@@ -363,6 +363,29 @@ textarea.input {
 }
 
 /* login */
+.passwordWrap {
+  position: relative;
+}
+.passwordWrap .input {
+  padding-right: 48px;
+}
+.eye {
+  position: absolute;
+  top: 50%;
+  right: 4px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--muted);
+}
+.eye:hover {
+  color: var(--fg);
+}
 .loginWrap {
   min-height: 100dvh;
   display: grid;

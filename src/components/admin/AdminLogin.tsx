@@ -9,6 +9,7 @@ export default function AdminLogin({ configured }: { configured: boolean }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,15 +38,39 @@ export default function AdminLogin({ configured }: { configured: boolean }) {
           </p>
         ) : (
           <>
-            <input
-              className={s.input}
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Şifre"
-              autoFocus
-              autoComplete="current-password"
-            />
+            <div className={s.passwordWrap}>
+              <input
+                className={s.input}
+                type={visible ? "text" : "password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Şifre"
+                autoFocus
+                autoComplete="current-password"
+                autoCapitalize="off"
+                autoCorrect="off"
+                spellCheck={false}
+              />
+              <button
+                type="button"
+                className={s.eye}
+                onClick={() => setVisible((v) => !v)}
+                aria-label={visible ? "Şifreyi gizle" : "Şifreyi göster"}
+                aria-pressed={visible}
+              >
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden>
+                  <path
+                    d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinejoin="round"
+                  />
+                  <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" strokeWidth="1.8" />
+                  {visible && <path d="M4 4l16 16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />}
+                </svg>
+              </button>
+            </div>
             {error && <p className={s.error}>{error}</p>}
             <button className={s.primary} disabled={busy || !password}>
               {busy ? "…" : "Giriş"}
