@@ -10,6 +10,7 @@ import {
 import { istanbulDate, msUntilNextDay } from "@/lib/day";
 import Ring from "./Ring";
 import Num from "./Num";
+import SharePanel from "./SharePanel";
 import StatsPanel from "./StatsPanel";
 import SettingsPanel from "./SettingsPanel";
 import { defaultSettings, readSettings, saveSettings, type Settings } from "@/lib/settings";
@@ -108,7 +109,7 @@ export default function Game({ questions, daily }: { questions: Question[]; dail
   const [helpOpen, setHelpOpen] = useState(false);
   const [statsOpen, setStatsOpen] = useState(false);
   const [stats, setStats] = useState<Stats | null>(null);
-  const [copied, setCopied] = useState(false);
+  const [shareOpen, setShareOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const lastAction = useRef(0);
   const remainingRef = useRef(remaining);
@@ -159,7 +160,6 @@ export default function Game({ questions, daily }: { questions: Question[]; dail
   const switchMode = (m: Mode) => {
     if (m === mode) return;
     setMode(m);
-    setCopied(false);
     if (m === "daily") {
       loadDaily();
     } else {
@@ -254,7 +254,6 @@ export default function Game({ questions, daily }: { questions: Question[]; dail
     setRemaining(ms);
     setGuess("");
     setFeedback(null);
-    setCopied(false);
     setPhase("playing");
     focusInput();
   };
@@ -322,22 +321,12 @@ export default function Game({ questions, daily }: { questions: Question[]; dail
     }`;
   };
 
-  const share = async () => {
-    const text = shareText();
-    try {
-      if (navigator.share && matchMedia("(pointer: coarse)").matches) {
-        await navigator.share({ text });
-        return;
-      }
-    } catch {
-      return;
-    }
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 2000);
-    } catch {}
-  };
+  const longDate = (date: string) =>
+    new Intl.DateTimeFormat("tr-TR", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(
+      new Date(date),
+    );
+  const shareTitle =
+    mode === "daily" ? `Günlük #${daily.number} · ${longDate(daily.date)}` : `Serbest mod · ${longDate(istanbulDate())}`;
 
   const ringStatuses = slots.map((x, i) =>
     (phase === "playing" || phase === "paused") && i === current ? "current" : x.status,
@@ -566,7 +555,7 @@ export default function Game({ questions, daily }: { questions: Question[]; dail
               <div><strong><Num value={formatTime(roundMs - remaining)} /></strong><span>Süre</span></div>
             </div>
             <div className={s.row}>
-              <button className={s.primary} onClick={share}>{copied ? "Kopyalandı ✓" : "Paylaş"}</button>
+              <button className={s.primary} onClick={() => setShareOpen(true)}>Paylaş</button>
               {mode === "daily" ? (
                 <button className={s.ghost} onClick={() => switchMode("free")}>Serbest oyna</button>
               ) : (
@@ -594,6 +583,23 @@ export default function Game({ questions, daily }: { questions: Question[]; dail
           </section>
         )}
       </main>
+
+      {shareOpen && phase === "done" && (
+        <div className={s.modalBack} onClick={() => setShareOpen(false)}>
+          <div className={s.modal} role="dialog" aria-modal="true" aria-label="Paylaş" onClick={(e) => e.stopPropagation()}>
+            <button className={s.modalClose} onClick={() => setShareOpen(false)} aria-label="Kapat">×</button>
+            <SharePanel
+              title={shareTitle}
+              fileName={mode === "daily" ? `passaparola-gunluk-${daily.number}.png` : "passaparola-serbest.png"}
+              slots={slots}
+              ms={roundMs - remaining}
+              colorBlind={settings.colorBlind}
+              defaultHideAnswers={mode === "daily"}
+              text={shareText()}
+            />
+          </div>
+        </div>
+      )}
 
       {settingsOpen && (
         <div className={s.modalBack} onClick={() => setSettingsOpen(false)}>
