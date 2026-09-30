@@ -580,3 +580,42 @@ textarea.input {
     justify-content: flex-start;
   }
 }
+
+/* tools */
+.tools {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+.toolCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.toolCard h2 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 800;
+}
+.toolCard p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.toolCard button {
+  flex: none;
+}
+.toolDanger {
+  border-color: color-mix(in srgb, var(--red) 40%, transparent);
+}
+@media (max-width: 560px) {
+  .toolCard {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

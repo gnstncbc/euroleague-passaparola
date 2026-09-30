@@ -48,7 +48,7 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
   const [notice, setNotice] = useState("");
   const [testGuess, setTestGuess] = useState("");
   const fileRef = useRef<HTMLInputElement>(null);
-  const [view, setView] = useState<"questions" | "stats">("questions");
+  const [view, setView] = useState<"questions" | "stats" | "tools">("questions");
   const [report, setReport] = useState<StatsReport | null>(null);
 
   const loadReport = useCallback(async () => {
@@ -249,9 +249,55 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
         >
           İstatistikler
         </button>
+        <button role="tab" aria-selected={view === "tools"} className={view === "tools" ? s.segOn : ""} onClick={() => setView("tools")}>
+          Araçlar
+        </button>
       </div>
 
-      {view === "stats" ? (
+      {view === "tools" ? (
+        <div className={s.tools}>
+          {error && <p className={s.error}>{error}</p>}
+          <section className={s.toolCard}>
+            <div>
+              <h2>Yedek al</h2>
+              <p>Tüm soruları ({list.length}) bir JSON dosyası olarak indirir.</p>
+            </div>
+            <button className={s.ghostSm} onClick={exportJson}>JSON dışa aktar</button>
+          </section>
+          <section className={s.toolCard}>
+            <div>
+              <h2>Yedekten yükle</h2>
+              <p>Seçtiğin JSON dosyasındaki soruları yükler. Mevcut soruların yerini alır.</p>
+            </div>
+            <button className={s.ghostSm} onClick={() => fileRef.current?.click()} disabled={busy}>JSON içe aktar</button>
+          </section>
+          <section className={s.toolCard}>
+            <div>
+              <h2>Günün bulmacasını yenile</h2>
+              <p>Bugünün günlük bulmacasını yeniden seçer. Bugün oynamış olanların ilerlemesi geçersiz olur.</p>
+            </div>
+            <button className={s.ghostSm} onClick={regenerateDaily} disabled={busy}>Yenile</button>
+          </section>
+          <section className={`${s.toolCard} ${s.toolDanger}`}>
+            <div>
+              <h2>Varsayılan sorulara dön</h2>
+              <p>Tüm soruları silip varsayılan soru setini geri yükler. Yaptığın düzenlemeler kaybolur; önce yedek al.</p>
+            </div>
+            <button className={s.danger} onClick={resetDefaults} disabled={busy}>Varsayılanlara dön</button>
+          </section>
+          <input
+            ref={fileRef}
+            type="file"
+            accept="application/json,.json"
+            hidden
+            onChange={(e) => {
+              const f = e.target.files?.[0];
+              e.target.value = "";
+              if (f) importJson(f);
+            }}
+          />
+        </div>
+      ) : view === "stats" ? (
         <AdminStats
           report={report}
           questions={list}
@@ -334,23 +380,6 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
         {!visible.length && <li className={s.empty}>Soru bulunamadı.</li>}
       </ul>
 
-      <footer className={s.footer}>
-        <button className={s.ghostSm} onClick={exportJson}>JSON dışa aktar</button>
-        <button className={s.ghostSm} onClick={() => fileRef.current?.click()} disabled={busy}>JSON içe aktar</button>
-        <button className={s.ghostSm} onClick={resetDefaults} disabled={busy}>Varsayılanlara dön</button>
-        <button className={s.ghostSm} onClick={regenerateDaily} disabled={busy}>Günün bulmacasını yenile</button>
-        <input
-          ref={fileRef}
-          type="file"
-          accept="application/json,.json"
-          hidden
-          onChange={(e) => {
-            const f = e.target.files?.[0];
-            e.target.value = "";
-            if (f) importJson(f);
-          }}
-        />
-      </footer>
       </>
       )}
 
