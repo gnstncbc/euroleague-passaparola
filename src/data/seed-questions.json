@@ -468,6 +468,17 @@
     ]
   },
   {
+    "id": "d10",
+    "letter": "D",
+    "rule": "starts",
+    "question": "2010 Dünya Şampiyonası'nda İstanbul'da gümüş madalya kazanan Türkiye milli takımının lakabı: 12 ___.",
+    "answer": "Dev Adam",
+    "alternates": [
+      "12 Dev Adam",
+      "Dev Adamlar"
+    ]
+  },
+  {
     "id": "e1",
     "letter": "E",
     "rule": "starts",
@@ -515,6 +526,48 @@
     "alternates": [
       "THY",
       "Türk Hava Yolları"
+    ]
+  },
+  {
+    "id": "e6",
+    "letter": "E",
+    "rule": "starts",
+    "question": "Kamerunlu pivot; 2023'te Philadelphia 76ers formasıyla NBA MVP'si seçilen Joel ___.",
+    "answer": "Joel Embiid",
+    "alternates": [
+      "Embiid"
+    ]
+  },
+  {
+    "id": "e7",
+    "letter": "E",
+    "rule": "starts",
+    "question": "'Dr. J' lakaplı, smaçlarıyla efsaneleşen forvet Julius ___.",
+    "answer": "Julius Erving",
+    "alternates": [
+      "Erving",
+      "Dr J"
+    ]
+  },
+  {
+    "id": "e8",
+    "letter": "E",
+    "rule": "starts",
+    "question": "New York Knicks'in 1985 draftında 1 numaradan seçtiği efsane Jamaikalı pivot Patrick ___.",
+    "answer": "Patrick Ewing",
+    "alternates": [
+      "Ewing"
+    ]
+  },
+  {
+    "id": "e9",
+    "letter": "E",
+    "rule": "starts",
+    "question": "FIBA Avrupa Şampiyonası'nın adı.",
+    "answer": "EuroBasket",
+    "alternates": [
+      "Euro Basket",
+      "Avrupa Şampiyonası"
     ]
   },
   {
@@ -583,6 +636,24 @@
     ]
   },
   {
+    "id": "f7",
+    "letter": "F",
+    "rule": "starts",
+    "question": "Dünya basketbolunun yönetim kurulu olan Uluslararası Basketbol Federasyonu'nun kısaltması.",
+    "answer": "FIBA",
+    "alternates": []
+  },
+  {
+    "id": "f8",
+    "letter": "F",
+    "rule": "starts",
+    "question": "2004 playofflarında Spurs'e karşı 0.4 saniyede attığı basketle ünlenen Lakers guardı Derek ___.",
+    "answer": "Derek Fisher",
+    "alternates": [
+      "Fisher"
+    ]
+  },
+  {
     "id": "g1",
     "letter": "G",
     "rule": "starts",
@@ -641,6 +712,28 @@
     "answer": "Marko Gudurić",
     "alternates": [
       "Guduric"
+    ]
+  },
+  {
+    "id": "g7",
+    "letter": "G",
+    "rule": "starts",
+    "question": "Milwaukee Bucks'ı 2021'de NBA şampiyonluğuna taşıyan 'Greek Freak' lakaplı Yunan yıldız.",
+    "answer": "Giannis Antetokounmpo",
+    "alternates": [
+      "Giannis",
+      "Antetokounmpo",
+      "Greek Freak"
+    ]
+  },
+  {
+    "id": "g8",
+    "letter": "G",
+    "rule": "starts",
+    "question": "NBA'de dört kez Yılın Savunmacısı seçilen Fransız pivot Rudy ___.",
+    "answer": "Rudy Gobert",
+    "alternates": [
+      "Gobert"
     ]
   },
   {
@@ -726,6 +819,18 @@
     ]
   },
   {
+    "id": "h9",
+    "letter": "H",
+    "rule": "starts",
+    "question": "2008'de NBA'de 'En Çok Gelişen Oyuncu' ödülünü kazanan Türk forvet.",
+    "answer": "Hidayet Türkoğlu",
+    "alternates": [
+      "Hidayet",
+      "Turkoglu",
+      "Hedo"
+    ]
+  },
+  {
     "id": "i1",
     "letter": "I",
     "rule": "starts",
@@ -789,6 +894,27 @@
     ]
   },
   {
+    "id": "i7",
+    "letter": "I",
+    "rule": "starts",
+    "question": "2001 NBA MVP'si, 'The Answer' lakaplı Philadelphia 76ers efsanesi Allen ___.",
+    "answer": "Allen Iverson",
+    "alternates": [
+      "Iverson"
+    ]
+  },
+  {
+    "id": "i8",
+    "letter": "I",
+    "rule": "starts",
+    "question": "2016 NBA Finalleri'nin 7. maçında Cleveland'a şampiyonluğu getiren üçlüğü atan Kyrie ___.",
+    "answer": "Kyrie Irving",
+    "alternates": [
+      "Irving",
+      "Kyrie"
+    ]
+  },
+  {
     "id": "j1",
     "letter": "J",
     "rule": "starts",
@@ -829,6 +955,60 @@
     "alternates": [
       "Joventut Badalona",
       "Penya"
+    ]
+  },
+  {
+    "id": "j5",
+    "letter": "J",
+    "rule": "starts",
+    "question": "Chicago Bulls ile altı NBA şampiyonluğu kazanıp altısında da Finaller MVP'si olan efsane Michael ___.",
+    "answer": "Michael Jordan",
+    "alternates": [
+      "Jordan"
+    ]
+  },
+  {
+    "id": "j6",
+    "letter": "J",
+    "rule": "starts",
+    "question": "2023'te Kareem Abdul-Jabbar'ı geçerek NBA tarihinin en skorer oyuncusu olan LeBron ___.",
+    "answer": "LeBron James",
+    "alternates": [
+      "James",
+      "Lebron"
+    ]
+  },
+  {
+    "id": "j7",
+    "letter": "J",
+    "rule": "starts",
+    "question": "Denver Nuggets'ı 2023'te ilk NBA şampiyonluğuna taşıyan, üç kez MVP seçilen Sırp pivot Nikola ___.",
+    "answer": "Nikola Jokić",
+    "alternates": [
+      "Jokic",
+      "Joker"
+    ]
+  },
+  {
+    "id": "j8",
+    "letter": "J",
+    "rule": "starts",
+    "question": "Maçın başında hakemin topu iki oyuncu arasında havaya atmasıyla yapılan başlangıç (İngilizce).",
+    "answer": "Jump ball",
+    "alternates": [
+      "Jumpball",
+      "Hava atışı"
+    ]
+  },
+  {
+    "id": "j9",
+    "letter": "J",
+    "rule": "starts",
+    "question": "1980'lerde Lakers'ın 'Showtime' dönemini yöneten efsane oyun kurucu Magic ___.",
+    "answer": "Magic Johnson",
+    "alternates": [
+      "Johnson",
+      "Magic"
     ]
   },
   {
@@ -898,6 +1078,18 @@
     "answer": "Kinder",
     "alternates": [
       "Kinder Bologna"
+    ]
+  },
+  {
+    "id": "k8",
+    "letter": "K",
+    "rule": "starts",
+    "question": "2006'da Toronto'ya karşı tek maçta 81 sayı atan Lakers efsanesi.",
+    "answer": "Kobe Bryant",
+    "alternates": [
+      "Kobe",
+      "Bryant",
+      "Black Mamba"
     ]
   },
   {
@@ -1210,6 +1402,48 @@
     ]
   },
   {
+    "id": "n5",
+    "letter": "N",
+    "rule": "starts",
+    "question": "Dallas Mavericks'i 2011'de NBA şampiyonluğuna taşıyan Alman efsane Dirk ___.",
+    "answer": "Dirk Nowitzki",
+    "alternates": [
+      "Nowitzki",
+      "Dirk"
+    ]
+  },
+  {
+    "id": "n6",
+    "letter": "N",
+    "rule": "starts",
+    "question": "Basketbolu 1891'de icat eden Kanadalı beden eğitimi öğretmeni James ___.",
+    "answer": "James Naismith",
+    "alternates": [
+      "Naismith"
+    ]
+  },
+  {
+    "id": "n7",
+    "letter": "N",
+    "rule": "starts",
+    "question": "Phoenix Suns formasıyla 2005 ve 2006'da üst üste NBA MVP'si seçilen Kanadalı oyun kurucu Steve ___.",
+    "answer": "Steve Nash",
+    "alternates": [
+      "Nash"
+    ]
+  },
+  {
+    "id": "n8",
+    "letter": "N",
+    "rule": "starts",
+    "question": "Nikola Jokić'in takımı; 2023'te ilk NBA şampiyonluğunu kazanan Denver ___.",
+    "answer": "Denver Nuggets",
+    "alternates": [
+      "Nuggets",
+      "Denver"
+    ]
+  },
+  {
     "id": "o1",
     "letter": "O",
     "rule": "starts",
@@ -1281,6 +1515,29 @@
     "answer": "Elie Okobo",
     "alternates": [
       "Okobo"
+    ]
+  },
+  {
+    "id": "o8",
+    "letter": "O",
+    "rule": "starts",
+    "question": "Detroit Pistons ile 2004'te NBA şampiyonu olan ilk Türk basketbolcu Mehmet ___.",
+    "answer": "Mehmet Okur",
+    "alternates": [
+      "Okur",
+      "Memo"
+    ]
+  },
+  {
+    "id": "o9",
+    "letter": "O",
+    "rule": "starts",
+    "question": "Houston Rockets'ı 1994 ve 1995'te şampiyonluğa taşıyan Nijerya doğumlu pivot Hakeem ___.",
+    "answer": "Hakeem Olajuwon",
+    "alternates": [
+      "Olajuwon",
+      "Hakeem",
+      "The Dream"
     ]
   },
   {
@@ -1450,6 +1707,60 @@
     ]
   },
   {
+    "id": "q3",
+    "letter": "Q",
+    "rule": "starts",
+    "question": "Utah Jazz ve Atlanta Hawks'ı çalıştıran, kariyerinde CSKA Moskova'da Messina'nın yardımcılığını da yapan Amerikalı koç Quin ___.",
+    "answer": "Quin Snyder",
+    "alternates": [
+      "Snyder"
+    ]
+  },
+  {
+    "id": "q4",
+    "letter": "Q",
+    "rule": "contains",
+    "question": "Lakers ile 2000-2002 arasında üst üste üç NBA şampiyonluğu kazanan, 'Diesel' lakaplı dev pivot.",
+    "answer": "Shaquille O'Neal",
+    "alternates": [
+      "Shaq",
+      "O'Neal",
+      "Oneal",
+      "Shaquille"
+    ]
+  },
+  {
+    "id": "q5",
+    "letter": "Q",
+    "rule": "starts",
+    "question": "Bir oyuncunun tek maçta dört ayrı istatistikte çift haneye ulaşmasının adı.",
+    "answer": "Quadruple-double",
+    "alternates": [
+      "Quadruple double"
+    ]
+  },
+  {
+    "id": "q6",
+    "letter": "Q",
+    "rule": "contains",
+    "question": "Dwyane Wade'in NBA'den önce oynadığı Milwaukee'deki üniversite.",
+    "answer": "Marquette",
+    "alternates": [
+      "Marquette University"
+    ]
+  },
+  {
+    "id": "q7",
+    "letter": "Q",
+    "rule": "starts",
+    "question": "Cleveland Cavaliers'ın salonunun 2005-2019 arasındaki adı: ___ Loans Arena.",
+    "answer": "Quicken Loans Arena",
+    "alternates": [
+      "Quicken",
+      "Quicken Loans"
+    ]
+  },
+  {
     "id": "r1",
     "letter": "R",
     "rule": "starts",
@@ -1519,6 +1830,17 @@
     "answer": "Rising Star",
     "alternates": [
       "Rising Star Trophy"
+    ]
+  },
+  {
+    "id": "r8",
+    "letter": "R",
+    "rule": "starts",
+    "question": "Bulls ve Pistons ile şampiyonluklar kazanan, ribaundlarıyla ve renkli saçlarıyla ünlü Dennis ___.",
+    "answer": "Dennis Rodman",
+    "alternates": [
+      "Rodman",
+      "The Worm"
     ]
   },
   {
@@ -1720,6 +2042,27 @@
     ]
   },
   {
+    "id": "t8",
+    "letter": "T",
+    "rule": "starts",
+    "question": "Bir oyuncunun tek maçta üç ayrı istatistikte çift haneye ulaşmasının adı.",
+    "answer": "Triple-double",
+    "alternates": [
+      "Triple double"
+    ]
+  },
+  {
+    "id": "t9",
+    "letter": "T",
+    "rule": "starts",
+    "question": "San Antonio Spurs ile beş NBA şampiyonluğu kazanan 'Big Fundamental' lakaplı efsane uzun.",
+    "answer": "Tim Duncan",
+    "alternates": [
+      "Duncan",
+      "Tim"
+    ]
+  },
+  {
     "id": "u1",
     "letter": "U",
     "rule": "starts",
@@ -1780,6 +2123,25 @@
     ]
   },
   {
+    "id": "u7",
+    "letter": "U",
+    "rule": "starts",
+    "question": "John Stockton ve Karl Malone'un efsaneleştiği Salt Lake City takımı.",
+    "answer": "Utah Jazz",
+    "alternates": [
+      "Utah",
+      "Jazz"
+    ]
+  },
+  {
+    "id": "u8",
+    "letter": "U",
+    "rule": "starts",
+    "question": "John Wooden'ın 10 NCAA şampiyonluğu kazandığı Los Angeles üniversitesi.",
+    "answer": "UCLA",
+    "alternates": []
+  },
+  {
     "id": "v1",
     "letter": "V",
     "rule": "starts",
@@ -1832,6 +2194,38 @@
     ]
   },
   {
+    "id": "v6",
+    "letter": "V",
+    "rule": "starts",
+    "question": "Orlando ve Chicago'da forma giyen Karadağlı pivot Nikola ___.",
+    "answer": "Nikola Vučević",
+    "alternates": [
+      "Vucevic"
+    ]
+  },
+  {
+    "id": "v7",
+    "letter": "V",
+    "rule": "starts",
+    "question": "2000 NBA smaç yarışmasını kazanan, 'Vinsanity' lakaplı Toronto Raptors yıldızı.",
+    "answer": "Vince Carter",
+    "alternates": [
+      "Carter",
+      "Vinsanity"
+    ]
+  },
+  {
+    "id": "v8",
+    "letter": "V",
+    "rule": "starts",
+    "question": "Lakers ve Sacramento Kings'te oynayan, NBA'de oynayan ilk Avrupalı yıldızlardan Sırp pivot Vlade ___.",
+    "answer": "Vlade Divac",
+    "alternates": [
+      "Divac",
+      "Vlade"
+    ]
+  },
+  {
     "id": "w1",
     "letter": "W",
     "rule": "starts",
@@ -1859,6 +2253,70 @@
     "answer": "Kemba Walker",
     "alternates": [
       "Walker"
+    ]
+  },
+  {
+    "id": "w4",
+    "letter": "W",
+    "rule": "starts",
+    "question": "San Antonio Spurs'ün 2023 draftında 1 numaradan seçtiği 2,20'lik Fransız yıldız Victor ___.",
+    "answer": "Victor Wembanyama",
+    "alternates": [
+      "Wembanyama",
+      "Wemby"
+    ]
+  },
+  {
+    "id": "w5",
+    "letter": "W",
+    "rule": "starts",
+    "question": "2017'de NBA MVP'si seçilen, triple-double rekorlarıyla bilinen oyun kurucu Russell ___.",
+    "answer": "Russell Westbrook",
+    "alternates": [
+      "Westbrook"
+    ]
+  },
+  {
+    "id": "w6",
+    "letter": "W",
+    "rule": "starts",
+    "question": "Miami Heat ile 2006 NBA Finalleri'nin MVP'si seçilen guard Dwyane ___.",
+    "answer": "Dwyane Wade",
+    "alternates": [
+      "Wade",
+      "D-Wade"
+    ]
+  },
+  {
+    "id": "w7",
+    "letter": "W",
+    "rule": "starts",
+    "question": "Stephen Curry'nin takımı; 2015, 2017, 2018 ve 2022'de NBA şampiyonu olan Golden State ___.",
+    "answer": "Golden State Warriors",
+    "alternates": [
+      "Warriors",
+      "Golden State"
+    ]
+  },
+  {
+    "id": "w8",
+    "letter": "W",
+    "rule": "starts",
+    "question": "1962'de tek maçta 100 sayı atarak NBA rekorunu kıran pivot Wilt ___.",
+    "answer": "Wilt Chamberlain",
+    "alternates": [
+      "Chamberlain",
+      "Wilt"
+    ]
+  },
+  {
+    "id": "w9",
+    "letter": "W",
+    "rule": "starts",
+    "question": "UCLA'yı 10 NCAA şampiyonluğuna taşıyan efsane koç John ___.",
+    "answer": "John Wooden",
+    "alternates": [
+      "Wooden"
     ]
   },
   {
@@ -1902,6 +2360,38 @@
     "answer": "Alex Tyus",
     "alternates": [
       "Tyus"
+    ]
+  },
+  {
+    "id": "x5",
+    "letter": "X",
+    "rule": "contains",
+    "question": "San Antonio Spurs, Houston Rockets ve Dallas Mavericks'in bulunduğu ABD eyaleti.",
+    "answer": "Texas",
+    "alternates": [
+      "Teksas"
+    ]
+  },
+  {
+    "id": "x6",
+    "letter": "X",
+    "rule": "contains",
+    "question": "Steve Nash'in iki kez MVP seçildiği Arizona takımı.",
+    "answer": "Phoenix Suns",
+    "alternates": [
+      "Phoenix",
+      "Suns"
+    ]
+  },
+  {
+    "id": "x7",
+    "letter": "X",
+    "rule": "contains",
+    "question": "NBA'de maaş sınırını aşan takımların ödediği ceza vergisinin İngilizce adı.",
+    "answer": "Luxury tax",
+    "alternates": [
+      "Luxury",
+      "Lüks vergisi"
     ]
   },
   {
@@ -1955,6 +2445,38 @@
       "Bayern",
       "Bayern Munich",
       "FC Bayern"
+    ]
+  },
+  {
+    "id": "y6",
+    "letter": "Y",
+    "rule": "starts",
+    "question": "2002 NBA draftında 1 numaradan Houston Rockets'a seçilen Çinli dev pivot.",
+    "answer": "Yao Ming",
+    "alternates": [
+      "Yao",
+      "Ming"
+    ]
+  },
+  {
+    "id": "y7",
+    "letter": "Y",
+    "rule": "starts",
+    "question": "Atlanta Hawks'ın uzaktan şutlarıyla bilinen yıldız oyun kurucusu Trae ___.",
+    "answer": "Trae Young",
+    "alternates": [
+      "Young"
+    ]
+  },
+  {
+    "id": "y8",
+    "letter": "Y",
+    "rule": "starts",
+    "question": "1998 ve 2002 FIBA Dünya Şampiyonası'nı kazanan, Sırbistan-Karadağ'ın o dönemki devlet adı.",
+    "answer": "Yugoslavya",
+    "alternates": [
+      "Yugoslavia",
+      "Sırbistan-Karadağ"
     ]
   },
   {
@@ -2017,6 +2539,28 @@
     "alternates": [
       "Zalgirio Arena",
       "Zalgiris Arena"
+    ]
+  },
+  {
+    "id": "z7",
+    "letter": "Z",
+    "rule": "starts",
+    "question": "2019 NBA draftında 1 numaradan New Orleans Pelicans'a seçilen güçlü forvet Zion ___.",
+    "answer": "Zion Williamson",
+    "alternates": [
+      "Zion",
+      "Williamson"
+    ]
+  },
+  {
+    "id": "z8",
+    "letter": "Z",
+    "rule": "starts",
+    "question": "2015 ve 2016 NBA smaç yarışmalarını üst üste kazanan guard Zach ___.",
+    "answer": "Zach LaVine",
+    "alternates": [
+      "Lavine",
+      "Zach"
     ]
   }
 ]
