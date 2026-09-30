@@ -193,6 +193,19 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
     });
   };
 
+  const regenerateDaily = () => {
+    if (
+      !confirm(
+        "Bugünün günlük bulmacası yeniden seçilecek. Bugün oynamış olanların ilerlemesi geçersiz olur. Devam?",
+      )
+    )
+      return;
+    run(async () => {
+      await api("/api/admin/daily", "POST");
+      flash("Günün bulmacası yenilendi");
+    });
+  };
+
   const logout = async () => {
     await fetch("/api/admin/logout", { method: "POST" });
     router.refresh();
@@ -325,6 +338,7 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
         <button className={s.ghostSm} onClick={exportJson}>JSON dışa aktar</button>
         <button className={s.ghostSm} onClick={() => fileRef.current?.click()} disabled={busy}>JSON içe aktar</button>
         <button className={s.ghostSm} onClick={resetDefaults} disabled={busy}>Varsayılanlara dön</button>
+        <button className={s.ghostSm} onClick={regenerateDaily} disabled={busy}>Günün bulmacasını yenile</button>
         <input
           ref={fileRef}
           type="file"

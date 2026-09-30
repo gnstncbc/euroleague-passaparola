@@ -33,6 +33,20 @@ async function dailyIds(questions: Question[], date: string): Promise<string[]> 
   return ids;
 }
 
+/** Drop today's set so the next visit picks a fresh one (admin action). */
+export async function regenerateDaily(): Promise<void> {
+  const redis = redisClient();
+  if (!redis) return;
+  const date = istanbulDate();
+  const ids = await redis.get<string[]>(dayKey(date));
+  if (Array.isArray(ids) && ids.length) {
+    const last = (await redis.hmget<Record<string, string | null>>(LAST_USED, ...ids)) ?? {};
+    const today = Object.entries(last).filter(([, d]) => d === date).map(([id]) => id);
+    if (today.length) await redis.hdel(LAST_USED, ...today);
+  }
+  await redis.del(dayKey(date));
+}
+
 export async function getDaily(questions: Question[]): Promise<Daily> {
   const date = istanbulDate();
   const ids = await dailyIds(questions, date);

@@ -525,6 +525,19 @@
     ]
   },
   {
+    "id": "d11",
+    "letter": "D",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2000'lerde EuroLeague'de mücadele eden, CSKA'nın şehir rakibi Moskova kulübü.",
+    "answer": "Dinamo Moskova",
+    "alternates": [
+      "Dynamo Moscow",
+      "Dinamo",
+      "Dynamo"
+    ]
+  },
+  {
     "id": "e1",
     "letter": "E",
     "rule": "starts",
@@ -623,6 +636,28 @@
     "alternates": [
       "Euro Basket",
       "Avrupa Şampiyonası"
+    ]
+  },
+  {
+    "id": "e10",
+    "letter": "E",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "EuroLeague'i organize eden, merkezi Barselona'da bulunan şirket.",
+    "answer": "Euroleague Basketball",
+    "alternates": [
+      "Euroleague Basketball Company"
+    ]
+  },
+  {
+    "id": "e11",
+    "letter": "E",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Galatasaray'a 2016'da EuroCup'ı, Efes'e 2021 ve 2022'de EuroLeague'i kazandıran koçun adı (soyadı Ataman).",
+    "answer": "Ergin Ataman",
+    "alternates": [
+      "Ergin"
     ]
   },
   {
@@ -805,6 +840,29 @@
     "answer": "Rudy Gobert",
     "alternates": [
       "Gobert"
+    ]
+  },
+  {
+    "id": "g9",
+    "letter": "G",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2018-19 sezonunda EuroLeague'de mücadele eden Kanarya Adaları kulübü.",
+    "answer": "Gran Canaria",
+    "alternates": [
+      "Herbalife Gran Canaria",
+      "Canaria"
+    ]
+  },
+  {
+    "id": "g10",
+    "letter": "G",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Baskonia'nın şehri Vitoria'nın Baskça adı.",
+    "answer": "Gasteiz",
+    "alternates": [
+      "Vitoria-Gasteiz"
     ]
   },
   {
@@ -1106,6 +1164,43 @@
     "alternates": [
       "Johnson",
       "Magic"
+    ]
+  },
+  {
+    "id": "j10",
+    "letter": "J",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Rusya'yı 2007 Avrupa Şampiyonası finalinde son saniye basketiyle şampiyon yapan, CSKA'nın Amerikan doğumlu oyun kurucusu.",
+    "answer": "J.R. Holden",
+    "alternates": [
+      "JR Holden",
+      "Holden"
+    ]
+  },
+  {
+    "id": "j11",
+    "letter": "J",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2004'te ULEB Cup'ı kazanan İsrail kulübü Hapoel ___.",
+    "answer": "Hapoel Jerusalem",
+    "alternates": [
+      "Jerusalem",
+      "Kudüs",
+      "Hapoel Kudüs"
+    ]
+  },
+  {
+    "id": "j12",
+    "letter": "J",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid'i 2007'de ULEB Cup şampiyonluğuna taşıyan İspanyol başantrenör ___ Plaza.",
+    "answer": "Joan Plaza",
+    "alternates": [
+      "Joan",
+      "Plaza"
     ]
   },
   {
@@ -1491,6 +1586,19 @@
     ]
   },
   {
+    "id": "m15",
+    "letter": "M",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2008 ve 2011'de Final Four'a kalan Siena kulübü.",
+    "answer": "Montepaschi Siena",
+    "alternates": [
+      "Montepaschi",
+      "Siena",
+      "Mens Sana"
+    ]
+  },
+  {
     "id": "n1",
     "letter": "N",
     "rule": "starts",
@@ -1580,6 +1688,28 @@
     "alternates": [
       "Nuggets",
       "Denver"
+    ]
+  },
+  {
+    "id": "n9",
+    "letter": "N",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Panathinaikos, Olimpia Milano ve Crvena Zvezda formaları giymiş Sırp guard Nemanja ___.",
+    "answer": "Nemanja Nedović",
+    "alternates": [
+      "Nedovic"
+    ]
+  },
+  {
+    "id": "n10",
+    "letter": "N",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Maccabi Tel Aviv'in efsanevi salonunun 2000'lerin sonunda kullandığı, bir telefon markasının adını taşıyan sponsor ismi.",
+    "answer": "Nokia Arena",
+    "alternates": [
+      "Nokia"
     ]
   },
   {
@@ -1686,6 +1816,19 @@
       "Olajuwon",
       "Hakeem",
       "The Dream"
+    ]
+  },
+  {
+    "id": "o10",
+    "letter": "O",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2000'lerde EuroLeague'de oynayan, Slovenya'nın başkenti Ljubljana'nın kulübü Union ___.",
+    "answer": "Olimpija",
+    "alternates": [
+      "Union Olimpija",
+      "Olimpija Ljubljana",
+      "Cedevita Olimpija"
     ]
   },
   {
@@ -1930,6 +2073,31 @@
     ]
   },
   {
+    "id": "q8",
+    "letter": "Q",
+    "rule": "contains",
+    "category": "euroleague",
+    "question": "FC Barcelona'nın basketbol şubesinin Katalanca resmî adı FC Barcelona ___ (basketbol anlamına gelir).",
+    "answer": "Bàsquet",
+    "alternates": [
+      "Basquet",
+      "FC Barcelona Basquet"
+    ]
+  },
+  {
+    "id": "q9",
+    "letter": "Q",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "EuroLeague'de Final Four'dan önce oynanan, beşte üç galibiyet usulü play-off turunun İngilizce karşılığı (çeyrek final).",
+    "answer": "Quarterfinals",
+    "alternates": [
+      "Quarterfinal",
+      "Quarter-finals",
+      "Quarter finals"
+    ]
+  },
+  {
     "id": "r1",
     "letter": "R",
     "rule": "starts",
@@ -2018,6 +2186,17 @@
     "alternates": [
       "Rodman",
       "The Worm"
+    ]
+  },
+  {
+    "id": "r9",
+    "letter": "R",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid ve Tau Cerámica'da forma giymiş, EuroLeague'de sayılarıyla öne çıkan Sırp guard Igor ___.",
+    "answer": "Igor Rakočević",
+    "alternates": [
+      "Rakocevic"
     ]
   },
   {
@@ -2261,6 +2440,17 @@
     ]
   },
   {
+    "id": "t10",
+    "letter": "T",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Tau Cerámica'da forma giyip NBA'e giden Bosnalı stretch forvet Mirza ___.",
+    "answer": "Mirza Teletović",
+    "alternates": [
+      "Teletovic"
+    ]
+  },
+  {
     "id": "u1",
     "letter": "U",
     "rule": "starts",
@@ -2440,6 +2630,37 @@
     ]
   },
   {
+    "id": "v9",
+    "letter": "V",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "ASVEL'in bulunduğu, Lyon'a bitişik Fransız şehri.",
+    "answer": "Villeurbanne",
+    "alternates": []
+  },
+  {
+    "id": "v10",
+    "letter": "V",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Lietuvos Rytas'ın şehri, Litvanya'nın başkenti.",
+    "answer": "Vilnius",
+    "alternates": []
+  },
+  {
+    "id": "v11",
+    "letter": "V",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "CSKA, Zenit ve UNICS gibi Rus kulüplerinin oynadığı, Doğu Avrupa merkezli bölgesel lig.",
+    "answer": "VTB United League",
+    "alternates": [
+      "VTB",
+      "VTB Ligi",
+      "VTB League"
+    ]
+  },
+  {
     "id": "w1",
     "letter": "W",
     "rule": "starts",
@@ -2543,6 +2764,40 @@
     ]
   },
   {
+    "id": "w10",
+    "letter": "W",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Maccabi Tel Aviv'den Fenerbahçe'ye geçip 2025'te EuroLeague şampiyonu olan Amerikalı guard ___ Baldwin.",
+    "answer": "Wade Baldwin",
+    "alternates": [
+      "Wade",
+      "Baldwin"
+    ]
+  },
+  {
+    "id": "w11",
+    "letter": "W",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Brose Bamberg ve Darüşşafaka'da oynadıktan sonra NBA'de Boston Celtics'e giden Amerikalı guard Brad ___.",
+    "answer": "Brad Wanamaker",
+    "alternates": [
+      "Wanamaker"
+    ]
+  },
+  {
+    "id": "w12",
+    "letter": "W",
+    "rule": "contains",
+    "category": "euroleague",
+    "question": "Panathinaikos'un CSKA'yı yendiği 2009 Final Four'unun oynandığı Berlin salonunun o zamanki adı.",
+    "answer": "O2 World",
+    "alternates": [
+      "O2 World Berlin"
+    ]
+  },
+  {
     "id": "x1",
     "letter": "X",
     "rule": "contains",
@@ -2622,6 +2877,29 @@
     "alternates": [
       "Luxury",
       "Lüks vergisi"
+    ]
+  },
+  {
+    "id": "x8",
+    "letter": "X",
+    "rule": "contains",
+    "category": "euroleague",
+    "question": "Anadolu Efes'in 2021'de ilk EuroLeague kupasını kaldırdığı Köln salonu.",
+    "answer": "Lanxess Arena",
+    "alternates": [
+      "Lanxess"
+    ]
+  },
+  {
+    "id": "x9",
+    "letter": "X",
+    "rule": "contains",
+    "category": "euroleague",
+    "question": "Fenerbahçe'nin 2017 şampiyonluğunda oynayan, Türk vatandaşlığı alıp Ali Muhammed adını kullanan oyun kurucu.",
+    "answer": "Bobby Dixon",
+    "alternates": [
+      "Dixon",
+      "Ali Muhammed"
     ]
   },
   {
@@ -2715,6 +2993,40 @@
     "alternates": [
       "Yugoslavia",
       "Sırbistan-Karadağ"
+    ]
+  },
+  {
+    "id": "y9",
+    "letter": "Y",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Crvena Zvezda'nın Türkçe anlamı: Kızıl ___.",
+    "answer": "Yıldız",
+    "alternates": [
+      "Kızıl Yıldız",
+      "Yildiz"
+    ]
+  },
+  {
+    "id": "y10",
+    "letter": "Y",
+    "rule": "contains",
+    "category": "euroleague",
+    "question": "Olympiacos ve CSKA ile toplam dört EuroLeague kupası kazanan, kısa boyuna rağmen pivot oynayan Amerikalı.",
+    "answer": "Kyle Hines",
+    "alternates": [
+      "Hines"
+    ]
+  },
+  {
+    "id": "y11",
+    "letter": "Y",
+    "rule": "contains",
+    "category": "euroleague",
+    "question": "2014 finalinde Real Madrid'i uzatmada yenen Maccabi'nin Final Four MVP'si Amerikalı oyun kurucu.",
+    "answer": "Tyrese Rice",
+    "alternates": [
+      "Rice"
     ]
   },
   {

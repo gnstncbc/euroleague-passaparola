@@ -119,7 +119,10 @@ export default function Game({ questions, daily }: { questions: Question[]; dail
 
   // Bring back today's daily puzzle: finished result, or a paused game in progress.
   const loadDaily = useCallback(() => {
-    const progress = readDailyProgress(daily.date);
+    let progress = readDailyProgress(daily.date);
+    // Ignore progress saved for a set that has since been regenerated.
+    const todayIds = new Set(daily.questions.map((q) => q.id));
+    if (progress && !progress.slots.some((x) => todayIds.has(x.id))) progress = null;
     setRoundMs(DAILY_MS);
     setFeedback(null);
     setGuess("");

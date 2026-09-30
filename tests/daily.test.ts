@@ -32,18 +32,57 @@ describe("pickDaily", () => {
     const lastUsed: Record<string, string> = {};
     const seen = new Map<string, Set<string>>();
     let date = "2026-10-01";
-    const poolSize = (l: string) => questions.filter((q) => q.letter === l).length;
+    const poolSize = (l: string) => questions.filter((q) => q.letter === l && q.category !== "general").length;
     for (let d = 0; d < 7; d++) {
       for (const q of pickDaily(questions, date, lastUsed)) {
         const set = seen.get(q.letter) ?? new Set();
-        // no repeat until every question of the letter was used
-        if (set.size < poolSize(q.letter)) expect(set.has(q.id)).toBe(false);
-        set.add(q.id);
+        // no EuroLeague repeat until every EuroLeague question of the letter was used
+        if (q.category !== "general" && set.size < poolSize(q.letter)) expect(set.has(q.id)).toBe(false);
+        if (q.category !== "general") set.add(q.id);
         seen.set(q.letter, set);
         lastUsed[q.id] = date;
       }
       date = addDays(date, 1);
     }
+  });
+});
+
+describe("pickDaily categories", () => {
+  it("caps general questions per day", () => {
+    const lastUsed: Record<string, string> = {};
+    let date = "2026-10-01";
+    for (let d = 0; d < 60; d++) {
+      const day = pickDaily(questions, date, lastUsed);
+      expect(day.filter((q) => q.category === "general").length).toBeLessThanOrEqual(2);
+      day.forEach((q) => (lastUsed[q.id] = date));
+      date = addDays(date, 1);
+    }
+  });
+
+  it("prefers EuroLeague questions and never repeats an answer in one puzzle", () => {
+    const lastUsed: Record<string, string> = {};
+    let date = "2026-10-01";
+    for (let d = 0; d < 30; d++) {
+      const day = pickDaily(questions, date, lastUsed);
+      const answers = day.map((q) => q.answer);
+      expect(new Set(answers).size).toBe(answers.length);
+      for (const q of day) {
+        if (q.category === "general") {
+          // only when every EuroLeague question of the letter was used recently
+          const el = questions.filter((x) => x.letter === q.letter && x.category !== "general");
+          for (const x of el) {
+            expect(lastUsed[x.id]).toBeDefined();
+            expect(Date.parse(date) - Date.parse(lastUsed[x.id])).toBeLessThan(21 * 86_400_000);
+          }
+        }
+        lastUsed[q.id] = date;
+      }
+      date = addDays(date, 1);
+    }
+  });
+
+  it("uses no general questions on the first day", () => {
+    expect(pickDaily(questions, "2026-10-01").filter((q) => q.category === "general")).toEqual([]);
   });
 });
 
