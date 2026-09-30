@@ -1,10 +1,17 @@
 import "server-only";
+import { createHash } from "node:crypto";
 import { Redis } from "@upstash/redis";
 import seed from "@/data/seed-questions.json";
 import type { Question } from "./types";
 
 const HASH = "pp:questions";
-const SEEDED = "pp:seeded";
+const SEED_VERSION = "pp:seedVersion";
+const DELETED = "pp:deleted";
+
+const seedList = seed as Question[];
+// Changes whenever questions are added to the seed file, so new defaults get
+// merged into an existing database without touching edited or deleted ones.
+const seedVersion = `v1-${createHash("sha1").update(seedList.map((q) => q.id).join(",")).digest("hex")}`;
 
 export type StoreKind = "redis" | "memory";
 
@@ -38,19 +45,18 @@ export const storeKind: StoreKind = redis ? "redis" : "memory";
 const g = globalThis as unknown as { __ppMemory?: Map<string, Question> };
 function memory(): Map<string, Question> {
   if (!g.__ppMemory) {
-    g.__ppMemory = new Map((seed as Question[]).map((q) => [q.id, q]));
+    g.__ppMemory = new Map(seedList.map((q) => [q.id, q]));
   }
   return g.__ppMemory;
 }
 
 async function ensureSeeded(r: Redis) {
-  // SET NX so concurrent first requests seed only once; deleting every
-  // question later does not bring the defaults back.
-  const first = await r.set(SEEDED, "1", { nx: true });
-  if (first) {
-    const entries = Object.fromEntries((seed as Question[]).map((q) => [q.id, q]));
-    await r.hset(HASH, entries);
-  }
+  if (String(await r.get(SEED_VERSION)) === seedVersion) return;
+  const [ids, deleted] = await Promise.all([r.hkeys(HASH), r.smembers(DELETED)]);
+  const skip = new Set([...ids, ...deleted]);
+  const missing = seedList.filter((q) => !skip.has(q.id));
+  if (missing.length) await r.hset(HASH, Object.fromEntries(missing.map((q) => [q.id, q])));
+  await r.set(SEED_VERSION, seedVersion);
 }
 
 function sortQuestions(list: Question[]) {
@@ -79,6 +85,8 @@ export async function deleteQuestion(id: string): Promise<void> {
     return;
   }
   await redis.hdel(HASH, id);
+  // Remember deleted default questions so a seed update does not restore them.
+  await redis.sadd(DELETED, id);
 }
 
 export async function replaceAll(list: Question[]): Promise<void> {
@@ -86,13 +94,17 @@ export async function replaceAll(list: Question[]): Promise<void> {
     g.__ppMemory = new Map(list.map((q) => [q.id, q]));
     return;
   }
+  const kept = new Set(list.map((q) => q.id));
+  const dropped = seedList.filter((q) => !kept.has(q.id)).map((q) => q.id);
   const tx = redis.multi();
-  tx.set(SEEDED, "1");
   tx.del(HASH);
+  tx.del(DELETED);
   if (list.length) tx.hset(HASH, Object.fromEntries(list.map((q) => [q.id, q])));
+  if (dropped.length) tx.sadd(DELETED, dropped[0], ...dropped.slice(1));
+  tx.set(SEED_VERSION, seedVersion);
   await tx.exec();
 }
 
 export function defaultQuestions(): Question[] {
-  return seed as Question[];
+  return seedList;
 }

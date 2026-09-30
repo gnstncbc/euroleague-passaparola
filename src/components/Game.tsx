@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { isCorrect } from "@/lib/match";
-import { ruleLabel, type Question } from "@/lib/types";
+import type { Question } from "@/lib/types";
 import {
   buildRound, formatTime, GAME_MS, nextOpen, readStats, recordGame,
   type Slot, type Stats,
@@ -303,7 +303,13 @@ export default function Game({ questions }: { questions: Question[] }) {
                 </div>
               ) : (
                 <>
-                  <div className={s.rule}>{ruleLabel(active.q.letter, active.q.rule)}</div>
+                  <div className={`${s.rule} ${active.q.rule === "contains" ? s.ruleContains : ""}`}>
+                    {active.q.rule === "starts" ? (
+                      <><b>{active.q.letter}</b> ile başlar</>
+                    ) : (
+                      <>İçinde <b>{active.q.letter}</b> geçer</>
+                    )}
+                  </div>
                   <p key={active.q.id} className={s.question}>{active.q.question}</p>
                 </>
               )}

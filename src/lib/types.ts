@@ -12,5 +12,5 @@ export interface Question {
 export const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 export function ruleLabel(letter: string, rule: Rule) {
-  return rule === "starts" ? `${letter} ile başlar` : `İçinde ${letter} var`;
+  return rule === "starts" ? `${letter} ile başlar` : `İçinde ${letter} geçer`;
 }
