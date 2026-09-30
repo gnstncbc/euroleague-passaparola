@@ -4,10 +4,11 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { isCorrect } from "@/lib/match";
 import type { Question } from "@/lib/types";
 import {
-  buildRound, formatTime, GAME_MS, nextOpen, readStats, recordGame,
+  buildRound, formatTime, GAME_MS, nextOpen, readStats, recordGame, resetStats,
   type Slot, type Stats,
 } from "@/lib/game";
 import Ring from "./Ring";
+import StatsPanel from "./StatsPanel";
 import s from "./Game.module.css";
 
 type Phase = "idle" | "playing" | "paused" | "done";
@@ -48,16 +49,26 @@ export default function Game({ questions }: { questions: Question[] }) {
   const [guess, setGuess] = useState("");
   const [feedback, setFeedback] = useState<Feedback>(null);
   const [helpOpen, setHelpOpen] = useState(false);
+  const [statsOpen, setStatsOpen] = useState(false);
   const [stats, setStats] = useState<Stats | null>(null);
   const [copied, setCopied] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const lastAction = useRef(0);
+  const remainingRef = useRef(remaining);
+  remainingRef.current = remaining;
 
   useEffect(() => setStats(readStats()), []);
 
   const finish = useCallback((final: Slot[]) => {
     setPhase("done");
-    setStats(recordGame(final.filter((x) => x.status === "correct").length));
+    setStats(
+      recordGame({
+        correct: final.filter((x) => x.status === "correct").length,
+        wrong: final.filter((x) => x.status === "wrong").length,
+        total: final.length,
+        ms: GAME_MS - Math.max(0, remainingRef.current),
+      }),
+    );
     inputRef.current?.blur();
   }, []);
 
@@ -217,7 +228,13 @@ export default function Game({ questions }: { questions: Question[] }) {
             </svg>
           </button>
         ) : (
-          <span className={s.iconBtn} aria-hidden />
+          <button className={s.iconBtn} onClick={() => setStatsOpen(true)} aria-label="İstatistikler">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden>
+              <rect x="4" y="12" width="3.6" height="8" rx="1" fill="currentColor" />
+              <rect x="10.2" y="7" width="3.6" height="13" rx="1" fill="currentColor" />
+              <rect x="16.4" y="4" width="3.6" height="16" rx="1" fill="currentColor" />
+            </svg>
+          </button>
         )}
       </header>
 
@@ -282,9 +299,9 @@ export default function Game({ questions }: { questions: Question[] }) {
               <li>Kişi isimlerinde harf genelde soyadına aittir.</li>
             </ul>
             {stats && stats.played > 0 && (
-              <p className={s.statsLine}>
-                {stats.played} oyun · en iyi {stats.best}
-              </p>
+              <button className={s.statsLink} onClick={() => setStatsOpen(true)}>
+                {stats.played} oyun · en iyi {stats.best} · istatistikler →
+              </button>
             )}
             {!questions.length && <p className={s.statsLine}>Henüz soru eklenmemiş.</p>}
           </section>
@@ -376,10 +393,10 @@ export default function Game({ questions }: { questions: Question[] }) {
               <button className={s.ghost} onClick={start}>Tekrar oyna</button>
             </div>
             {stats && (
-              <p className={s.statsLine}>
+              <button className={s.statsLink} onClick={() => setStatsOpen(true)}>
                 {stats.played} oyun · en iyi {stats.best} · ortalama{" "}
-                {stats.played ? (stats.totalCorrect / stats.played).toFixed(1) : 0}
-              </p>
+                {(stats.played ? stats.totalCorrect / stats.played : 0).toLocaleString("tr-TR", { maximumFractionDigits: 1 })} · istatistikler →
+              </button>
             )}
             <ol className={s.review}>
               {slots.map((x) => (
@@ -398,6 +415,20 @@ export default function Game({ questions }: { questions: Question[] }) {
           </section>
         )}
       </main>
+
+      {statsOpen && stats && (
+        <div className={s.modalBack} onClick={() => setStatsOpen(false)}>
+          <div className={s.modal} role="dialog" aria-modal="true" aria-label="İstatistikler" onClick={(e) => e.stopPropagation()}>
+            <button className={s.modalClose} onClick={() => setStatsOpen(false)} aria-label="Kapat">×</button>
+            <StatsPanel
+              stats={stats}
+              onReset={() => {
+                if (confirm("Tüm istatistiklerin silinsin mi?")) setStats(resetStats());
+              }}
+            />
+          </div>
+        </div>
+      )}
 
       {helpOpen && (
         <div className={s.modalBack} onClick={() => setHelpOpen(false)}>
