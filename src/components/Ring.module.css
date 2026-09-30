@@ -1,3 +1,9 @@
+@property --s {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 1;
+}
+
 .ring {
   --b: calc(var(--ring) * 0.092);
   position: relative;
@@ -19,12 +25,13 @@
   font-weight: 700;
   font-size: calc(var(--b) * 0.5);
   line-height: 1;
+  /* Scale last so it grows in place instead of moving away from the centre. */
   transform: rotate(calc(var(--a) - 90deg)) translate(calc(var(--ring) / 2 - var(--b) / 2 - 2px))
-    rotate(calc(90deg - var(--a)));
+    rotate(calc(90deg - var(--a))) scale(var(--s));
   background: var(--tile);
   border: 1.5px solid var(--tile-line);
   color: var(--fg);
-  transition: background-color 0.25s, border-color 0.25s, color 0.25s, scale 0.25s;
+  transition: background-color 0.25s, border-color 0.25s, color 0.25s, --s 0.25s;
   user-select: none;
 }
 
@@ -32,7 +39,7 @@
   background: var(--accent);
   border-color: var(--accent);
   color: var(--accent-fg);
-  scale: 1.18;
+  --s: 1.18;
   z-index: 1;
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
 }
@@ -58,7 +65,7 @@
 
 @keyframes pop {
   50% {
-    scale: 1.2;
+    --s: 1.2;
   }
 }
 

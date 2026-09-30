@@ -13,12 +13,21 @@
 
 .header {
   flex: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   height: 52px;
   padding: 0 10px;
   border-bottom: 1px solid var(--line);
+}
+
+.headerSide {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.headerRight {
+  justify-content: flex-end;
 }
 
 .title {

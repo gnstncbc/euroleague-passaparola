@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { settingsBootScript } from "@/lib/settings";
 
 export const metadata: Metadata = {
   title: "Passaparola · EuroLeague",
@@ -20,7 +21,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="tr">
+    <html lang="tr" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: settingsBootScript }} />
+      </head>
       <body>{children}</body>
     </html>
   );

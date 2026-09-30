@@ -9,6 +9,8 @@ import {
 } from "@/lib/game";
 import Ring from "./Ring";
 import StatsPanel from "./StatsPanel";
+import SettingsPanel from "./SettingsPanel";
+import { defaultSettings, readSettings, saveSettings, type Settings } from "@/lib/settings";
 import s from "./Game.module.css";
 
 type Phase = "idle" | "playing" | "paused" | "done";
@@ -45,6 +47,9 @@ export default function Game({ questions }: { questions: Question[] }) {
   const [phase, setPhase] = useState<Phase>("idle");
   const [slots, setSlots] = useState<Slot[]>([]);
   const [current, setCurrent] = useState(0);
+  const [settings, setSettings] = useState<Settings>(defaultSettings);
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [roundMs, setRoundMs] = useState(GAME_MS);
   const [remaining, setRemaining] = useState(GAME_MS);
   const [guess, setGuess] = useState("");
   const [feedback, setFeedback] = useState<Feedback>(null);
@@ -56,8 +61,18 @@ export default function Game({ questions }: { questions: Question[] }) {
   const lastAction = useRef(0);
   const remainingRef = useRef(remaining);
   remainingRef.current = remaining;
+  const roundMsRef = useRef(roundMs);
+  roundMsRef.current = roundMs;
 
-  useEffect(() => setStats(readStats()), []);
+  useEffect(() => {
+    setStats(readStats());
+    setSettings(readSettings());
+  }, []);
+
+  const updateSettings = (next: Settings) => {
+    setSettings(next);
+    saveSettings(next);
+  };
 
   const finish = useCallback((final: Slot[]) => {
     setPhase("done");
@@ -66,7 +81,7 @@ export default function Game({ questions }: { questions: Question[] }) {
         correct: final.filter((x) => x.status === "correct").length,
         wrong: final.filter((x) => x.status === "wrong").length,
         total: final.length,
-        ms: GAME_MS - Math.max(0, remainingRef.current),
+        ms: roundMsRef.current - Math.max(0, remainingRef.current),
       }),
     );
     inputRef.current?.blur();
@@ -111,7 +126,9 @@ export default function Game({ questions }: { questions: Question[] }) {
     if (!round.length) return;
     setSlots(round);
     setCurrent(0);
-    setRemaining(GAME_MS);
+    const ms = settings.minutes * 60_000;
+    setRoundMs(ms);
+    setRemaining(ms);
     setGuess("");
     setFeedback(null);
     setCopied(false);
@@ -131,7 +148,7 @@ export default function Game({ questions }: { questions: Question[] }) {
       kind: status,
       key: now,
       text:
-        status === "correct" ? slot.q.answer : status === "wrong" ? slot.q.answer : `${slot.q.letter} — pas`,
+        status === "correct" ? slot.q.answer : status === "wrong" ? (settings.revealAnswer ? slot.q.answer : "Yanlış") : `${slot.q.letter} — pas`,
     });
     const n = nextOpen(next, current);
     if (n === -1) finish(next);
@@ -177,7 +194,7 @@ export default function Game({ questions }: { questions: Question[] }) {
       .join("");
     const rows = squares.match(/(?:🟩|🟥|⬜){1,13}/gu)?.join("\n") ?? squares;
     return `Passaparola · EuroLeague 🏀\n${counts.correct}/${slots.length} doğru · ${formatTime(
-      GAME_MS - remaining,
+      roundMs - remaining,
     )}\n${rows}\n${window.location.origin}`;
   };
 
@@ -210,32 +227,49 @@ export default function Game({ questions }: { questions: Question[] }) {
   return (
     <div className={s.app}>
       <header className={s.header}>
-        <button className={s.iconBtn} onClick={openHelp} aria-label="Nasıl oynanır">
-          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden>
-            <circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" strokeWidth="1.8" />
-            <path d="M9.5 9.3a2.6 2.6 0 0 1 5 .9c0 1.7-2.5 2.2-2.5 3.8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
-            <circle cx="12" cy="17.2" r="1.1" fill="currentColor" />
-          </svg>
-        </button>
+        <div className={s.headerSide}>
+          <button className={s.iconBtn} onClick={openHelp} aria-label="Nasıl oynanır">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden>
+              <circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" strokeWidth="1.8" />
+              <path d="M9.5 9.3a2.6 2.6 0 0 1 5 .9c0 1.7-2.5 2.2-2.5 3.8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+              <circle cx="12" cy="17.2" r="1.1" fill="currentColor" />
+            </svg>
+          </button>
+        </div>
         <h1 className={s.title}>
           Passaparola<span className={s.titleSub}>EuroLeague</span>
         </h1>
-        {phase === "playing" ? (
-          <button className={s.iconBtn} onClick={pause} aria-label="Duraklat">
-            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden>
-              <rect x="7" y="5.5" width="3.2" height="13" rx="1" fill="currentColor" />
-              <rect x="13.8" y="5.5" width="3.2" height="13" rx="1" fill="currentColor" />
-            </svg>
-          </button>
-        ) : (
-          <button className={s.iconBtn} onClick={() => setStatsOpen(true)} aria-label="İstatistikler">
-            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden>
-              <rect x="4" y="12" width="3.6" height="8" rx="1" fill="currentColor" />
-              <rect x="10.2" y="7" width="3.6" height="13" rx="1" fill="currentColor" />
-              <rect x="16.4" y="4" width="3.6" height="16" rx="1" fill="currentColor" />
-            </svg>
-          </button>
-        )}
+        <div className={`${s.headerSide} ${s.headerRight}`}>
+          {phase === "playing" ? (
+            <button className={s.iconBtn} onClick={pause} aria-label="Duraklat">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden>
+                <rect x="7" y="5.5" width="3.2" height="13" rx="1" fill="currentColor" />
+                <rect x="13.8" y="5.5" width="3.2" height="13" rx="1" fill="currentColor" />
+              </svg>
+            </button>
+          ) : (
+            <>
+              <button className={s.iconBtn} onClick={() => setStatsOpen(true)} aria-label="İstatistikler">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden>
+                  <rect x="4" y="12" width="3.6" height="8" rx="1" fill="currentColor" />
+                  <rect x="10.2" y="7" width="3.6" height="13" rx="1" fill="currentColor" />
+                  <rect x="16.4" y="4" width="3.6" height="16" rx="1" fill="currentColor" />
+                </svg>
+              </button>
+              <button className={s.iconBtn} onClick={() => setSettingsOpen(true)} aria-label="Ayarlar">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden>
+                  <path
+                    d="M12 8.6a3.4 3.4 0 1 0 0 6.8 3.4 3.4 0 0 0 0-6.8zm8.3 4.8l-1.8-.4a6.9 6.9 0 0 1-.6 1.5l1 1.6-1.7 1.7-1.6-1a6.9 6.9 0 0 1-1.5.6l-.4 1.8h-2.4l-.4-1.8a6.9 6.9 0 0 1-1.5-.6l-1.6 1-1.7-1.7 1-1.6a6.9 6.9 0 0 1-.6-1.5l-1.8-.4v-2.4l1.8-.4c.1-.5.3-1 .6-1.5l-1-1.6 1.7-1.7 1.6 1c.5-.3 1-.5 1.5-.6l.4-1.8h2.4l.4 1.8c.5.1 1 .3 1.5.6l1.6-1 1.7 1.7-1 1.6c.3.5.5 1 .6 1.5l1.8.4z"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+            </>
+          )}
+        </div>
       </header>
 
       <main className={`${s.main} ${phase === "done" ? s.mainScroll : ""}`}>
@@ -291,7 +325,7 @@ export default function Game({ questions }: { questions: Question[] }) {
           <section className={s.intro}>
             <p className={s.lead}>
               A&apos;dan Z&apos;ye her harf için bir <strong>modern EuroLeague</strong> sorusu. Süren{" "}
-              <strong>4 dakika</strong>.
+              <strong>{settings.minutes} dakika</strong>.
             </p>
             <ul className={s.rules}>
               <li>Bilmiyorsan <strong>Pas</strong> geç; tur bitince o harfe geri dönersin.</li>
@@ -335,7 +369,7 @@ export default function Game({ questions }: { questions: Question[] }) {
             <div className={s.feedbackSlot} aria-live="polite">
               {feedback && (
                 <div key={feedback.key} className={`${s.feedback} ${s[feedback.kind]}`}>
-                  {feedback.kind === "correct" ? "✓ " : feedback.kind === "wrong" ? "✗ Cevap: " : ""}
+                  {feedback.kind === "correct" ? "✓ " : feedback.kind === "wrong" ? (settings.revealAnswer ? "✗ Cevap: " : "✗ ") : ""}
                   {feedback.text}
                 </div>
               )}
@@ -386,7 +420,7 @@ export default function Game({ questions }: { questions: Question[] }) {
               <div><strong>{counts.correct}</strong><span>Doğru</span></div>
               <div><strong>{counts.wrong}</strong><span>Yanlış</span></div>
               <div><strong>{counts.open}</strong><span>Boş</span></div>
-              <div><strong>{formatTime(GAME_MS - remaining)}</strong><span>Süre</span></div>
+              <div><strong>{formatTime(roundMs - remaining)}</strong><span>Süre</span></div>
             </div>
             <div className={s.row}>
               <button className={s.primary} onClick={share}>{copied ? "Kopyalandı ✓" : "Paylaş"}</button>
@@ -416,6 +450,15 @@ export default function Game({ questions }: { questions: Question[] }) {
         )}
       </main>
 
+      {settingsOpen && (
+        <div className={s.modalBack} onClick={() => setSettingsOpen(false)}>
+          <div className={s.modal} role="dialog" aria-modal="true" aria-label="Ayarlar" onClick={(e) => e.stopPropagation()}>
+            <button className={s.modalClose} onClick={() => setSettingsOpen(false)} aria-label="Kapat">×</button>
+            <SettingsPanel settings={settings} onChange={updateSettings} />
+          </div>
+        </div>
+      )}
+
       {statsOpen && stats && (
         <div className={s.modalBack} onClick={() => setStatsOpen(false)}>
           <div className={s.modal} role="dialog" aria-modal="true" aria-label="İstatistikler" onClick={(e) => e.stopPropagation()}>
@@ -440,7 +483,7 @@ export default function Game({ questions }: { questions: Question[] }) {
               <li><strong>Enter</strong> ya da ok tuşu: cevapla</li>
               <li><strong>Pas</strong> (ya da boşken Enter): sonraki harfe geç, tur sonunda geri gel</li>
               <li>Yanlış cevap o harfi kapatır.</li>
-              <li>4 dakika bittiğinde ya da tüm harfler kapandığında oyun biter.</li>
+              <li>{settings.minutes} dakika bittiğinde ya da tüm harfler kapandığında oyun biter.</li>
             </ul>
             <div className={s.legend}>
               <span><i className={s.st_correct} /> doğru</span>

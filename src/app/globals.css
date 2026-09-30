@@ -54,6 +54,18 @@
   color-scheme: dark;
 }
 
+:root[data-colorblind="true"] {
+  --green: #3a7bd5;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-colorblind="true"]:not([data-theme="light"]) {
+    --green: #5a93e0;
+  }
+}
+:root[data-colorblind="true"][data-theme="dark"] {
+  --green: #5a93e0;
+}
+
 * {
   box-sizing: border-box;
 }
