@@ -8,10 +8,27 @@ const SEEDED = "pp:seeded";
 
 export type StoreKind = "redis" | "memory";
 
+// Vercel's Upstash integration names the variables after the chosen prefix
+// (KV_REST_API_URL by default, e.g. STORAGE_KV_REST_API_URL otherwise).
+function envPair(): { url: string; token: string } | null {
+  const env = process.env;
+  if (env.KV_REST_API_URL && env.KV_REST_API_TOKEN) {
+    return { url: env.KV_REST_API_URL, token: env.KV_REST_API_TOKEN };
+  }
+  if (env.UPSTASH_REDIS_REST_URL && env.UPSTASH_REDIS_REST_TOKEN) {
+    return { url: env.UPSTASH_REDIS_REST_URL, token: env.UPSTASH_REDIS_REST_TOKEN };
+  }
+  for (const key of Object.keys(env)) {
+    if (!key.endsWith("_REST_API_URL")) continue;
+    const token = env[key.replace(/_URL$/, "_TOKEN")];
+    if (env[key] && token) return { url: env[key]!, token };
+  }
+  return null;
+}
+
 function redisClient(): Redis | null {
-  const url = process.env.KV_REST_API_URL ?? process.env.UPSTASH_REDIS_REST_URL;
-  const token = process.env.KV_REST_API_TOKEN ?? process.env.UPSTASH_REDIS_REST_TOKEN;
-  return url && token ? new Redis({ url, token }) : null;
+  const pair = envPair();
+  return pair ? new Redis(pair) : null;
 }
 
 const redis = redisClient();
