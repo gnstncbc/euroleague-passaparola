@@ -125,6 +125,84 @@
     ]
   },
   {
+    "id": "a12",
+    "letter": "A",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Olimpia Milano'nun sahibi olan ünlü İtalyan moda tasarımcısı Giorgio ___.",
+    "answer": "Armani",
+    "alternates": [
+      "Giorgio Armani"
+    ]
+  },
+  {
+    "id": "a13",
+    "letter": "A",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Giannis'in ağabeyi; 2017-2019 arasında Panathinaikos'ta forma giyen Thanasis ___.",
+    "answer": "Thanasis Antetokounmpo",
+    "alternates": [
+      "Antetokounmpo",
+      "Thanasis"
+    ]
+  },
+  {
+    "id": "a14",
+    "letter": "A",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Crvena Zvezda ve Partizan'ın maçlarına ev sahipliği yapan, eskiden 'Pionir' adıyla bilinen Belgrad salonu.",
+    "answer": "Aleksandar Nikolić",
+    "alternates": [
+      "Aleksandar Nikolic Hall",
+      "Aleksandar Nikolic Salonu",
+      "Nikolic"
+    ]
+  },
+  {
+    "id": "a15",
+    "letter": "A",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Bayern Münih ve Alba Berlin'in ülkesi.",
+    "answer": "Almanya",
+    "alternates": [
+      "Germany"
+    ]
+  },
+  {
+    "id": "a16",
+    "letter": "A",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Paris Basketball'un 2024'te açılan iç saha salonu.",
+    "answer": "Adidas Arena",
+    "alternates": [
+      "Adidas"
+    ]
+  },
+  {
+    "id": "a17",
+    "letter": "A",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "ASVEL'in Villeurbanne'daki iç saha salonu.",
+    "answer": "Astroballe",
+    "alternates": []
+  },
+  {
+    "id": "a18",
+    "letter": "A",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Sezonun en iyi beş oyuncusundan oluşan takıma verilen ad: ___ First Team.",
+    "answer": "All-EuroLeague",
+    "alternates": [
+      "All EuroLeague"
+    ]
+  },
+  {
     "id": "b1",
     "letter": "B",
     "rule": "starts",
@@ -305,6 +383,96 @@
     ]
   },
   {
+    "id": "b17",
+    "letter": "B",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "NBA'de 2014'te San Antonio Spurs ile şampiyon olup ardından Virtus Bologna'ya dönen İtalyan şutör Marco ___.",
+    "answer": "Marco Belinelli",
+    "alternates": [
+      "Belinelli"
+    ]
+  },
+  {
+    "id": "b18",
+    "letter": "B",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Brose sponsorluğuyla Almanya'da uzun yıllar şampiyonluk yaşayan kulübün şehri.",
+    "answer": "Bamberg",
+    "alternates": [
+      "Brose Bamberg",
+      "Brose Baskets"
+    ]
+  },
+  {
+    "id": "b19",
+    "letter": "B",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Panathinaikos'ta uzun yıllar forma giyip birden fazla EuroLeague kupası kazanan Amerikalı uzun Mike ___.",
+    "answer": "Mike Batiste",
+    "alternates": [
+      "Batiste"
+    ]
+  },
+  {
+    "id": "b20",
+    "letter": "B",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Joventut'un bulunduğu Barselona yakınındaki şehir.",
+    "answer": "Badalona",
+    "alternates": []
+  },
+  {
+    "id": "b21",
+    "letter": "B",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Barcelona'nın Olympiacos'u yendiği 2010 Final Four'unun oynandığı Paris salonu.",
+    "answer": "Bercy",
+    "alternates": [
+      "Paris-Bercy",
+      "Palais Omnisports de Paris-Bercy",
+      "Accor Arena"
+    ]
+  },
+  {
+    "id": "b22",
+    "letter": "B",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "EuroLeague'de sezonun en iyi savunmacısına verilen ödülün İngilizce adı.",
+    "answer": "Best Defender",
+    "alternates": [
+      "Best Defender Trophy"
+    ]
+  },
+  {
+    "id": "b23",
+    "letter": "B",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Cleveland Cavaliers'tan sonra 2016-17 sezonunda Darüşşafaka'yı çalıştıran koç David ___.",
+    "answer": "David Blatt",
+    "alternates": [
+      "Blatt"
+    ]
+  },
+  {
+    "id": "b24",
+    "letter": "B",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Anadolu Efes'in 2021 finalinde Köln'de yendiği takım.",
+    "answer": "Barcelona",
+    "alternates": [
+      "Barça",
+      "FC Barcelona"
+    ]
+  },
+  {
     "id": "c1",
     "letter": "C",
     "rule": "starts",
@@ -406,6 +574,75 @@
     "answer": "Caja Laboral",
     "alternates": [
       "Laboral"
+    ]
+  },
+  {
+    "id": "c10",
+    "letter": "C",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Andrés Nocioni'nin 'El' ile başlayan lakabı: El ___.",
+    "answer": "Chapu",
+    "alternates": [
+      "El Chapu"
+    ]
+  },
+  {
+    "id": "c11",
+    "letter": "C",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Sergio Rodríguez'in 'El' ile başlayan lakabı: El ___.",
+    "answer": "Chacho",
+    "alternates": [
+      "El Chacho"
+    ]
+  },
+  {
+    "id": "c12",
+    "letter": "C",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Dubai Basketball'un iç saha maçlarını oynadığı salon.",
+    "answer": "Coca-Cola Arena",
+    "alternates": [
+      "Coca Cola Arena"
+    ]
+  },
+  {
+    "id": "c13",
+    "letter": "C",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Fenerbahçe'nin 2016 finalinde Berlin'de uzatmada kaybettiği takım.",
+    "answer": "CSKA Moskova",
+    "alternates": [
+      "CSKA",
+      "CSKA Moscow"
+    ]
+  },
+  {
+    "id": "c14",
+    "letter": "C",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Anadolu Efes'in 2019 finalinde Vitoria'da kaybettiği takım.",
+    "answer": "CSKA Moskova",
+    "alternates": [
+      "CSKA",
+      "CSKA Moscow"
+    ]
+  },
+  {
+    "id": "c15",
+    "letter": "C",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid'in 2018 Final Four yarı finalinde Belgrad'da yendiği Rus kulübü.",
+    "answer": "CSKA Moskova",
+    "alternates": [
+      "CSKA",
+      "CSKA Moscow"
     ]
   },
   {
@@ -538,6 +775,51 @@
     ]
   },
   {
+    "id": "d12",
+    "letter": "D",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Yunanistan milli takımında oynayan, Olympiacos ve Fenerbahçe'de forma giyen Amerikan doğumlu guard Tyler ___.",
+    "answer": "Tyler Dorsey",
+    "alternates": [
+      "Dorsey"
+    ]
+  },
+  {
+    "id": "d13",
+    "letter": "D",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid'de oynayıp NBA'de Oklahoma City Thunder'a da giden Arjantinli forvet Gabriel ___.",
+    "answer": "Gabriel Deck",
+    "alternates": [
+      "Deck"
+    ]
+  },
+  {
+    "id": "d14",
+    "letter": "D",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "CSKA'dan sonra 2019'da Fenerbahçe'ye transfer olan Fransız guard Nando ___.",
+    "answer": "Nando De Colo",
+    "alternates": [
+      "De Colo",
+      "Decolo"
+    ]
+  },
+  {
+    "id": "d15",
+    "letter": "D",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2011'de Panathinaikos ile hem sezonun hem Final Four'un MVP'si seçilen Yunan oyun kurucu.",
+    "answer": "Dimitris Diamantidis",
+    "alternates": [
+      "Diamantidis"
+    ]
+  },
+  {
     "id": "e1",
     "letter": "E",
     "rule": "starts",
@@ -661,6 +943,30 @@
     ]
   },
   {
+    "id": "e12",
+    "letter": "E",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid ile Barcelona arasındaki maçlara verilen isim.",
+    "answer": "El Clásico",
+    "alternates": [
+      "El Clasico",
+      "Clasico"
+    ]
+  },
+  {
+    "id": "e13",
+    "letter": "E",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Olimpia Milano'nun uzun yıllar kullandığı, moda markasından gelen sponsor adı: EA7 ___ Armani.",
+    "answer": "Emporio Armani",
+    "alternates": [
+      "EA7 Emporio Armani",
+      "Emporio"
+    ]
+  },
+  {
     "id": "f1",
     "letter": "F",
     "rule": "starts",
@@ -749,6 +1055,41 @@
     "answer": "Derek Fisher",
     "alternates": [
       "Fisher"
+    ]
+  },
+  {
+    "id": "f9",
+    "letter": "F",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2005 NBA draftında Orlando Magic'in seçip NBA'e hiç gitmeyen, Unicaja ve Barcelona'da oynayan İspanyol pivot.",
+    "answer": "Fran Vázquez",
+    "alternates": [
+      "Vazquez",
+      "Fran Vazquez"
+    ]
+  },
+  {
+    "id": "f10",
+    "letter": "F",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "ASVEL, Monaco ve Paris Basketball'un ülkesi.",
+    "answer": "Fransa",
+    "alternates": [
+      "France"
+    ]
+  },
+  {
+    "id": "f11",
+    "letter": "F",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2016 ve 2018'de finali kaybeden, 2017'de ise kupayı kaldıran Türk kulübü.",
+    "answer": "Fenerbahçe",
+    "alternates": [
+      "Fener",
+      "Fenerbahce"
     ]
   },
   {
@@ -866,6 +1207,29 @@
     ]
   },
   {
+    "id": "g11",
+    "letter": "G",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "EuroLeague'de yılın koçuna verilen ödül, efsane Sovyet koçunun adını taşır: Alexander ___.",
+    "answer": "Gomelsky",
+    "alternates": [
+      "Alexander Gomelsky"
+    ]
+  },
+  {
+    "id": "g12",
+    "letter": "G",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Tornike Shengelia'nın ülkesi.",
+    "answer": "Gürcistan",
+    "alternates": [
+      "Georgia",
+      "Gurcistan"
+    ]
+  },
+  {
     "id": "h1",
     "letter": "H",
     "rule": "starts",
@@ -969,6 +1333,29 @@
     ]
   },
   {
+    "id": "h10",
+    "letter": "H",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "CSKA Moskova ile 2019'da şampiyon olan, Olimpia Milano ve Virtus Bologna'da da oynayan İtalyan guard Daniel ___.",
+    "answer": "Daniel Hackett",
+    "alternates": [
+      "Hackett"
+    ]
+  },
+  {
+    "id": "h11",
+    "letter": "H",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Cibona Zagreb'in ülkesi.",
+    "answer": "Hırvatistan",
+    "alternates": [
+      "Croatia",
+      "Hirvatistan"
+    ]
+  },
+  {
     "id": "i1",
     "letter": "I",
     "rule": "starts",
@@ -1058,6 +1445,41 @@
     "alternates": [
       "Irving",
       "Kyrie"
+    ]
+  },
+  {
+    "id": "i9",
+    "letter": "I",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2008-09 sezonunu Barcelona'da geçirip NBA'e dönen Türkiye milli takımı forveti Ersan ___.",
+    "answer": "Ersan İlyasova",
+    "alternates": [
+      "Ilyasova",
+      "Ersan"
+    ]
+  },
+  {
+    "id": "i10",
+    "letter": "I",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid, Barcelona, Baskonia ve Valencia'nın ülkesi.",
+    "answer": "İspanya",
+    "alternates": [
+      "Spain",
+      "Ispanya"
+    ]
+  },
+  {
+    "id": "i11",
+    "letter": "I",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Fenerbahçe'nin kendi şehrinde kupayı kaldırdığı 2017 Final Four'unun oynandığı şehir.",
+    "answer": "İstanbul",
+    "alternates": [
+      "Istanbul"
     ]
   },
   {
@@ -1204,6 +1626,41 @@
     ]
   },
   {
+    "id": "j13",
+    "letter": "J",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Barcelona'yı 2020-2023 arasında çalıştıran, oyunculuğunda da Barça ile şampiyon olan Litvanyalı efsane.",
+    "answer": "Šarūnas Jasikevičius",
+    "alternates": [
+      "Jasikevicius",
+      "Saras"
+    ]
+  },
+  {
+    "id": "j14",
+    "letter": "J",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Žalgiris'i başantrenör olarak 2018 Final Four'una taşıyan eski yıldız oyun kurucu.",
+    "answer": "Šarūnas Jasikevičius",
+    "alternates": [
+      "Jasikevicius",
+      "Saras"
+    ]
+  },
+  {
+    "id": "j15",
+    "letter": "J",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Monaco'dan önce Baskonia, Panathinaikos, Olimpia Milano ve CSKA'da oynayan Amerikalı skorer guard Mike ___.",
+    "answer": "Mike James",
+    "alternates": [
+      "James"
+    ]
+  },
+  {
     "id": "k1",
     "letter": "K",
     "rule": "starts",
@@ -1290,6 +1747,27 @@
       "Kobe",
       "Bryant",
       "Black Mamba"
+    ]
+  },
+  {
+    "id": "k9",
+    "letter": "K",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Lokomotiv Kuban kulübünün bulunduğu Rus şehri.",
+    "answer": "Krasnodar",
+    "alternates": []
+  },
+  {
+    "id": "k10",
+    "letter": "K",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Budućnost Podgorica'nın ülkesi.",
+    "answer": "Karadağ",
+    "alternates": [
+      "Montenegro",
+      "Karadag"
     ]
   },
   {
@@ -1425,6 +1903,60 @@
     "answer": "Lietuvos Rytas",
     "alternates": [
       "Rytas"
+    ]
+  },
+  {
+    "id": "l13",
+    "letter": "L",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "ASVEL'in bağlı olduğu, Villeurbanne'a komşu büyük Fransız şehri.",
+    "answer": "Lyon",
+    "alternates": []
+  },
+  {
+    "id": "l14",
+    "letter": "L",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Žalgiris Kaunas ve Rytas Vilnius'un ülkesi.",
+    "answer": "Litvanya",
+    "alternates": [
+      "Lithuania"
+    ]
+  },
+  {
+    "id": "l15",
+    "letter": "L",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid'in 'beyazlar' anlamına gelen İspanyolca lakabı.",
+    "answer": "Los Blancos",
+    "alternates": [
+      "Blancos"
+    ]
+  },
+  {
+    "id": "l16",
+    "letter": "L",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid'de efsaneleşen, 2017 sezon MVP'si seçilen ve uzak mesafe üçlükleriyle ünlü İspanyol guard.",
+    "answer": "Sergio Llull",
+    "alternates": [
+      "Llull",
+      "Lull"
+    ]
+  },
+  {
+    "id": "l17",
+    "letter": "L",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Baskonia ve Boston Celtics'te oynadıktan sonra 2018'de Anadolu Efes'e gelen oyun kurucu Shane ___.",
+    "answer": "Shane Larkin",
+    "alternates": [
+      "Larkin"
     ]
   },
   {
@@ -1599,6 +2131,105 @@
     ]
   },
   {
+    "id": "m16",
+    "letter": "M",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Fenerbahçe'nin 2017 şampiyon kadrosunda yer alan Türk şutör Melih ___.",
+    "answer": "Melih Mahmutoğlu",
+    "alternates": [
+      "Mahmutoglu",
+      "Melih"
+    ]
+  },
+  {
+    "id": "m17",
+    "letter": "M",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid ile 2015'te şampiyon olup NBA'de Dallas'a giden Tunuslu pivot Salah ___.",
+    "answer": "Salah Mejri",
+    "alternates": [
+      "Mejri"
+    ]
+  },
+  {
+    "id": "m18",
+    "letter": "M",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Unicaja'nın bulunduğu Endülüs şehri.",
+    "answer": "Malaga",
+    "alternates": [
+      "Málaga"
+    ]
+  },
+  {
+    "id": "m19",
+    "letter": "M",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "CSKA'nın Fenerbahçe'yi uzatmada yendiği 2016 Final Four'unun oynandığı Berlin salonunun o zamanki adı.",
+    "answer": "Mercedes-Benz Arena",
+    "alternates": [
+      "Mercedes Benz Arena",
+      "Mercedes"
+    ]
+  },
+  {
+    "id": "m20",
+    "letter": "M",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "CSKA'dan sonra 2009-2011 arasında Real Madrid'i çalıştıran İtalyan koç Ettore ___.",
+    "answer": "Ettore Messina",
+    "alternates": [
+      "Messina"
+    ]
+  },
+  {
+    "id": "m21",
+    "letter": "M",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Fenerbahçe'nin ilk Final Four'una katıldığı 2015'te turnuvanın düzenlendiği şehir.",
+    "answer": "Madrid",
+    "alternates": []
+  },
+  {
+    "id": "m22",
+    "letter": "M",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2021'de Anadolu Efes ile hem sezonun hem Final Four'un MVP'si seçilen Sırp oyun kurucu.",
+    "answer": "Vasilije Micić",
+    "alternates": [
+      "Micic"
+    ]
+  },
+  {
+    "id": "m23",
+    "letter": "M",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Fenerbahçe'nin 2025 finalinde Abu Dhabi'de yendiği takım.",
+    "answer": "Monaco",
+    "alternates": [
+      "AS Monaco"
+    ]
+  },
+  {
+    "id": "m24",
+    "letter": "M",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Sezonun en değerli oyuncusu ödülünün İngilizce kısaltması.",
+    "answer": "MVP",
+    "alternates": [
+      "Most Valuable Player"
+    ]
+  },
+  {
     "id": "n1",
     "letter": "N",
     "rule": "starts",
@@ -1710,6 +2341,64 @@
     "answer": "Nokia Arena",
     "alternates": [
       "Nokia"
+    ]
+  },
+  {
+    "id": "n11",
+    "letter": "N",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2009'da EuroLeague sezon MVP'si seçilen Barcelona yıldızı Juan Carlos ___.",
+    "answer": "Juan Carlos Navarro",
+    "alternates": [
+      "Navarro"
+    ]
+  },
+  {
+    "id": "n12",
+    "letter": "N",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2025'te EuroLeague sezon MVP'si seçilen Panathinaikos guardı Kendrick ___.",
+    "answer": "Kendrick Nunn",
+    "alternates": [
+      "Nunn"
+    ]
+  },
+  {
+    "id": "n13",
+    "letter": "N",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "EuroLeague'in 18 yaş altı gençler turnuvası: Adidas ___ Tournament.",
+    "answer": "Next Generation",
+    "alternates": [
+      "Next Gen",
+      "NGT"
+    ]
+  },
+  {
+    "id": "n14",
+    "letter": "N",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "EuroLeague'de her takımın diğer tüm takımlarla ikişer kez karşılaştığı ilk aşamanın Türkçe adı.",
+    "answer": "Normal sezon",
+    "alternates": [
+      "Regular season",
+      "Normal"
+    ]
+  },
+  {
+    "id": "n15",
+    "letter": "N",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Bir NBA sezonu (Memphis) dışında tüm kariyerini Barcelona'da geçiren 'La Bomba'.",
+    "answer": "Juan Carlos Navarro",
+    "alternates": [
+      "Navarro",
+      "La Bomba"
     ]
   },
   {
@@ -1829,6 +2518,64 @@
       "Union Olimpija",
       "Olimpija Ljubljana",
       "Cedevita Olimpija"
+    ]
+  },
+  {
+    "id": "o11",
+    "letter": "O",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Fenerbahçe'den NBA'e, Chicago Bulls'a giden Türk pivot Ömer ___.",
+    "answer": "Ömer Aşık",
+    "alternates": [
+      "Asik",
+      "Omer Asik"
+    ]
+  },
+  {
+    "id": "o12",
+    "letter": "O",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Maccabi'nin şampiyon olduğu 2005 Final Four'unun oynandığı Moskova salonu.",
+    "answer": "Olimpiyskiy",
+    "alternates": [
+      "Olimpiyskiy Arena",
+      "Olimpiysky"
+    ]
+  },
+  {
+    "id": "o13",
+    "letter": "O",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Kariyerine başladığı Belgrad kulübü Partizan'a 2021'de başantrenör olarak dönen efsane koç Željko ___.",
+    "answer": "Željko Obradović",
+    "alternates": [
+      "Obradovic"
+    ]
+  },
+  {
+    "id": "o14",
+    "letter": "O",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid'in 2023 finalinde Kaunas'ta Llull'un basketiyle yendiği takım.",
+    "answer": "Olympiacos",
+    "alternates": [
+      "Olympiakos",
+      "Olimpiakos"
+    ]
+  },
+  {
+    "id": "o15",
+    "letter": "O",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2024'te NBA'den Panathinaikos'a transfer olan Türk milli forvet Cedi ___.",
+    "answer": "Cedi Osman",
+    "alternates": [
+      "Osman"
     ]
   },
   {
@@ -1989,6 +2736,93 @@
     "answer": "Palau Sant Jordi",
     "alternates": [
       "Sant Jordi"
+    ]
+  },
+  {
+    "id": "p15",
+    "letter": "P",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Panathinaikos'un Yunan forveti Ioannis ___.",
+    "answer": "Ioannis Papapetrou",
+    "alternates": [
+      "Papapetrou"
+    ]
+  },
+  {
+    "id": "p16",
+    "letter": "P",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Žalgiris, Barcelona ve Zenit'te oynamış Kanadalı oyun kurucu Kevin ___.",
+    "answer": "Kevin Pangos",
+    "alternates": [
+      "Pangos"
+    ]
+  },
+  {
+    "id": "p17",
+    "letter": "P",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Nikola Mirotić'in doğduğu Karadağ'ın başkenti.",
+    "answer": "Podgorica",
+    "alternates": []
+  },
+  {
+    "id": "p18",
+    "letter": "P",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Panathinaikos ile 2009'da şampiyon olup NBA'de Minnesota'ya giden Karadağlı pivot Nikola ___.",
+    "answer": "Nikola Peković",
+    "alternates": [
+      "Pekovic"
+    ]
+  },
+  {
+    "id": "p19",
+    "letter": "P",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2006'da CSKA ile hem sezonun hem Final Four'un MVP'si seçilen Yunan oyun kurucu.",
+    "answer": "Theo Papaloukas",
+    "alternates": [
+      "Papaloukas"
+    ]
+  },
+  {
+    "id": "p20",
+    "letter": "P",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2004 ve 2005'te üst üste EuroLeague sezon MVP'si seçilen Maccabi yıldızı Anthony ___.",
+    "answer": "Anthony Parker",
+    "alternates": [
+      "Parker"
+    ]
+  },
+  {
+    "id": "p21",
+    "letter": "P",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Ergin Ataman'ın 2024'te Berlin'de şampiyonluk yaşadığı Atina kulübü.",
+    "answer": "Panathinaikos",
+    "alternates": [
+      "PAO"
+    ]
+  },
+  {
+    "id": "p22",
+    "letter": "P",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Final Four'dan önce beşte üç galibiyet usulüyle oynanan eleme turunun İngilizce adı.",
+    "answer": "Playoffs",
+    "alternates": [
+      "Playoff",
+      "Play-off"
     ]
   },
   {
@@ -2200,6 +3034,51 @@
     ]
   },
   {
+    "id": "r10",
+    "letter": "R",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "CSKA ve Zenit'in ülkesi.",
+    "answer": "Rusya",
+    "alternates": [
+      "Russia"
+    ]
+  },
+  {
+    "id": "r11",
+    "letter": "R",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Luka Dončić'in NBA'den önce EuroLeague'de oynadığı tek kulüp.",
+    "answer": "Real Madrid",
+    "alternates": [
+      "Real"
+    ]
+  },
+  {
+    "id": "r12",
+    "letter": "R",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid, CSKA Moskova ve Olimpia Milano'da oynayan Kanaryalı oyun kurucu Sergio ___.",
+    "answer": "Sergio Rodríguez",
+    "alternates": [
+      "Rodriguez",
+      "Chacho"
+    ]
+  },
+  {
+    "id": "r13",
+    "letter": "R",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Anadolu Efes'in 2022 finalinde Belgrad'da tek sayı farkla yendiği takım.",
+    "answer": "Real Madrid",
+    "alternates": [
+      "Real"
+    ]
+  },
+  {
     "id": "s1",
     "letter": "S",
     "rule": "starts",
@@ -2337,6 +3216,85 @@
     ]
   },
   {
+    "id": "s13",
+    "letter": "S",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Partizan ve Crvena Zvezda'nın ülkesi.",
+    "answer": "Sırbistan",
+    "alternates": [
+      "Serbia",
+      "Sirbistan"
+    ]
+  },
+  {
+    "id": "s14",
+    "letter": "S",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Olimpija Ljubljana'nın ülkesi.",
+    "answer": "Slovenya",
+    "alternates": [
+      "Slovenia"
+    ]
+  },
+  {
+    "id": "s15",
+    "letter": "S",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Olimpia Milano'nun Danimarka milli takımında da oynayan Amerikan doğumlu kanat oyuncusu Shavon ___.",
+    "answer": "Shavon Shields",
+    "alternates": [
+      "Shields"
+    ]
+  },
+  {
+    "id": "s16",
+    "letter": "S",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "AS Monaco'nun iç saha salonu Salle Gaston ___.",
+    "answer": "Salle Gaston Médecin",
+    "alternates": [
+      "Gaston Medecin",
+      "Medecin"
+    ]
+  },
+  {
+    "id": "s17",
+    "letter": "S",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Bayern Münih'in 2024'te açılan yeni iç saha salonu.",
+    "answer": "SAP Garden",
+    "alternates": [
+      "SAP"
+    ]
+  },
+  {
+    "id": "s18",
+    "letter": "S",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "CSKA'nın şampiyon olduğu 2006 Final Four'unun oynandığı Prag salonunun o zamanki adı.",
+    "answer": "Sazka Arena",
+    "alternates": [
+      "Sazka"
+    ]
+  },
+  {
+    "id": "s19",
+    "letter": "S",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2013'te EuroLeague sezon MVP'si seçilen Olympiacos yıldızı Vassilis ___.",
+    "answer": "Vassilis Spanoulis",
+    "alternates": [
+      "Spanoulis"
+    ]
+  },
+  {
     "id": "t1",
     "letter": "T",
     "rule": "starts",
@@ -2451,6 +3409,29 @@
     ]
   },
   {
+    "id": "t11",
+    "letter": "T",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Brose Bamberg, Partizan ve Bayern Münih'i çalıştıran İtalyan başantrenör Andrea ___.",
+    "answer": "Andrea Trinchieri",
+    "alternates": [
+      "Trinchieri"
+    ]
+  },
+  {
+    "id": "t12",
+    "letter": "T",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2003 finalinde Barcelona'ya kaybeden 'Benetton' sponsorlu İtalyan kulübünün şehri.",
+    "answer": "Treviso",
+    "alternates": [
+      "Benetton Treviso",
+      "Benetton"
+    ]
+  },
+  {
     "id": "u1",
     "letter": "U",
     "rule": "starts",
@@ -2536,6 +3517,29 @@
     "question": "John Wooden'ın 10 NCAA şampiyonluğu kazandığı Los Angeles üniversitesi.",
     "answer": "UCLA",
     "alternates": []
+  },
+  {
+    "id": "u9",
+    "letter": "U",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid altyapısından yetişip NBA'de Houston Rockets'a giden İspanyol uzun ___ Garuba.",
+    "answer": "Usman Garuba",
+    "alternates": [
+      "Usman",
+      "Garuba"
+    ]
+  },
+  {
+    "id": "u10",
+    "letter": "U",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "EuroCup'ın 2008'e kadar kullanılan adı.",
+    "answer": "ULEB Cup",
+    "alternates": [
+      "ULEB Kupası"
+    ]
   },
   {
     "id": "v1",
@@ -2658,6 +3662,51 @@
       "VTB",
       "VTB Ligi",
       "VTB League"
+    ]
+  },
+  {
+    "id": "v12",
+    "letter": "V",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Anadolu Efes'in Sırp yıldızı Vasilije Micić'in lakabı.",
+    "answer": "Vasa",
+    "alternates": [
+      "Vasa Micic"
+    ]
+  },
+  {
+    "id": "v13",
+    "letter": "V",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "'Kill Bill' lakaplı Olympiacos efsanesinin adı (soyadı Spanoulis).",
+    "answer": "Vassilis Spanoulis",
+    "alternates": [
+      "Vassilis",
+      "Vasilis"
+    ]
+  },
+  {
+    "id": "v14",
+    "letter": "V",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Fenerbahçe'den sonra 2022'de Barcelona'ya geçen Çek pivot Jan ___.",
+    "answer": "Jan Veselý",
+    "alternates": [
+      "Vesely"
+    ]
+  },
+  {
+    "id": "v15",
+    "letter": "V",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2023 MVP'liğinin ardından Sacramento Kings'e gidip 2024'te Olympiacos'a dönen Bulgar forvet Sasha ___.",
+    "answer": "Sasha Vezenkov",
+    "alternates": [
+      "Vezenkov"
     ]
   },
   {
@@ -2798,6 +3847,29 @@
     ]
   },
   {
+    "id": "w13",
+    "letter": "W",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid'in dev pivotunun asıl adı (Edy lakabıyla bilinir).",
+    "answer": "Walter Tavares",
+    "alternates": [
+      "Walter",
+      "Walter Edy Tavares"
+    ]
+  },
+  {
+    "id": "w14",
+    "letter": "W",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "CSKA Moskova ile 2019 Final Four MVP'si seçilen Amerikalı forvetin adı ve soyadı.",
+    "answer": "Will Clyburn",
+    "alternates": [
+      "Clyburn"
+    ]
+  },
+  {
     "id": "x1",
     "letter": "X",
     "rule": "contains",
@@ -2900,6 +3972,18 @@
     "alternates": [
       "Dixon",
       "Ali Muhammed"
+    ]
+  },
+  {
+    "id": "x10",
+    "letter": "X",
+    "rule": "contains",
+    "category": "euroleague",
+    "question": "Barcelona'dan sonra Panathinaikos'u da çalıştıran İspanyol başantrenör.",
+    "answer": "Xavi Pascual",
+    "alternates": [
+      "Pascual",
+      "Xavier Pascual"
     ]
   },
   {
@@ -3030,6 +4114,32 @@
     ]
   },
   {
+    "id": "y12",
+    "letter": "Y",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid pivotu Walter Tavares'in ülkesi.",
+    "answer": "Yeşil Burun Adaları",
+    "alternates": [
+      "Cape Verde",
+      "Yesil Burun",
+      "Yeşil Burun"
+    ]
+  },
+  {
+    "id": "y13",
+    "letter": "Y",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Final Four'un ilk gününde oynanan iki maçın Türkçe adı.",
+    "answer": "Yarı final",
+    "alternates": [
+      "Yarı finaller",
+      "Yari final",
+      "Semifinal"
+    ]
+  },
+  {
     "id": "z1",
     "letter": "Z",
     "rule": "starts",
@@ -3119,6 +4229,30 @@
     "alternates": [
       "Lavine",
       "Zach"
+    ]
+  },
+  {
+    "id": "z9",
+    "letter": "Z",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "9 EuroLeague kupasıyla rekor sahibi efsane koçun adı (soyadı Obradović).",
+    "answer": "Željko Obradović",
+    "alternates": [
+      "Zeljko",
+      "Zeljko Obradovic"
+    ]
+  },
+  {
+    "id": "z10",
+    "letter": "Z",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Fenerbahçe'nin 2018 Final Four yarı finalinde Belgrad'da yendiği Kaunas kulübü.",
+    "answer": "Žalgiris",
+    "alternates": [
+      "Zalgiris",
+      "Zalgiris Kaunas"
     ]
   }
 ]
