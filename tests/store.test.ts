@@ -1,19 +1,31 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import seed from "@/data/seed-questions.json";
 
-// Minimal in-memory stand-in for the Upstash client.
-const db = { kv: new Map<string, unknown>(), hash: new Map<string, unknown>(), set: new Set<string>() };
+// Minimal in-memory stand-in for the Upstash client (keyed like Redis).
+const store_ = { kv: new Map<string, unknown>(), hashes: new Map<string, Map<string, unknown>>(), sets: new Map<string, Set<string>>() };
+const h = (k: string) => store_.hashes.get(k) ?? store_.hashes.set(k, new Map()).get(k)!;
+const st = (k: string) => store_.sets.get(k) ?? store_.sets.set(k, new Set()).get(k)!;
+// Shortcuts used by the tests below.
+const db = {
+  kv: store_.kv,
+  get hash() { return h("pp:questions"); },
+  get set() { return st("pp:deleted"); },
+};
 class FakeRedis {
-  async get(k: string) { return db.kv.get(k) ?? null; }
-  async set(k: string, v: unknown) { db.kv.set(k, v); return "OK"; }
-  async hkeys() { return [...db.hash.keys()]; }
-  async hgetall() { return db.hash.size ? Object.fromEntries(db.hash) : null; }
-  async hset(_k: string, obj: Record<string, unknown>) { for (const [f, v] of Object.entries(obj)) db.hash.set(f, v); return 1; }
-  async hmget(_k: string, ...f: string[]) { return Object.fromEntries(f.map((x) => [x, db.hash.get(x) ?? null])); }
-  async hdel(_k: string, f: string) { db.hash.delete(f); return 1; }
-  async smembers() { return [...db.set]; }
-  async sadd(_k: string, ...m: string[]) { m.forEach((x) => db.set.add(x)); return m.length; }
-  async del(k: string) { if (k.includes("questions")) db.hash.clear(); else db.set.clear(); return 1; }
+  async get(k: string) { return store_.kv.get(k) ?? null; }
+  async set(k: string, v: unknown, opts?: { nx?: boolean }) {
+    if (opts?.nx && store_.kv.has(k)) return null;
+    store_.kv.set(k, v);
+    return "OK";
+  }
+  async hkeys(k: string) { return [...h(k).keys()]; }
+  async hgetall(k: string) { return h(k).size ? Object.fromEntries(h(k)) : null; }
+  async hset(k: string, obj: Record<string, unknown>) { for (const [f, v] of Object.entries(obj)) h(k).set(f, v); return 1; }
+  async hmget(k: string, ...f: string[]) { return Object.fromEntries(f.map((x) => [x, h(k).get(x) ?? null])); }
+  async hdel(k: string, ...f: string[]) { f.forEach((x) => h(k).delete(x)); return f.length; }
+  async smembers(k: string) { return [...st(k)]; }
+  async sadd(k: string, ...m: string[]) { m.forEach((x) => st(k).add(x)); return m.length; }
+  async del(...keys: string[]) { keys.forEach((k) => { store_.kv.delete(k); store_.hashes.delete(k); store_.sets.delete(k); }); return keys.length; }
   multi() {
     const ops: (() => Promise<unknown>)[] = [];
     const tx = new Proxy({}, {
@@ -32,7 +44,7 @@ process.env.KV_REST_API_TOKEN = "t";
 const store = await import("@/lib/store");
 
 describe("redis store seeding", () => {
-  beforeEach(() => { db.kv.clear(); db.hash.clear(); db.set.clear(); });
+  beforeEach(() => { store_.kv.clear(); store_.hashes.clear(); store_.sets.clear(); });
 
   it("seeds an empty database", async () => {
     expect((await store.listQuestions()).length).toBe(seed.length);
@@ -72,6 +84,17 @@ describe("redis store seeding", () => {
     db.kv.set("pp:seedVersion", "older");
     const ids = (await store.listQuestions()).map((q) => q.id);
     expect(ids).not.toContain("b1");
+  });
+
+  it("regenerating today's daily picks different questions", async () => {
+    const { getDaily, regenerateDaily } = await import("@/lib/daily");
+    const qs = await store.listQuestions();
+    const first = (await getDaily(qs)).questions.map((q) => q.id);
+    expect((await getDaily(qs)).questions.map((q) => q.id)).toEqual(first);
+    await regenerateDaily();
+    const second = (await getDaily(qs)).questions.map((q) => q.id);
+    expect(second).toHaveLength(26);
+    expect(second.filter((id) => first.includes(id))).toEqual([]);
   });
 
   it("import keeps only the imported set even after a seed update", async () => {

@@ -5,6 +5,8 @@ import { redisClient } from "./store";
 import type { Question } from "./types";
 
 const LAST_USED = "pp:dailyLast";
+// Local fallback (no Redis): how many times today's set was regenerated.
+const memorySalt = new Map<string, number>();
 const dayKey = (date: string) => `pp:daily:${date}`;
 
 export interface Daily {
@@ -16,7 +18,14 @@ export interface Daily {
 // Question ids for the day, chosen once and shared by every player.
 async function dailyIds(questions: Question[], date: string): Promise<string[]> {
   const redis = redisClient();
-  if (!redis) return pickDaily(questions, date).map((q) => q.id);
+  if (!redis) {
+    // Without Redis, mark earlier picks of the day as used to get a new set.
+    const lastUsed: Record<string, string> = {};
+    for (let i = 0; i < (memorySalt.get(date) ?? 0); i++) {
+      for (const q of pickDaily(questions, date, lastUsed)) lastUsed[q.id] = date;
+    }
+    return pickDaily(questions, date, lastUsed).map((q) => q.id);
+  }
 
   const existing = await redis.get<string[]>(dayKey(date));
   if (Array.isArray(existing)) return existing;
@@ -33,18 +42,17 @@ async function dailyIds(questions: Question[], date: string): Promise<string[]> 
   return ids;
 }
 
-/** Drop today's set so the next visit picks a fresh one (admin action). */
+/**
+ * Drop today's set so the next visit picks a fresh one (admin action). The
+ * replaced questions stay marked as used today, so different ones are chosen.
+ */
 export async function regenerateDaily(): Promise<void> {
   const redis = redisClient();
-  if (!redis) return;
-  const date = istanbulDate();
-  const ids = await redis.get<string[]>(dayKey(date));
-  if (Array.isArray(ids) && ids.length) {
-    const last = (await redis.hmget<Record<string, string | null>>(LAST_USED, ...ids)) ?? {};
-    const today = Object.entries(last).filter(([, d]) => d === date).map(([id]) => id);
-    if (today.length) await redis.hdel(LAST_USED, ...today);
+  if (!redis) {
+    memorySalt.set(istanbulDate(), (memorySalt.get(istanbulDate()) ?? 0) + 1);
+    return;
   }
-  await redis.del(dayKey(date));
+  await redis.del(dayKey(istanbulDate()));
 }
 
 export async function getDaily(questions: Question[]): Promise<Daily> {

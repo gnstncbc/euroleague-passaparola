@@ -196,7 +196,7 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
   const regenerateDaily = () => {
     if (
       !confirm(
-        "Bugünün günlük bulmacası yeniden seçilecek. Bugün oynamış olanların ilerlemesi geçersiz olur. Devam?",
+        "Bugünün günlük bulmacası farklı sorularla yeniden seçilecek ve bugün oynamış herkes için sıfırlanacak. Devam?",
       )
     )
       return;
@@ -274,7 +274,10 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
           <section className={s.toolCard}>
             <div>
               <h2>Günün bulmacasını yenile</h2>
-              <p>Bugünün günlük bulmacasını yeniden seçer. Bugün oynamış olanların ilerlemesi geçersiz olur.</p>
+              <p>
+                Bugünün günlük bulmacasını farklı sorularla yeniden seçer. Bugün oynamış herkes yeni seti baştan
+                oynayabilir; istatistiklerde günün ilk sonucu kalır.
+              </p>
             </div>
             <button className={s.ghostSm} onClick={regenerateDaily} disabled={busy}>Yenile</button>
           </section>

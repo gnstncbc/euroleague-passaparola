@@ -122,7 +122,7 @@ export default function Game({ questions, daily }: { questions: Question[]; dail
     let progress = readDailyProgress(daily.date);
     // Ignore progress saved for a set that has since been regenerated.
     const todayIds = new Set(daily.questions.map((q) => q.id));
-    if (progress && !progress.slots.some((x) => todayIds.has(x.id))) progress = null;
+    if (progress && !progress.slots.every((x) => todayIds.has(x.id))) progress = null;
     setRoundMs(DAILY_MS);
     setFeedback(null);
     setGuess("");
