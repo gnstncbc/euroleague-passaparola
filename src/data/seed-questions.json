@@ -1,0 +1,852 @@
+[
+  {
+    "id": "a1",
+    "letter": "A",
+    "rule": "starts",
+    "question": "2021 ve 2022'de üst üste EuroLeague şampiyonu olan Türk kulübü.",
+    "answer": "Anadolu Efes",
+    "alternates": [
+      "Efes",
+      "Efes Pilsen"
+    ]
+  },
+  {
+    "id": "a2",
+    "letter": "A",
+    "rule": "starts",
+    "question": "Anadolu Efes'i 2021 ve 2022'de, Panathinaikos'u 2024'te EuroLeague şampiyonluğuna taşıyan Türk başantrenör.",
+    "answer": "Ergin Ataman",
+    "alternates": [
+      "Ataman"
+    ]
+  },
+  {
+    "id": "a3",
+    "letter": "A",
+    "rule": "starts",
+    "question": "Fenerbahçe'nin Monaco'yu yenerek şampiyon olduğu 2025 Final Four'u hangi şehirde oynandı?",
+    "answer": "Abu Dhabi",
+    "alternates": [
+      "Abudabi"
+    ]
+  },
+  {
+    "id": "a4",
+    "letter": "A",
+    "rule": "starts",
+    "question": "Panathinaikos'un kendi şehrinde CSKA'yı yenerek kupayı kaldırdığı 2007 Final Four'u hangi şehirde oynandı?",
+    "answer": "Atina",
+    "alternates": [
+      "Athens"
+    ]
+  },
+  {
+    "id": "b1",
+    "letter": "B",
+    "rule": "starts",
+    "question": "2002'de Panathinaikos, 2003'te Barcelona formasıyla üst üste iki kez Final Four MVP'si seçilen Sırp efsane.",
+    "answer": "Dejan Bodiroga",
+    "alternates": [
+      "Bodiroga"
+    ]
+  },
+  {
+    "id": "b2",
+    "letter": "B",
+    "rule": "starts",
+    "question": "2003'te kendi evinde, 2010'da Paris'te EuroLeague'i kazanan İspanyol kulübü.",
+    "answer": "Barcelona",
+    "alternates": [
+      "Barca",
+      "Barça",
+      "FC Barcelona"
+    ]
+  },
+  {
+    "id": "b3",
+    "letter": "B",
+    "rule": "starts",
+    "question": "2018 ve 2022 Final Four'larına ev sahipliği yapan şehir.",
+    "answer": "Belgrad",
+    "alternates": [
+      "Belgrade",
+      "Beograd"
+    ]
+  },
+  {
+    "id": "b4",
+    "letter": "B",
+    "rule": "starts",
+    "question": "2009, 2016 ve 2024 Final Four'larının oynandığı Alman başkenti.",
+    "answer": "Berlin",
+    "alternates": []
+  },
+  {
+    "id": "b5",
+    "letter": "B",
+    "rule": "starts",
+    "question": "Olympiacos'u 2013'te Londra'da şampiyonluğa taşıyan Yunan başantrenör.",
+    "answer": "Georgios Bartzokas",
+    "alternates": [
+      "Bartzokas"
+    ]
+  },
+  {
+    "id": "c1",
+    "letter": "C",
+    "rule": "starts",
+    "question": "2006, 2008, 2016 ve 2019'da EuroLeague şampiyonu olan Rus kulübü.",
+    "answer": "CSKA Moskova",
+    "alternates": [
+      "CSKA",
+      "CSKA Moscow",
+      "TSKA"
+    ]
+  },
+  {
+    "id": "c2",
+    "letter": "C",
+    "rule": "starts",
+    "question": "CSKA Moskova'nın 2019 şampiyonluğunda Final Four MVP'si seçilen Amerikalı forvet.",
+    "answer": "Will Clyburn",
+    "alternates": [
+      "Clyburn"
+    ]
+  },
+  {
+    "id": "c3",
+    "letter": "C",
+    "rule": "starts",
+    "question": "Real Madrid'de 'Facu' lakabıyla bilinen, NBA'de Denver Nuggets'ta da oynamış Arjantinli oyun kurucu.",
+    "answer": "Facundo Campazzo",
+    "alternates": [
+      "Campazzo",
+      "Facu Campazzo"
+    ]
+  },
+  {
+    "id": "c4",
+    "letter": "C",
+    "rule": "starts",
+    "question": "Panathinaikos ve Barcelona'da oynamış, pas becerisiyle bilinen Amerikan-Yunan oyun kurucu Nick ___.",
+    "answer": "Nick Calathes",
+    "alternates": [
+      "Calathes",
+      "Kalathis"
+    ]
+  },
+  {
+    "id": "d1",
+    "letter": "D",
+    "rule": "starts",
+    "question": "Panathinaikos'un 2007 ve 2011 Final Four MVP'si olan efsane Yunan oyun kurucu.",
+    "answer": "Dimitris Diamantidis",
+    "alternates": [
+      "Diamantidis"
+    ]
+  },
+  {
+    "id": "d2",
+    "letter": "D",
+    "rule": "starts",
+    "question": "2018'de Real Madrid formasıyla hem sezon MVP'si hem Final Four MVP'si seçilen Sloven yıldız.",
+    "answer": "Luka Dončić",
+    "alternates": [
+      "Doncic",
+      "Luka"
+    ]
+  },
+  {
+    "id": "d3",
+    "letter": "D",
+    "rule": "starts",
+    "question": "2016'da CSKA Moskova ile hem sezonun hem Final Four'un MVP'si seçilen Fransız guard.",
+    "answer": "Nando De Colo",
+    "alternates": [
+      "De Colo",
+      "Decolo"
+    ]
+  },
+  {
+    "id": "e1",
+    "letter": "E",
+    "rule": "starts",
+    "question": "Anadolu Efes kulübünün 2011 yılına kadar kullandığı isim.",
+    "answer": "Efes Pilsen",
+    "alternates": []
+  },
+  {
+    "id": "e2",
+    "letter": "E",
+    "rule": "starts",
+    "question": "2025 Final Four'una ev sahipliği yapan Abu Dhabi'deki salon.",
+    "answer": "Etihad Arena",
+    "alternates": [
+      "Etihad"
+    ]
+  },
+  {
+    "id": "f1",
+    "letter": "F",
+    "rule": "starts",
+    "question": "2017'de İstanbul'da, 2025'te Abu Dhabi'de EuroLeague şampiyonu olan Türk kulübü.",
+    "answer": "Fenerbahçe",
+    "alternates": [
+      "Fener",
+      "Fenerbahce Beko"
+    ]
+  },
+  {
+    "id": "f2",
+    "letter": "F",
+    "rule": "starts",
+    "question": "Real Madrid ile 2015, 2018 ve 2023'te şampiyon olan, Palma de Mallorca doğumlu İspanyol kanat oyuncusu Rudy ___.",
+    "answer": "Rudy Fernández",
+    "alternates": [
+      "Fernandez",
+      "Rudy"
+    ]
+  },
+  {
+    "id": "g1",
+    "letter": "G",
+    "rule": "starts",
+    "question": "2001'de Kinder Bologna ile EuroLeague şampiyonu olup finallerin MVP'si seçilen, sonra San Antonio Spurs'te efsaneleşen Arjantinli.",
+    "answer": "Manu Ginóbili",
+    "alternates": [
+      "Ginobili",
+      "Manu"
+    ]
+  },
+  {
+    "id": "g2",
+    "letter": "G",
+    "rule": "starts",
+    "question": "Maccabi Tel Aviv'i 2004 ve 2005'te üst üste şampiyonluğa taşıyan İsrailli başantrenör.",
+    "answer": "Pini Gershon",
+    "alternates": [
+      "Gershon"
+    ]
+  },
+  {
+    "id": "h1",
+    "letter": "H",
+    "rule": "starts",
+    "question": "Fenerbahçe'nin 2025 şampiyonluğunda Final Four MVP'si seçilen Amerikalı forvet.",
+    "answer": "Nigel Hayes-Davis",
+    "alternates": [
+      "Hayes Davis",
+      "Hayes",
+      "Nigel Hayes"
+    ]
+  },
+  {
+    "id": "h2",
+    "letter": "H",
+    "rule": "starts",
+    "question": "Olympiacos ile 2012 ve 2013'te, CSKA Moskova ile 2016 ve 2019'da şampiyon olan, kısa boyuna rağmen pivot oynayan Amerikalı.",
+    "answer": "Kyle Hines",
+    "alternates": [
+      "Hines"
+    ]
+  },
+  {
+    "id": "h3",
+    "letter": "H",
+    "rule": "starts",
+    "question": "Real Madrid'in Hırvat forveti; NBA'de Orlando Magic'te de oynamış Mario ___.",
+    "answer": "Mario Hezonja",
+    "alternates": [
+      "Hezonja"
+    ]
+  },
+  {
+    "id": "i1",
+    "letter": "I",
+    "rule": "starts",
+    "question": "2012 ve 2017 Final Four'larına ev sahipliği yapan şehir.",
+    "answer": "İstanbul",
+    "alternates": [
+      "Istanbul"
+    ]
+  },
+  {
+    "id": "i2",
+    "letter": "I",
+    "rule": "starts",
+    "question": "CSKA Moskova'yı 2016 ve 2019'da EuroLeague şampiyonu yapan Yunan başantrenör.",
+    "answer": "Dimitris Itoudis",
+    "alternates": [
+      "Itoudis"
+    ]
+  },
+  {
+    "id": "i3",
+    "letter": "I",
+    "rule": "starts",
+    "question": "Olympiacos'u 2012'de İstanbul'da şampiyonluğa taşıyan efsane Sırp başantrenör Dušan ___.",
+    "answer": "Dušan Ivković",
+    "alternates": [
+      "Ivkovic",
+      "Duda Ivkovic"
+    ]
+  },
+  {
+    "id": "j1",
+    "letter": "J",
+    "rule": "starts",
+    "question": "Oyuncu olarak Barcelona, Maccabi ve Panathinaikos ile şampiyon olan; koç olarak Fenerbahçe'ye 2025'te kupayı kazandıran Litvanyalı.",
+    "answer": "Šarūnas Jasikevičius",
+    "alternates": [
+      "Jasikevicius",
+      "Saras",
+      "Sarunas"
+    ]
+  },
+  {
+    "id": "j2",
+    "letter": "J",
+    "rule": "starts",
+    "question": "AS Monaco'yu 2025'te Final Four'da finale taşıyan Amerikalı yıldız guard Mike ___.",
+    "answer": "Mike James",
+    "alternates": [
+      "James"
+    ]
+  },
+  {
+    "id": "k1",
+    "letter": "K",
+    "rule": "starts",
+    "question": "2023 Final Four'unun düzenlendiği, Žalgiris'in şehri olan Litvanya kenti.",
+    "answer": "Kaunas",
+    "alternates": []
+  },
+  {
+    "id": "k2",
+    "letter": "K",
+    "rule": "starts",
+    "question": "Anadolu Efes'in ilk şampiyonluğunu kazandığı, pandemi nedeniyle seyircisiz oynanan 2021 Final Four'unun Alman şehri.",
+    "answer": "Köln",
+    "alternates": [
+      "Koln",
+      "Cologne",
+      "Koeln"
+    ]
+  },
+  {
+    "id": "k3",
+    "letter": "K",
+    "rule": "starts",
+    "question": "2012'de CSKA Moskova formasıyla EuroLeague sezon MVP'si seçilen, NBA'de Utah Jazz'da oynamış Rus forvet.",
+    "answer": "Andrei Kirilenko",
+    "alternates": [
+      "Kirilenko",
+      "AK47"
+    ]
+  },
+  {
+    "id": "l1",
+    "letter": "L",
+    "rule": "starts",
+    "question": "2023 finalinde Olympiacos'a karşı son saniyelerde galibiyet basketini atan Real Madrid kaptanı Sergio ___.",
+    "answer": "Sergio Llull",
+    "alternates": [
+      "Llull",
+      "Lull"
+    ]
+  },
+  {
+    "id": "l2",
+    "letter": "L",
+    "rule": "starts",
+    "question": "Real Madrid'i 2015 ve 2018'de EuroLeague şampiyonluğuna taşıyan Baskli başantrenör.",
+    "answer": "Pablo Laso",
+    "alternates": [
+      "Laso"
+    ]
+  },
+  {
+    "id": "l3",
+    "letter": "L",
+    "rule": "starts",
+    "question": "CSKA Moskova'nın 2008 şampiyonluğunda Final Four MVP'si seçilen Amerikalı şutör Trajan ___.",
+    "answer": "Trajan Langdon",
+    "alternates": [
+      "Langdon"
+    ]
+  },
+  {
+    "id": "l4",
+    "letter": "L",
+    "rule": "starts",
+    "question": "Olympiacos'un Real Madrid'i yenerek üst üste ikinci kupasını kazandığı 2013 Final Four'u hangi şehirde oynandı?",
+    "answer": "Londra",
+    "alternates": [
+      "London"
+    ]
+  },
+  {
+    "id": "m1",
+    "letter": "M",
+    "rule": "starts",
+    "question": "Anadolu Efes'in 2021 ve 2022'de üst üste Final Four MVP'si seçilen Sırp oyun kurucusu.",
+    "answer": "Vasilije Micić",
+    "alternates": [
+      "Micic",
+      "Vasa Micic"
+    ]
+  },
+  {
+    "id": "m2",
+    "letter": "M",
+    "rule": "starts",
+    "question": "2004, 2005 ve 2014'te EuroLeague'i kazanan İsrail kulübü.",
+    "answer": "Maccabi Tel Aviv",
+    "alternates": [
+      "Maccabi",
+      "Makabi"
+    ]
+  },
+  {
+    "id": "m3",
+    "letter": "M",
+    "rule": "starts",
+    "question": "CSKA Moskova'yı 2006 ve 2008'de şampiyonluğa taşıyan İtalyan başantrenör Ettore ___.",
+    "answer": "Ettore Messina",
+    "alternates": [
+      "Messina"
+    ]
+  },
+  {
+    "id": "m4",
+    "letter": "M",
+    "rule": "starts",
+    "question": "2022'de Barcelona formasıyla EuroLeague sezon MVP'si seçilen, Karadağ doğumlu İspanyol forvet.",
+    "answer": "Nikola Mirotić",
+    "alternates": [
+      "Mirotic"
+    ]
+  },
+  {
+    "id": "m5",
+    "letter": "M",
+    "rule": "starts",
+    "question": "Maccabi'nin uzatmada Real Madrid'i yendiği 2014 Final Four'u hangi İtalyan şehrinde oynandı?",
+    "answer": "Milano",
+    "alternates": [
+      "Milan",
+      "Milano"
+    ]
+  },
+  {
+    "id": "m6",
+    "letter": "M",
+    "rule": "starts",
+    "question": "Maccabi Tel Aviv'in Tau Cerámica'yı yenerek şampiyon olduğu 2005 Final Four'u hangi şehirde oynandı?",
+    "answer": "Moskova",
+    "alternates": [
+      "Moscow",
+      "Moskva"
+    ]
+  },
+  {
+    "id": "n1",
+    "letter": "N",
+    "rule": "starts",
+    "question": "Barcelona'nın 'La Bomba' lakaplı efsane guardı, 2010 Final Four MVP'si Juan Carlos ___.",
+    "answer": "Juan Carlos Navarro",
+    "alternates": [
+      "Navarro",
+      "La Bomba"
+    ]
+  },
+  {
+    "id": "n2",
+    "letter": "N",
+    "rule": "starts",
+    "question": "2015'te Real Madrid ile Final Four MVP'si seçilen, 'El Chapu' lakaplı Arjantinli forvet.",
+    "answer": "Andrés Nocioni",
+    "alternates": [
+      "Nocioni",
+      "Chapu"
+    ]
+  },
+  {
+    "id": "n3",
+    "letter": "N",
+    "rule": "starts",
+    "question": "Panathinaikos'u 2024'te şampiyonluğa taşıyıp Final Four MVP'si seçilen Amerikalı guard Kendrick ___.",
+    "answer": "Kendrick Nunn",
+    "alternates": [
+      "Nunn"
+    ]
+  },
+  {
+    "id": "o1",
+    "letter": "O",
+    "rule": "starts",
+    "question": "2012 ve 2013'te üst üste EuroLeague şampiyonu olan Pire kulübü.",
+    "answer": "Olympiacos",
+    "alternates": [
+      "Olympiakos",
+      "Olimpiakos"
+    ]
+  },
+  {
+    "id": "o2",
+    "letter": "O",
+    "rule": "starts",
+    "question": "Panathinaikos ve Fenerbahçe ile şampiyonluklar kazanan, 9 EuroLeague kupasıyla rekor sahibi Sırp başantrenör Željko ___.",
+    "answer": "Željko Obradović",
+    "alternates": [
+      "Obradovic",
+      "Zeljko"
+    ]
+  },
+  {
+    "id": "p1",
+    "letter": "P",
+    "rule": "starts",
+    "question": "2024'te Berlin'de Real Madrid'i yenerek EuroLeague şampiyonu olan Atina kulübü.",
+    "answer": "Panathinaikos",
+    "alternates": [
+      "PAO",
+      "Panathinaikos AKTOR"
+    ]
+  },
+  {
+    "id": "p2",
+    "letter": "P",
+    "rule": "starts",
+    "question": "2006'da CSKA Moskova ile Final Four MVP'si seçilen Yunan oyun kurucu Theodoros ___.",
+    "answer": "Theo Papaloukas",
+    "alternates": [
+      "Papaloukas"
+    ]
+  },
+  {
+    "id": "p3",
+    "letter": "P",
+    "rule": "starts",
+    "question": "2012 finalinde CSKA'ya karşı son saniye basketiyle Olympiacos'a kupayı getiren Yunan forvet Georgios ___.",
+    "answer": "Georgios Printezis",
+    "alternates": [
+      "Printezis"
+    ]
+  },
+  {
+    "id": "p4",
+    "letter": "P",
+    "rule": "starts",
+    "question": "CSKA Moskova'nın Maccabi'yi yenerek şampiyon olduğu 2006 Final Four'u hangi şehirde oynandı?",
+    "answer": "Prag",
+    "alternates": [
+      "Prague",
+      "Praha"
+    ]
+  },
+  {
+    "id": "p5",
+    "letter": "P",
+    "rule": "starts",
+    "question": "Maccabi Tel Aviv formasıyla 2004 Final Four MVP'si seçilen, NBA'de Toronto'da da oynamış Amerikalı Anthony ___.",
+    "answer": "Anthony Parker",
+    "alternates": [
+      "Parker"
+    ]
+  },
+  {
+    "id": "p6",
+    "letter": "P",
+    "rule": "starts",
+    "question": "Belgrad'ın siyah-beyazlı kulübü; 2010'da Paris'teki Final Four'a kalmıştı.",
+    "answer": "Partizan",
+    "alternates": [
+      "Partizan Belgrad",
+      "Partizan Mozzart Bet"
+    ]
+  },
+  {
+    "id": "q1",
+    "letter": "Q",
+    "rule": "contains",
+    "question": "EuroLeague maçları 10'ar dakikalık dört bölümden oluşur. Bu bölümlerin İngilizce adı nedir?",
+    "answer": "Quarter",
+    "alternates": [
+      "Quarters"
+    ]
+  },
+  {
+    "id": "r1",
+    "letter": "R",
+    "rule": "starts",
+    "question": "2015, 2018 ve 2023'te EuroLeague şampiyonu olan İspanyol kulübü.",
+    "answer": "Real Madrid",
+    "alternates": [
+      "Real"
+    ]
+  },
+  {
+    "id": "r2",
+    "letter": "R",
+    "rule": "starts",
+    "question": "Maccabi Tel Aviv'in 2014 şampiyonluğunda Final Four MVP'si seçilen Amerikalı oyun kurucu Tyrese ___.",
+    "answer": "Tyrese Rice",
+    "alternates": [
+      "Rice"
+    ]
+  },
+  {
+    "id": "r3",
+    "letter": "R",
+    "rule": "starts",
+    "question": "'El Chacho' lakaplı, 2014'te Real Madrid ile EuroLeague sezon MVP'si seçilen Kanaryalı oyun kurucu Sergio ___.",
+    "answer": "Sergio Rodríguez",
+    "alternates": [
+      "Rodriguez",
+      "Chacho",
+      "El Chacho"
+    ]
+  },
+  {
+    "id": "s1",
+    "letter": "S",
+    "rule": "starts",
+    "question": "2009'da Panathinaikos, 2012 ve 2013'te Olympiacos ile Final Four MVP'si seçilen 'Kill Bill' lakaplı Yunan.",
+    "answer": "Vassilis Spanoulis",
+    "alternates": [
+      "Spanoulis",
+      "Kill Bill"
+    ]
+  },
+  {
+    "id": "s2",
+    "letter": "S",
+    "rule": "starts",
+    "question": "2007'de Panathinaikos, 2008'de CSKA formasıyla üst üste EuroLeague sezon MVP'si seçilen Litvanyalı kanat oyuncusu.",
+    "answer": "Ramūnas Šiškauskas",
+    "alternates": [
+      "Siskauskas"
+    ]
+  },
+  {
+    "id": "s3",
+    "letter": "S",
+    "rule": "starts",
+    "question": "Fenerbahçe ile 2017'de, Panathinaikos ile 2024'te EuroLeague şampiyonu olan Yunan oyun kurucu Kostas ___.",
+    "answer": "Kostas Sloukas",
+    "alternates": [
+      "Sloukas"
+    ]
+  },
+  {
+    "id": "s4",
+    "letter": "S",
+    "rule": "starts",
+    "question": "İstanbul'da 2012 ve 2017 Final Four'larına ev sahipliği yapan salon.",
+    "answer": "Sinan Erdem",
+    "alternates": [
+      "Sinan Erdem Spor Salonu"
+    ]
+  },
+  {
+    "id": "t1",
+    "letter": "T",
+    "rule": "starts",
+    "question": "Real Madrid'in Yeşil Burun Adaları (Cape Verde) doğumlu dev pivotu; 2023 Final Four MVP'si Walter 'Edy' ___.",
+    "answer": "Edy Tavares",
+    "alternates": [
+      "Tavares",
+      "Walter Tavares"
+    ]
+  },
+  {
+    "id": "t2",
+    "letter": "T",
+    "rule": "starts",
+    "question": "2010'da Olympiacos formasıyla EuroLeague sezon MVP'si seçilen Sırp oyun kurucu Miloš ___.",
+    "answer": "Miloš Teodosić",
+    "alternates": [
+      "Teodosic"
+    ]
+  },
+  {
+    "id": "t3",
+    "letter": "T",
+    "rule": "starts",
+    "question": "Maccabi'nin kendi seyircisi önünde Skipper Bologna'yı yenerek şampiyon olduğu 2004 Final Four'u hangi şehirde oynandı?",
+    "answer": "Tel Aviv",
+    "alternates": [
+      "Tel Aviv Yafo"
+    ]
+  },
+  {
+    "id": "t4",
+    "letter": "T",
+    "rule": "starts",
+    "question": "Vitoria kulübünün 2000'lerdeki sponsor adı; 2001 ve 2005'te EuroLeague finali oynadı.",
+    "answer": "Tau Cerámica",
+    "alternates": [
+      "Tau",
+      "Tau Ceramica"
+    ]
+  },
+  {
+    "id": "u1",
+    "letter": "U",
+    "rule": "starts",
+    "question": "Fenerbahçe'nin 2017 şampiyonluğunda Final Four MVP'si seçilen Amerikalı pivot Ekpe ___.",
+    "answer": "Ekpe Udoh",
+    "alternates": [
+      "Udoh"
+    ]
+  },
+  {
+    "id": "u2",
+    "letter": "U",
+    "rule": "starts",
+    "question": "2007'de Atina'daki Final Four'a kalan Malaga kulübü.",
+    "answer": "Unicaja",
+    "alternates": [
+      "Unicaja Malaga"
+    ]
+  },
+  {
+    "id": "v1",
+    "letter": "V",
+    "rule": "starts",
+    "question": "2023'te Olympiacos formasıyla EuroLeague sezon MVP'si seçilen Bulgar forvet Sasha ___.",
+    "answer": "Sasha Vezenkov",
+    "alternates": [
+      "Vezenkov"
+    ]
+  },
+  {
+    "id": "v2",
+    "letter": "V",
+    "rule": "starts",
+    "question": "2019'da Fenerbahçe formasıyla EuroLeague sezon MVP'si seçilen Çek pivot Jan ___.",
+    "answer": "Jan Veselý",
+    "alternates": [
+      "Vesely"
+    ]
+  },
+  {
+    "id": "v3",
+    "letter": "V",
+    "rule": "starts",
+    "question": "2001'de 'Kinder' sponsorluğuyla EuroLeague'i kazanan İtalyan kulübü.",
+    "answer": "Virtus Bologna",
+    "alternates": [
+      "Virtus",
+      "Kinder Bologna"
+    ]
+  },
+  {
+    "id": "v4",
+    "letter": "V",
+    "rule": "starts",
+    "question": "CSKA'nın Anadolu Efes'i yenerek şampiyon olduğu 2019 Final Four'u hangi Bask şehrinde oynandı?",
+    "answer": "Vitoria",
+    "alternates": [
+      "Vitoria-Gasteiz",
+      "Gasteiz"
+    ]
+  },
+  {
+    "id": "w1",
+    "letter": "W",
+    "rule": "starts",
+    "question": "Olympiacos'un savunmasıyla tanınan Amerikalı guardı Thomas ___.",
+    "answer": "Thomas Walkup",
+    "alternates": [
+      "Walkup"
+    ]
+  },
+  {
+    "id": "w2",
+    "letter": "W",
+    "rule": "starts",
+    "question": "Türkiye milli takımında da forma giyen, uzun yıllar Maccabi Tel Aviv'de oynayan Amerikalı guard Scottie ___.",
+    "answer": "Scottie Wilbekin",
+    "alternates": [
+      "Wilbekin"
+    ]
+  },
+  {
+    "id": "x1",
+    "letter": "X",
+    "rule": "contains",
+    "question": "FC Barcelona'yı 2010'da Paris'te EuroLeague şampiyonluğuna taşıyan İspanyol başantrenör.",
+    "answer": "Xavi Pascual",
+    "alternates": [
+      "Pascual",
+      "Xavier Pascual"
+    ]
+  },
+  {
+    "id": "x2",
+    "letter": "X",
+    "rule": "contains",
+    "question": "Barcelona'da forma giydikten sonra NBA'de Oklahoma City'de oynayan Mallorcalı şutör.",
+    "answer": "Álex Abrines",
+    "alternates": [
+      "Abrines",
+      "Alex Abrines"
+    ]
+  },
+  {
+    "id": "y1",
+    "letter": "Y",
+    "rule": "starts",
+    "question": "Maccabi Tel Aviv'in efsanevi iç saha salonunun tarihi adı.",
+    "answer": "Yad Eliyahu",
+    "alternates": [
+      "Yad Eliyahu Arena"
+    ]
+  },
+  {
+    "id": "y2",
+    "letter": "Y",
+    "rule": "contains",
+    "question": "Real Madrid'in 2023'te Kaunas'ta yendiği ve Llull'un son saniye basketiyle kupayı kaçıran rakip.",
+    "answer": "Olympiacos",
+    "alternates": [
+      "Olympiakos",
+      "Olimpiakos"
+    ]
+  },
+  {
+    "id": "z1",
+    "letter": "Z",
+    "rule": "starts",
+    "question": "Jasikevičius yönetiminde 2018 Final Four'unda üçüncü olan Kaunas kulübü.",
+    "answer": "Žalgiris",
+    "alternates": [
+      "Zalgiris",
+      "Zalgiris Kaunas"
+    ]
+  },
+  {
+    "id": "z2",
+    "letter": "Z",
+    "rule": "starts",
+    "question": "2020-2022 arasında EuroLeague'de mücadele eden St. Petersburg kulübü.",
+    "answer": "Zenit",
+    "alternates": [
+      "Zenit St Petersburg"
+    ]
+  },
+  {
+    "id": "z3",
+    "letter": "Z",
+    "rule": "contains",
+    "question": "Belgrad'ın 'Kızıl Yıldız' anlamına gelen kulübü.",
+    "answer": "Crvena Zvezda",
+    "alternates": [
+      "Zvezda",
+      "Kızılyıldız",
+      "Red Star"
+    ]
+  }
+]
