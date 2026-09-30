@@ -9,6 +9,7 @@ import {
 } from "@/lib/game";
 import { istanbulDate, msUntilNextDay } from "@/lib/day";
 import Ring from "./Ring";
+import Num from "./Num";
 import StatsPanel from "./StatsPanel";
 import SettingsPanel from "./SettingsPanel";
 import { defaultSettings, readSettings, saveSettings, type Settings } from "@/lib/settings";
@@ -445,8 +446,10 @@ export default function Game({ questions, daily }: { questions: Question[]; dail
             {phase === "done" && (
               <div className={s.center}>
                 <div className={s.score}>
-                  {counts.correct}
-                  <span>/{slots.length}</span>
+                  <Num value={counts.correct} />
+                  <span className={s.scoreTotal}>
+                    <Num value={`/${slots.length}`} />
+                  </span>
                 </div>
                 <div className={s.centerMeta}>doğru</div>
               </div>
@@ -557,10 +560,10 @@ export default function Game({ questions, daily }: { questions: Question[]; dail
         {phase === "done" && (
           <section className={s.result}>
             <div className={s.tally}>
-              <div><strong>{counts.correct}</strong><span>Doğru</span></div>
-              <div><strong>{counts.wrong}</strong><span>Yanlış</span></div>
-              <div><strong>{counts.open}</strong><span>Boş</span></div>
-              <div><strong>{formatTime(roundMs - remaining)}</strong><span>Süre</span></div>
+              <div><strong><Num value={counts.correct} /></strong><span>Doğru</span></div>
+              <div><strong><Num value={counts.wrong} /></strong><span>Yanlış</span></div>
+              <div><strong><Num value={counts.open} /></strong><span>Boş</span></div>
+              <div><strong><Num value={formatTime(roundMs - remaining)} /></strong><span>Süre</span></div>
             </div>
             <div className={s.row}>
               <button className={s.primary} onClick={share}>{copied ? "Kopyalandı ✓" : "Paylaş"}</button>

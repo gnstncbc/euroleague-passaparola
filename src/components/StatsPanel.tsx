@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { dailyStreaks, formatTime, gameMode, type Mode, type Stats } from "@/lib/game";
+import Num from "./Num";
 import s from "./StatsPanel.module.css";
 
 const BUCKETS = [
@@ -72,7 +73,9 @@ export default function StatsPanel({
       <div className={s.tiles}>
         {tiles.map((x) => (
           <div key={x.l}>
-            <strong>{x.v}</strong>
+            <strong>
+              <Num value={x.v} />
+            </strong>
             <span>{x.l}</span>
           </div>
         ))}
@@ -98,7 +101,7 @@ export default function StatsPanel({
                     className={`${s.bar} ${i === lastBucket ? s.barLast : ""}`}
                     style={{ width: `${Math.max(8, (counts[i] / maxCount) * 100)}%` }}
                   >
-                    {counts[i]}
+                    <Num value={counts[i]} />
                   </span>
                 </span>
               </div>
@@ -114,10 +117,13 @@ export default function StatsPanel({
                   {dateFmt.format(g.at)}
                 </span>
                 <span className={s.score}>
-                  <b>{g.correct}</b>/{g.total}
+                  <b>
+                    <Num value={g.correct} />
+                  </b>
+                  <Num value={`/${g.total}`} />
                 </span>
                 <span className={s.meta}>
-                  {g.wrong} yanlış · {formatTime(g.ms)}
+                  <Num value={g.wrong} /> yanlış · <Num value={formatTime(g.ms)} />
                 </span>
               </li>
             ))}

@@ -25,6 +25,8 @@ export const metadata: Metadata = {
     description,
     url: "/",
   },
+  // Stop mobile browsers from turning scores like "25 Doğru" into address links.
+  formatDetection: { telephone: false, address: false, email: false, date: false },
   twitter: {
     card: "summary_large_image",
     title: "Passaparola · EuroLeague",

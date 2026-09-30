@@ -112,3 +112,7 @@ a {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+.pp-num::before {
+  content: attr(data-v);
+}
