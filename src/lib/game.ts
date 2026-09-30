@@ -55,15 +55,23 @@ export function formatTime(ms: number): string {
   return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 }
 
+export type Mode = "daily" | "free";
+
 export interface GameRecord {
   at: number;
   correct: number;
   wrong: number;
   total: number;
   ms: number;
+  /** Missing on games recorded before daily mode existed (those were free games). */
+  mode?: Mode;
+  /** Istanbul date of the daily puzzle. */
+  date?: string;
+  number?: number;
 }
 
 export interface Stats {
+  /** Free-mode totals (kept separately so games from before history existed still count). */
   played: number;
   best: number;
   totalCorrect: number;
@@ -71,7 +79,7 @@ export interface Stats {
 }
 
 const STATS_KEY = "pp:stats";
-const HISTORY_LIMIT = 200;
+const HISTORY_LIMIT = 400;
 
 const emptyStats = (): Stats => ({ played: 0, best: 0, totalCorrect: 0, history: [] });
 
@@ -93,11 +101,16 @@ function writeStats(s: Stats) {
 
 export function recordGame(game: Omit<GameRecord, "at">): Stats {
   const s = readStats();
+  const entry = { ...game, at: Date.now() };
+  if (game.mode === "daily" && s.history.some((g) => g.mode === "daily" && g.date === game.date)) {
+    return s; // one result per daily puzzle
+  }
+  const free = game.mode !== "daily";
   const next: Stats = {
-    played: s.played + 1,
-    best: Math.max(s.best, game.correct),
-    totalCorrect: s.totalCorrect + game.correct,
-    history: [...s.history, { ...game, at: Date.now() }].slice(-HISTORY_LIMIT),
+    played: s.played + (free ? 1 : 0),
+    best: free ? Math.max(s.best, game.correct) : s.best,
+    totalCorrect: s.totalCorrect + (free ? game.correct : 0),
+    history: [...s.history, entry].slice(-HISTORY_LIMIT),
   };
   writeStats(next);
   return next;
@@ -107,4 +120,60 @@ export function resetStats(): Stats {
   const s = emptyStats();
   writeStats(s);
   return s;
+}
+
+export const gameMode = (g: GameRecord): Mode => g.mode ?? "free";
+
+/** Current and longest run of consecutive days with a finished daily puzzle. */
+export function dailyStreaks(history: GameRecord[], today: string): { current: number; max: number } {
+  const days = [...new Set(history.filter((g) => g.mode === "daily" && g.date).map((g) => g.date!))].sort();
+  const DAY = 86_400_000;
+  let max = 0;
+  let run = 0;
+  for (let i = 0; i < days.length; i++) {
+    run = i && Date.parse(days[i]) - Date.parse(days[i - 1]) === DAY ? run + 1 : 1;
+    max = Math.max(max, run);
+  }
+  let current = 0;
+  const last = days[days.length - 1];
+  if (last && Date.parse(today) - Date.parse(last) <= DAY) {
+    current = 1;
+    for (let i = days.length - 1; i > 0 && Date.parse(days[i]) - Date.parse(days[i - 1]) === DAY; i--) current++;
+  }
+  return { current, max };
+}
+
+/* ---- daily puzzle progress (survives reloads, one attempt per day) ---- */
+
+export interface DailyProgress {
+  date: string;
+  slots: { id: string; status: Slot["status"]; guess?: string }[];
+  current: number;
+  remaining: number;
+  finished: boolean;
+}
+
+const DAILY_KEY = "pp:daily";
+
+export function readDailyProgress(date: string): DailyProgress | null {
+  try {
+    const p = JSON.parse(localStorage.getItem(DAILY_KEY) ?? "null");
+    if (p && p.date === date && Array.isArray(p.slots)) return p;
+  } catch {}
+  return null;
+}
+
+export function saveDailyProgress(p: DailyProgress) {
+  try {
+    localStorage.setItem(DAILY_KEY, JSON.stringify(p));
+  } catch {}
+}
+
+/** Rebuild slots from saved progress against today's questions. */
+export function restoreSlots(questions: Question[], progress: DailyProgress): Slot[] {
+  const saved = new Map(progress.slots.map((x) => [x.id, x]));
+  return questions.map((q) => {
+    const x = saved.get(q.id);
+    return x ? { q, status: x.status, guess: x.guess } : { q, status: "pending" };
+  });
 }

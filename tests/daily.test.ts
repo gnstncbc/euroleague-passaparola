@@ -1,0 +1,59 @@
+import { describe, expect, it } from "vitest";
+import seed from "@/data/seed-questions.json";
+import { addDays, dailyNumber, istanbulDate, msUntilNextDay } from "@/lib/day";
+import { pickDaily } from "@/lib/dailyPick";
+import { dailyStreaks, type GameRecord } from "@/lib/game";
+import type { Question } from "@/lib/types";
+
+const questions = seed as Question[];
+
+describe("day helpers", () => {
+  it("uses Istanbul midnight", () => {
+    expect(istanbulDate(Date.parse("2026-09-30T20:59:00Z"))).toBe("2026-09-30");
+    expect(istanbulDate(Date.parse("2026-09-30T21:00:00Z"))).toBe("2026-10-01");
+    expect(msUntilNextDay(Date.parse("2026-09-30T20:59:00Z"))).toBe(60_000);
+  });
+  it("numbers puzzles from the start date", () => {
+    expect(dailyNumber("2026-09-30")).toBe(1);
+    expect(dailyNumber("2026-10-10")).toBe(11);
+    expect(addDays("2026-12-31", 1)).toBe("2027-01-01");
+  });
+});
+
+describe("pickDaily", () => {
+  it("is deterministic and picks one per letter", () => {
+    const a = pickDaily(questions, "2026-10-01");
+    expect(a.map((q) => q.id)).toEqual(pickDaily(questions, "2026-10-01").map((q) => q.id));
+    expect(new Set(a.map((q) => q.letter)).size).toBe(26);
+    expect(a.map((q) => q.letter).join("")).toBe("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+  });
+
+  it("rotates through the pool before repeating", () => {
+    const lastUsed: Record<string, string> = {};
+    const seen = new Map<string, Set<string>>();
+    let date = "2026-10-01";
+    const poolSize = (l: string) => questions.filter((q) => q.letter === l).length;
+    for (let d = 0; d < 7; d++) {
+      for (const q of pickDaily(questions, date, lastUsed)) {
+        const set = seen.get(q.letter) ?? new Set();
+        // no repeat until every question of the letter was used
+        if (set.size < poolSize(q.letter)) expect(set.has(q.id)).toBe(false);
+        set.add(q.id);
+        seen.set(q.letter, set);
+        lastUsed[q.id] = date;
+      }
+      date = addDays(date, 1);
+    }
+  });
+});
+
+describe("dailyStreaks", () => {
+  const g = (date: string): GameRecord => ({ at: 0, correct: 10, wrong: 2, total: 26, ms: 1, mode: "daily", date });
+  it("counts consecutive days", () => {
+    const h = [g("2026-10-01"), g("2026-10-02"), g("2026-10-03"), g("2026-10-05"), g("2026-10-06")];
+    expect(dailyStreaks(h, "2026-10-06")).toEqual({ current: 2, max: 3 });
+    expect(dailyStreaks(h, "2026-10-07")).toEqual({ current: 2, max: 3 });
+    expect(dailyStreaks(h, "2026-10-08")).toEqual({ current: 0, max: 3 });
+    expect(dailyStreaks([], "2026-10-08")).toEqual({ current: 0, max: 0 });
+  });
+});

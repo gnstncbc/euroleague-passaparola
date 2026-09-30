@@ -88,3 +88,14 @@ describe("edge cases", () => {
     expect(isCorrect(guess as string, answer as string)).toBe(expected);
   });
 });
+
+describe("closeness", () => {
+  it("ranks near misses above unrelated guesses", async () => {
+    const { closeness } = await import("@/lib/match");
+    expect(closeness("spanolis vasilis", "Vassilis Spanoulis")).toBeGreaterThan(0.8);
+    expect(closeness("mirotic", "Vasilije Micić")).toBeLessThan(0.6);
+    expect(closeness("jasikevicius", "Šarūnas Jasikevičius")).toBe(1);
+    expect(closeness("adanolu", "Anadolu Efes")).toBeGreaterThan(0.6);
+    expect(closeness("galatasaray", "Anadolu Efes")).toBeLessThan(0.55);
+  });
+});

@@ -3,6 +3,7 @@
     "id": "a1",
     "letter": "A",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2021 ve 2022'de üst üste EuroLeague şampiyonu olan Türk kulübü.",
     "answer": "Anadolu Efes",
     "alternates": [
@@ -14,6 +15,7 @@
     "id": "a2",
     "letter": "A",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Anadolu Efes'i 2021 ve 2022'de, Panathinaikos'u 2024'te EuroLeague şampiyonluğuna taşıyan Türk başantrenör.",
     "answer": "Ergin Ataman",
     "alternates": [
@@ -24,6 +26,7 @@
     "id": "a3",
     "letter": "A",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Fenerbahçe'nin Monaco'yu yenerek şampiyon olduğu 2025 Final Four'u hangi şehirde oynandı?",
     "answer": "Abu Dhabi",
     "alternates": [
@@ -34,6 +37,7 @@
     "id": "a4",
     "letter": "A",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Panathinaikos'un kendi şehrinde CSKA'yı yenerek kupayı kaldırdığı 2007 Final Four'u hangi şehirde oynandı?",
     "answer": "Atina",
     "alternates": [
@@ -44,6 +48,7 @@
     "id": "a5",
     "letter": "A",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos ile 2012 ve 2013'te, Fenerbahçe ile 2017'de EuroLeague şampiyonu olan Makedon uzun Pero ___.",
     "answer": "Pero Antić",
     "alternates": [
@@ -54,6 +59,7 @@
     "id": "a6",
     "letter": "A",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Başkanlığını Tony Parker'ın yaptığı Lyon-Villeurbanne kulübü.",
     "answer": "ASVEL",
     "alternates": [
@@ -65,6 +71,7 @@
     "id": "a7",
     "letter": "A",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Berlin'in sarı-mavili köklü kulübü.",
     "answer": "Alba Berlin",
     "alternates": [
@@ -75,6 +82,7 @@
     "id": "a8",
     "letter": "A",
     "rule": "starts",
+    "category": "euroleague",
     "question": "EuroLeague'de sezonun en skorer oyuncusuna verilen ödül, genç yaşta vefat eden Amerikalı bir efsanenin adını taşır.",
     "answer": "Alphonso Ford",
     "alternates": [
@@ -86,6 +94,7 @@
     "id": "a9",
     "letter": "A",
     "rule": "starts",
+    "category": "euroleague",
     "question": "İstanbul Zeytinburnu'ndaki, uzun yıllar Efes ve Fenerbahçe'nin Avrupa maçlarına ev sahipliği yapan ve 2018'de yıkılan tarihi salon.",
     "answer": "Abdi İpekçi",
     "alternates": [
@@ -97,6 +106,7 @@
     "id": "a10",
     "letter": "A",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid ile 2015 ve 2018'de şampiyon olan Meksikalı pivot Gustavo ___.",
     "answer": "Gustavo Ayón",
     "alternates": [
@@ -107,6 +117,7 @@
     "id": "a11",
     "letter": "A",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid'in 2023 şampiyon kadrosunda yer alan İspanyol kanat oyuncusu Alberto ___.",
     "answer": "Alberto Abalde",
     "alternates": [
@@ -117,6 +128,7 @@
     "id": "b1",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2002'de Panathinaikos, 2003'te Barcelona formasıyla üst üste iki kez Final Four MVP'si seçilen Sırp efsane.",
     "answer": "Dejan Bodiroga",
     "alternates": [
@@ -127,6 +139,7 @@
     "id": "b2",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2003'te kendi evinde, 2010'da Paris'te EuroLeague'i kazanan İspanyol kulübü.",
     "answer": "Barcelona",
     "alternates": [
@@ -139,6 +152,7 @@
     "id": "b3",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2018 ve 2022 Final Four'larına ev sahipliği yapan şehir.",
     "answer": "Belgrad",
     "alternates": [
@@ -150,6 +164,7 @@
     "id": "b4",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2009, 2016 ve 2024 Final Four'larının oynandığı Alman başkenti.",
     "answer": "Berlin",
     "alternates": []
@@ -158,6 +173,7 @@
     "id": "b5",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos'u 2013'te Londra'da şampiyonluğa taşıyan Yunan başantrenör.",
     "answer": "Georgios Bartzokas",
     "alternates": [
@@ -168,6 +184,7 @@
     "id": "b6",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Vitoria-Gasteiz kulübünün bugünkü adı.",
     "answer": "Baskonia",
     "alternates": [
@@ -178,6 +195,7 @@
     "id": "b7",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2015 EuroLeague sezon MVP'si seçilen Fenerbahçe'nin Sırp forveti Nemanja ___.",
     "answer": "Nemanja Bjelica",
     "alternates": [
@@ -188,6 +206,7 @@
     "id": "b8",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi Tel Aviv'i 2014'te şampiyon yapıp ardından Cleveland Cavaliers'ı çalıştıran Amerikan-İsrailli koç David ___.",
     "answer": "David Blatt",
     "alternates": [
@@ -198,6 +217,7 @@
     "id": "b9",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Fenerbahçe ile 2017'de şampiyon olup ardından NBA'de Sacramento Kings'e giden Sırp guard Bogdan ___.",
     "answer": "Bogdan Bogdanović",
     "alternates": [
@@ -208,6 +228,7 @@
     "id": "b10",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos, Real Madrid ve Baskonia formaları giymiş iri yapılı Yunan pivot Ioannis ___.",
     "answer": "Ioannis Bourousis",
     "alternates": [
@@ -219,6 +240,7 @@
     "id": "b11",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Guadeloupe doğumlu, Anadolu Efes'in 2021 ve 2022 şampiyonluklarında oynayan Fransız şutör Rodrigue ___.",
     "answer": "Rodrigue Beaubois",
     "alternates": [
@@ -229,6 +251,7 @@
     "id": "b12",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Fenerbahçe'nin 2025 şampiyonluğunda oynayan, Bosna doğumlu milli kanat oyuncusu Tarık ___.",
     "answer": "Tarık Biberović",
     "alternates": [
@@ -239,6 +262,7 @@
     "id": "b13",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Anadolu Efes'in 2021 ve 2022 şampiyonluklarında kadroda yer alan Türk oyun kurucu Doğuş ___.",
     "answer": "Doğuş Balbay",
     "alternates": [
@@ -249,6 +273,7 @@
     "id": "b14",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2000'den 2022'ye kadar EuroLeague'in CEO'luğunu yapan İspanyol yönetici Jordi ___.",
     "answer": "Jordi Bertomeu",
     "alternates": [
@@ -259,6 +284,7 @@
     "id": "b15",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos'un Pire'deki iç saha salonu (kısaca SEF).",
     "answer": "Barış ve Dostluk Stadı",
     "alternates": [
@@ -271,6 +297,7 @@
     "id": "b16",
     "letter": "B",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Barcelona'nın iç saha salonu Palau ___.",
     "answer": "Blaugrana",
     "alternates": [
@@ -281,6 +308,7 @@
     "id": "c1",
     "letter": "C",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2006, 2008, 2016 ve 2019'da EuroLeague şampiyonu olan Rus kulübü.",
     "answer": "CSKA Moskova",
     "alternates": [
@@ -293,6 +321,7 @@
     "id": "c2",
     "letter": "C",
     "rule": "starts",
+    "category": "euroleague",
     "question": "CSKA Moskova'nın 2019 şampiyonluğunda Final Four MVP'si seçilen Amerikalı forvet.",
     "answer": "Will Clyburn",
     "alternates": [
@@ -303,6 +332,7 @@
     "id": "c3",
     "letter": "C",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid'de 'Facu' lakabıyla bilinen, NBA'de Denver Nuggets'ta da oynamış Arjantinli oyun kurucu.",
     "answer": "Facundo Campazzo",
     "alternates": [
@@ -314,6 +344,7 @@
     "id": "c4",
     "letter": "C",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Panathinaikos ve Barcelona'da oynamış, pas becerisiyle bilinen Amerikan-Yunan oyun kurucu Nick ___.",
     "answer": "Nick Calathes",
     "alternates": [
@@ -325,6 +356,7 @@
     "id": "c5",
     "letter": "C",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid ile 2018 ve 2023'te şampiyon olan Fransız guard Fabien ___.",
     "answer": "Fabien Causeur",
     "alternates": [
@@ -335,6 +367,7 @@
     "id": "c6",
     "letter": "C",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid'de uzun yıllar oynayan, 2015 şampiyonu Amerikalı şutör Jaycee ___.",
     "answer": "Jaycee Carroll",
     "alternates": [
@@ -345,6 +378,7 @@
     "id": "c7",
     "letter": "C",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi Tel Aviv'de yetişip NBA'de oynayan ilk İsrailli basketbolcu Omri ___.",
     "answer": "Omri Casspi",
     "alternates": [
@@ -355,6 +389,7 @@
     "id": "c8",
     "letter": "C",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2000'lerde EuroLeague'de mücadele eden, Hırvatistan'ın başkenti Zagreb'in köklü kulübü.",
     "answer": "Cibona",
     "alternates": [
@@ -366,6 +401,7 @@
     "id": "c9",
     "letter": "C",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Tau Cerámica'nın ardından Vitoria kulübünün kullandığı, bir bankanın adını taşıyan sponsor ismi.",
     "answer": "Caja Laboral",
     "alternates": [
@@ -376,6 +412,7 @@
     "id": "d1",
     "letter": "D",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Panathinaikos'un 2007 ve 2011 Final Four MVP'si olan efsane Yunan oyun kurucu.",
     "answer": "Dimitris Diamantidis",
     "alternates": [
@@ -386,6 +423,7 @@
     "id": "d2",
     "letter": "D",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2018'de Real Madrid formasıyla hem sezon MVP'si hem Final Four MVP'si seçilen Sloven yıldız.",
     "answer": "Luka Dončić",
     "alternates": [
@@ -397,6 +435,7 @@
     "id": "d3",
     "letter": "D",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2016'da CSKA Moskova ile hem sezonun hem Final Four'un MVP'si seçilen Fransız guard.",
     "answer": "Nando De Colo",
     "alternates": [
@@ -408,6 +447,7 @@
     "id": "d4",
     "letter": "D",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2018'de EuroCup'ı kazanan, Maslak'taki okuluyla da bilinen İstanbul kulübü.",
     "answer": "Darüşşafaka",
     "alternates": [
@@ -419,6 +459,7 @@
     "id": "d5",
     "letter": "D",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2025-26 sezonunda EuroLeague'e katılan Birleşik Arap Emirlikleri kulübü.",
     "answer": "Dubai Basketball",
     "alternates": [
@@ -429,6 +470,7 @@
     "id": "d6",
     "letter": "D",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Fenerbahçe ile 2017'de şampiyon olan, 'Gigi' lakaplı İtalyan forvet.",
     "answer": "Luigi Datome",
     "alternates": [
@@ -440,6 +482,7 @@
     "id": "d7",
     "letter": "D",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Türk vatandaşlığı alıp Ali Muhammed adını kullanan, Fenerbahçe'nin 2017 şampiyonluğundaki Amerikalı oyun kurucu Bobby ___.",
     "answer": "Bobby Dixon",
     "alternates": [
@@ -451,6 +494,7 @@
     "id": "d8",
     "letter": "D",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos ve Anadolu Efes formaları giyen, savunmasıyla ödüller kazanmış Amerikalı pivot Bryant ___.",
     "answer": "Bryant Dunston",
     "alternates": [
@@ -461,6 +505,7 @@
     "id": "d9",
     "letter": "D",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Fenerbahçe'nin 2017 şampiyon kadrosunda yer alan Türk pivot Ahmet ___.",
     "answer": "Ahmet Düverioğlu",
     "alternates": [
@@ -471,6 +516,7 @@
     "id": "d10",
     "letter": "D",
     "rule": "starts",
+    "category": "general",
     "question": "2010 Dünya Şampiyonası'nda İstanbul'da gümüş madalya kazanan Türkiye milli takımının lakabı: 12 ___.",
     "answer": "Dev Adam",
     "alternates": [
@@ -482,6 +528,7 @@
     "id": "e1",
     "letter": "E",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Anadolu Efes kulübünün 2011 yılına kadar kullandığı isim.",
     "answer": "Efes Pilsen",
     "alternates": []
@@ -490,6 +537,7 @@
     "id": "e2",
     "letter": "E",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2025 Final Four'una ev sahipliği yapan Abu Dhabi'deki salon.",
     "answer": "Etihad Arena",
     "alternates": [
@@ -500,6 +548,7 @@
     "id": "e3",
     "letter": "E",
     "rule": "starts",
+    "category": "euroleague",
     "question": "NBA'de Boston Celtics'te de oynamış, Fenerbahçe ve Anadolu Efes formaları giymiş Türk pivot Semih ___.",
     "answer": "Semih Erden",
     "alternates": [
@@ -510,6 +559,7 @@
     "id": "e4",
     "letter": "E",
     "rule": "starts",
+    "category": "euroleague",
     "question": "EuroLeague'in bir alt seviyesindeki kardeş Avrupa kulüpler turnuvası.",
     "answer": "EuroCup",
     "alternates": [
@@ -521,6 +571,7 @@
     "id": "e5",
     "letter": "E",
     "rule": "contains",
+    "category": "euroleague",
     "question": "EuroLeague'in 2010'dan beri isim sponsoru olan Türk havayolu şirketi.",
     "answer": "Turkish Airlines",
     "alternates": [
@@ -532,6 +583,7 @@
     "id": "e6",
     "letter": "E",
     "rule": "starts",
+    "category": "general",
     "question": "Kamerunlu pivot; 2023'te Philadelphia 76ers formasıyla NBA MVP'si seçilen Joel ___.",
     "answer": "Joel Embiid",
     "alternates": [
@@ -542,6 +594,7 @@
     "id": "e7",
     "letter": "E",
     "rule": "starts",
+    "category": "general",
     "question": "'Dr. J' lakaplı, smaçlarıyla efsaneleşen forvet Julius ___.",
     "answer": "Julius Erving",
     "alternates": [
@@ -553,6 +606,7 @@
     "id": "e8",
     "letter": "E",
     "rule": "starts",
+    "category": "general",
     "question": "New York Knicks'in 1985 draftında 1 numaradan seçtiği efsane Jamaikalı pivot Patrick ___.",
     "answer": "Patrick Ewing",
     "alternates": [
@@ -563,6 +617,7 @@
     "id": "e9",
     "letter": "E",
     "rule": "starts",
+    "category": "general",
     "question": "FIBA Avrupa Şampiyonası'nın adı.",
     "answer": "EuroBasket",
     "alternates": [
@@ -574,6 +629,7 @@
     "id": "f1",
     "letter": "F",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2017'de İstanbul'da, 2025'te Abu Dhabi'de EuroLeague şampiyonu olan Türk kulübü.",
     "answer": "Fenerbahçe",
     "alternates": [
@@ -585,6 +641,7 @@
     "id": "f2",
     "letter": "F",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid ile 2015, 2018 ve 2023'te şampiyon olan, Palma de Mallorca doğumlu İspanyol kanat oyuncusu Rudy ___.",
     "answer": "Rudy Fernández",
     "alternates": [
@@ -596,6 +653,7 @@
     "id": "f3",
     "letter": "F",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Baskonia'nın Vitoria'daki iç saha salonu; 2019 Final Four'u da burada oynandı.",
     "answer": "Fernando Buesa Arena",
     "alternates": [
@@ -607,6 +665,7 @@
     "id": "f4",
     "letter": "F",
     "rule": "starts",
+    "category": "euroleague",
     "question": "EuroLeague şampiyonunu belirleyen, dört takımın katıldığı sezon sonu turnuvası.",
     "answer": "Final Four",
     "alternates": [
@@ -618,6 +677,7 @@
     "id": "f5",
     "letter": "F",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2004 finalinde Maccabi'ye kaybeden, 'Skipper' sponsorlu Bologna kulübü.",
     "answer": "Fortitudo Bologna",
     "alternates": [
@@ -629,6 +689,7 @@
     "id": "f6",
     "letter": "F",
     "rule": "starts",
+    "category": "euroleague",
     "question": "NBA kariyerinin ardından 2024'te Olympiacos'a imza atan Fransız şutör Evan ___.",
     "answer": "Evan Fournier",
     "alternates": [
@@ -639,6 +700,7 @@
     "id": "f7",
     "letter": "F",
     "rule": "starts",
+    "category": "general",
     "question": "Dünya basketbolunun yönetim kurulu olan Uluslararası Basketbol Federasyonu'nun kısaltması.",
     "answer": "FIBA",
     "alternates": []
@@ -647,6 +709,7 @@
     "id": "f8",
     "letter": "F",
     "rule": "starts",
+    "category": "general",
     "question": "2004 playofflarında Spurs'e karşı 0.4 saniyede attığı basketle ünlenen Lakers guardı Derek ___.",
     "answer": "Derek Fisher",
     "alternates": [
@@ -657,6 +720,7 @@
     "id": "g1",
     "letter": "G",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2001'de Kinder Bologna ile EuroLeague şampiyonu olup finallerin MVP'si seçilen, sonra San Antonio Spurs'te efsaneleşen Arjantinli.",
     "answer": "Manu Ginóbili",
     "alternates": [
@@ -668,6 +732,7 @@
     "id": "g2",
     "letter": "G",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi Tel Aviv'i 2004 ve 2005'te üst üste şampiyonluğa taşıyan İsrailli başantrenör.",
     "answer": "Pini Gershon",
     "alternates": [
@@ -678,6 +743,7 @@
     "id": "g3",
     "letter": "G",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Ergin Ataman yönetiminde 2016'da EuroCup'ı kazanan Türk kulübü.",
     "answer": "Galatasaray",
     "alternates": [
@@ -688,6 +754,7 @@
     "id": "g4",
     "letter": "G",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Panathinaikos'un 2024 şampiyonluğunda oynayan, NBA'de Knicks ve Bulls formaları giymiş Amerikalı guard Jerian ___.",
     "answer": "Jerian Grant",
     "alternates": [
@@ -698,6 +765,7 @@
     "id": "g5",
     "letter": "G",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Panathinaikos'un 2024 şampiyon kadrosunda yer alan Litvanyalı şutör Marius ___.",
     "answer": "Marius Grigonis",
     "alternates": [
@@ -708,6 +776,7 @@
     "id": "g6",
     "letter": "G",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Crvena Zvezda ve Fenerbahçe'de oynamış, NBA'de Memphis Grizzlies'e de giden Sırp şutör Marko ___.",
     "answer": "Marko Gudurić",
     "alternates": [
@@ -718,6 +787,7 @@
     "id": "g7",
     "letter": "G",
     "rule": "starts",
+    "category": "general",
     "question": "Milwaukee Bucks'ı 2021'de NBA şampiyonluğuna taşıyan 'Greek Freak' lakaplı Yunan yıldız.",
     "answer": "Giannis Antetokounmpo",
     "alternates": [
@@ -730,6 +800,7 @@
     "id": "g8",
     "letter": "G",
     "rule": "starts",
+    "category": "general",
     "question": "NBA'de dört kez Yılın Savunmacısı seçilen Fransız pivot Rudy ___.",
     "answer": "Rudy Gobert",
     "alternates": [
@@ -740,6 +811,7 @@
     "id": "h1",
     "letter": "H",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Fenerbahçe'nin 2025 şampiyonluğunda Final Four MVP'si seçilen Amerikalı forvet.",
     "answer": "Nigel Hayes-Davis",
     "alternates": [
@@ -752,6 +824,7 @@
     "id": "h2",
     "letter": "H",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos ile 2012 ve 2013'te, CSKA Moskova ile 2016 ve 2019'da şampiyon olan, kısa boyuna rağmen pivot oynayan Amerikalı.",
     "answer": "Kyle Hines",
     "alternates": [
@@ -762,6 +835,7 @@
     "id": "h3",
     "letter": "H",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid'in Hırvat forveti; NBA'de Orlando Magic'te de oynamış Mario ___.",
     "answer": "Mario Hezonja",
     "alternates": [
@@ -772,6 +846,7 @@
     "id": "h4",
     "letter": "H",
     "rule": "starts",
+    "category": "euroleague",
     "question": "CSKA Moskova ile 2016 ve 2019'da şampiyon olan, kritik şutlarıyla ünlü Amerikalı guard Cory ___.",
     "answer": "Cory Higgins",
     "alternates": [
@@ -782,6 +857,7 @@
     "id": "h5",
     "letter": "H",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Panathinaikos'un 2024 şampiyon kadrosunda yer alan, kardeşi de basketbolcu olan İspanyol forvet Juancho ___.",
     "answer": "Juancho Hernangómez",
     "alternates": [
@@ -792,6 +868,7 @@
     "id": "h6",
     "letter": "H",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2025-26'da EuroLeague'e katılan, Maccabi'nin şehir rakibi Tel Aviv kulübü.",
     "answer": "Hapoel Tel Aviv",
     "alternates": [
@@ -802,6 +879,7 @@
     "id": "h7",
     "letter": "H",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Anadolu Efes, Barcelona ve Real Madrid formaları giymiş Fransız oyun kurucu Thomas ___.",
     "answer": "Thomas Heurtel",
     "alternates": [
@@ -812,6 +890,7 @@
     "id": "h8",
     "letter": "H",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Barcelona ve Baskonia'da oynamış, sonra Tenerife'de efsaneleşen Brezilyalı oyun kurucu Marcelinho ___.",
     "answer": "Marcelinho Huertas",
     "alternates": [
@@ -822,6 +901,7 @@
     "id": "h9",
     "letter": "H",
     "rule": "starts",
+    "category": "general",
     "question": "2008'de NBA'de 'En Çok Gelişen Oyuncu' ödülünü kazanan Türk forvet.",
     "answer": "Hidayet Türkoğlu",
     "alternates": [
@@ -834,6 +914,7 @@
     "id": "i1",
     "letter": "I",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2012 ve 2017 Final Four'larına ev sahipliği yapan şehir.",
     "answer": "İstanbul",
     "alternates": [
@@ -844,6 +925,7 @@
     "id": "i2",
     "letter": "I",
     "rule": "starts",
+    "category": "euroleague",
     "question": "CSKA Moskova'yı 2016 ve 2019'da EuroLeague şampiyonu yapan Yunan başantrenör.",
     "answer": "Dimitris Itoudis",
     "alternates": [
@@ -854,6 +936,7 @@
     "id": "i3",
     "letter": "I",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos'u 2012'de İstanbul'da şampiyonluğa taşıyan efsane Sırp başantrenör Dušan ___.",
     "answer": "Dušan Ivković",
     "alternates": [
@@ -865,6 +948,7 @@
     "id": "i4",
     "letter": "I",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Baskonia'yı farklı dönemlerde çalıştıran, sert disipliniyle ünlü Karadağlı başantrenör Duško ___.",
     "answer": "Duško Ivanović",
     "alternates": [
@@ -875,6 +959,7 @@
     "id": "i5",
     "letter": "I",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Virtus Bologna ve Olimpia Milano hangi ülkenin kulüpleridir?",
     "answer": "İtalya",
     "alternates": [
@@ -886,6 +971,7 @@
     "id": "i6",
     "letter": "I",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi Tel Aviv ve Hapoel Tel Aviv hangi ülkenin kulüpleridir?",
     "answer": "İsrail",
     "alternates": [
@@ -897,6 +983,7 @@
     "id": "i7",
     "letter": "I",
     "rule": "starts",
+    "category": "general",
     "question": "2001 NBA MVP'si, 'The Answer' lakaplı Philadelphia 76ers efsanesi Allen ___.",
     "answer": "Allen Iverson",
     "alternates": [
@@ -907,6 +994,7 @@
     "id": "i8",
     "letter": "I",
     "rule": "starts",
+    "category": "general",
     "question": "2016 NBA Finalleri'nin 7. maçında Cleveland'a şampiyonluğu getiren üçlüğü atan Kyrie ___.",
     "answer": "Kyrie Irving",
     "alternates": [
@@ -918,6 +1006,7 @@
     "id": "j1",
     "letter": "J",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Oyuncu olarak Barcelona, Maccabi ve Panathinaikos ile şampiyon olan; koç olarak Fenerbahçe'ye 2025'te kupayı kazandıran Litvanyalı.",
     "answer": "Šarūnas Jasikevičius",
     "alternates": [
@@ -930,6 +1019,7 @@
     "id": "j2",
     "letter": "J",
     "rule": "starts",
+    "category": "euroleague",
     "question": "AS Monaco'yu 2025'te Final Four'da finale taşıyan Amerikalı yıldız guard Mike ___.",
     "answer": "Mike James",
     "alternates": [
@@ -940,6 +1030,7 @@
     "id": "j3",
     "letter": "J",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Žalgiris'ten Barcelona'ya transfer olan genç Litvanyalı oyun kurucu Rokas ___.",
     "answer": "Rokas Jokubaitis",
     "alternates": [
@@ -950,6 +1041,7 @@
     "id": "j4",
     "letter": "J",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Ricky Rubio ve Rudy Fernández'in yetiştiği Badalona kulübü.",
     "answer": "Joventut",
     "alternates": [
@@ -961,6 +1053,7 @@
     "id": "j5",
     "letter": "J",
     "rule": "starts",
+    "category": "general",
     "question": "Chicago Bulls ile altı NBA şampiyonluğu kazanıp altısında da Finaller MVP'si olan efsane Michael ___.",
     "answer": "Michael Jordan",
     "alternates": [
@@ -971,6 +1064,7 @@
     "id": "j6",
     "letter": "J",
     "rule": "starts",
+    "category": "general",
     "question": "2023'te Kareem Abdul-Jabbar'ı geçerek NBA tarihinin en skorer oyuncusu olan LeBron ___.",
     "answer": "LeBron James",
     "alternates": [
@@ -982,6 +1076,7 @@
     "id": "j7",
     "letter": "J",
     "rule": "starts",
+    "category": "general",
     "question": "Denver Nuggets'ı 2023'te ilk NBA şampiyonluğuna taşıyan, üç kez MVP seçilen Sırp pivot Nikola ___.",
     "answer": "Nikola Jokić",
     "alternates": [
@@ -993,6 +1088,7 @@
     "id": "j8",
     "letter": "J",
     "rule": "starts",
+    "category": "general",
     "question": "Maçın başında hakemin topu iki oyuncu arasında havaya atmasıyla yapılan başlangıç (İngilizce).",
     "answer": "Jump ball",
     "alternates": [
@@ -1004,6 +1100,7 @@
     "id": "j9",
     "letter": "J",
     "rule": "starts",
+    "category": "general",
     "question": "1980'lerde Lakers'ın 'Showtime' dönemini yöneten efsane oyun kurucu Magic ___.",
     "answer": "Magic Johnson",
     "alternates": [
@@ -1015,6 +1112,7 @@
     "id": "k1",
     "letter": "K",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2023 Final Four'unun düzenlendiği, Žalgiris'in şehri olan Litvanya kenti.",
     "answer": "Kaunas",
     "alternates": []
@@ -1023,6 +1121,7 @@
     "id": "k2",
     "letter": "K",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Anadolu Efes'in ilk şampiyonluğunu kazandığı, pandemi nedeniyle seyircisiz oynanan 2021 Final Four'unun Alman şehri.",
     "answer": "Köln",
     "alternates": [
@@ -1035,6 +1134,7 @@
     "id": "k3",
     "letter": "K",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2012'de CSKA Moskova formasıyla EuroLeague sezon MVP'si seçilen, NBA'de Utah Jazz'da oynamış Rus forvet.",
     "answer": "Andrei Kirilenko",
     "alternates": [
@@ -1046,6 +1146,7 @@
     "id": "k4",
     "letter": "K",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Fenerbahçe ile 2017'de şampiyon olan Sırp kanat oyuncusu Nikola ___.",
     "answer": "Nikola Kalinić",
     "alternates": [
@@ -1056,6 +1157,7 @@
     "id": "k5",
     "letter": "K",
     "rule": "starts",
+    "category": "euroleague",
     "question": "UNICS kulübünün bulunduğu Rus şehri.",
     "answer": "Kazan",
     "alternates": []
@@ -1064,6 +1166,7 @@
     "id": "k6",
     "letter": "K",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Moskova yakınlarındaki, Alexey Shved'in yıldızı olduğu Rus kulübü.",
     "answer": "Khimki",
     "alternates": [
@@ -1074,6 +1177,7 @@
     "id": "k7",
     "letter": "K",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Virtus Bologna'nın 2001 şampiyonluğunda formasında yazan çikolata markası sponsor.",
     "answer": "Kinder",
     "alternates": [
@@ -1084,6 +1188,7 @@
     "id": "k8",
     "letter": "K",
     "rule": "starts",
+    "category": "general",
     "question": "2006'da Toronto'ya karşı tek maçta 81 sayı atan Lakers efsanesi.",
     "answer": "Kobe Bryant",
     "alternates": [
@@ -1096,6 +1201,7 @@
     "id": "l1",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2023 finalinde Olympiacos'a karşı son saniyelerde galibiyet basketini atan Real Madrid kaptanı Sergio ___.",
     "answer": "Sergio Llull",
     "alternates": [
@@ -1107,6 +1213,7 @@
     "id": "l2",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid'i 2015 ve 2018'de EuroLeague şampiyonluğuna taşıyan Baskli başantrenör.",
     "answer": "Pablo Laso",
     "alternates": [
@@ -1117,6 +1224,7 @@
     "id": "l3",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "CSKA Moskova'nın 2008 şampiyonluğunda Final Four MVP'si seçilen Amerikalı şutör Trajan ___.",
     "answer": "Trajan Langdon",
     "alternates": [
@@ -1127,6 +1235,7 @@
     "id": "l4",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos'un Real Madrid'i yenerek üst üste ikinci kupasını kazandığı 2013 Final Four'u hangi şehirde oynandı?",
     "answer": "Londra",
     "alternates": [
@@ -1137,6 +1246,7 @@
     "id": "l5",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Anadolu Efes'in yıldızı olan, Türkiye milli takımında da oynayan Amerikalı oyun kurucu Shane ___.",
     "answer": "Shane Larkin",
     "alternates": [
@@ -1147,6 +1257,7 @@
     "id": "l6",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Panathinaikos'un 2024 şampiyon kadrosundaki Fransız pivot Mathias ___.",
     "answer": "Mathias Lessort",
     "alternates": [
@@ -1157,6 +1268,7 @@
     "id": "l7",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Barcelona ile 2010'da şampiyon olan Sloven oyun kurucu Jaka ___.",
     "answer": "Jaka Lakovič",
     "alternates": [
@@ -1167,6 +1279,7 @@
     "id": "l8",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "CSKA, Fenerbahçe ve Laboral Kutxa ile birlikte 2016 Final Four'una kalan Krasnodar kulübü.",
     "answer": "Lokomotiv Kuban",
     "alternates": [
@@ -1178,6 +1291,7 @@
     "id": "l9",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2016 Final Four'una kalan Vitoria kulübünün o dönemki sponsor adı.",
     "answer": "Laboral Kutxa",
     "alternates": [
@@ -1189,6 +1303,7 @@
     "id": "l10",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos'un 2012 şampiyonluğunda oynayan Amerikalı guard Acie ___.",
     "answer": "Acie Law",
     "alternates": [
@@ -1199,6 +1314,7 @@
     "id": "l11",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2021 Final Four'unun oynandığı Köln'deki salon.",
     "answer": "Lanxess Arena",
     "alternates": [
@@ -1209,6 +1325,7 @@
     "id": "l12",
     "letter": "L",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Vilnius'un EuroLeague'de de oynamış köklü kulübü.",
     "answer": "Lietuvos Rytas",
     "alternates": [
@@ -1219,6 +1336,7 @@
     "id": "m1",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Anadolu Efes'in 2021 ve 2022'de üst üste Final Four MVP'si seçilen Sırp oyun kurucusu.",
     "answer": "Vasilije Micić",
     "alternates": [
@@ -1230,6 +1348,7 @@
     "id": "m2",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2004, 2005 ve 2014'te EuroLeague'i kazanan İsrail kulübü.",
     "answer": "Maccabi Tel Aviv",
     "alternates": [
@@ -1241,6 +1360,7 @@
     "id": "m3",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "CSKA Moskova'yı 2006 ve 2008'de şampiyonluğa taşıyan İtalyan başantrenör Ettore ___.",
     "answer": "Ettore Messina",
     "alternates": [
@@ -1251,6 +1371,7 @@
     "id": "m4",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2022'de Barcelona formasıyla EuroLeague sezon MVP'si seçilen, Karadağ doğumlu İspanyol forvet.",
     "answer": "Nikola Mirotić",
     "alternates": [
@@ -1261,6 +1382,7 @@
     "id": "m5",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi'nin uzatmada Real Madrid'i yendiği 2014 Final Four'u hangi İtalyan şehrinde oynandı?",
     "answer": "Milano",
     "alternates": [
@@ -1272,6 +1394,7 @@
     "id": "m6",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi Tel Aviv'in Tau Cerámica'yı yenerek şampiyon olduğu 2005 Final Four'u hangi şehirde oynandı?",
     "answer": "Moskova",
     "alternates": [
@@ -1283,6 +1406,7 @@
     "id": "m7",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid'i 2023'te EuroLeague şampiyonluğuna taşıyan İspanyol başantrenör Chus ___.",
     "answer": "Chus Mateo",
     "alternates": [
@@ -1293,6 +1417,7 @@
     "id": "m8",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2025 finalinde Fenerbahçe'ye kaybeden Fransız ligi kulübü.",
     "answer": "Monaco",
     "alternates": [
@@ -1303,6 +1428,7 @@
     "id": "m9",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "CSKA'nın 2008'de, Real Madrid'in 2015'te şampiyon olduğu Final Four'lara ev sahipliği yapan başkent.",
     "answer": "Madrid",
     "alternates": []
@@ -1311,6 +1437,7 @@
     "id": "m10",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "CSKA Moskova'nın iç saha salonu.",
     "answer": "Megasport",
     "alternates": [
@@ -1321,6 +1448,7 @@
     "id": "m11",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos ve CSKA'da forma giymiş Sırp pivot Nikola ___.",
     "answer": "Nikola Milutinov",
     "alternates": [
@@ -1331,6 +1459,7 @@
     "id": "m12",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Fenerbahçe ve Olimpia Milano'da oynamış, NBA'de New Orleans'a da giden İtalyan uzun Nicolò ___.",
     "answer": "Nicolò Melli",
     "alternates": [
@@ -1341,6 +1470,7 @@
     "id": "m13",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi Tel Aviv'in iç saha salonunun bugünkü sponsor adı.",
     "answer": "Menora Mivtachim Arena",
     "alternates": [
@@ -1352,6 +1482,7 @@
     "id": "m14",
     "letter": "M",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi'nin uzatmada kazandığı 2014 Final Four'unun oynandığı Milano salonu.",
     "answer": "Mediolanum Forum",
     "alternates": [
@@ -1363,6 +1494,7 @@
     "id": "n1",
     "letter": "N",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Barcelona'nın 'La Bomba' lakaplı efsane guardı, 2010 Final Four MVP'si Juan Carlos ___.",
     "answer": "Juan Carlos Navarro",
     "alternates": [
@@ -1374,6 +1506,7 @@
     "id": "n2",
     "letter": "N",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2015'te Real Madrid ile Final Four MVP'si seçilen, 'El Chapu' lakaplı Arjantinli forvet.",
     "answer": "Andrés Nocioni",
     "alternates": [
@@ -1385,6 +1518,7 @@
     "id": "n3",
     "letter": "N",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Panathinaikos'u 2024'te şampiyonluğa taşıyıp Final Four MVP'si seçilen Amerikalı guard Kendrick ___.",
     "answer": "Kendrick Nunn",
     "alternates": [
@@ -1395,6 +1529,7 @@
     "id": "n4",
     "letter": "N",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi Tel Aviv ile 2004 ve 2005'te şampiyon olan Hırvat uzun Nikola ___.",
     "answer": "Nikola Vujčić",
     "alternates": [
@@ -1405,6 +1540,7 @@
     "id": "n5",
     "letter": "N",
     "rule": "starts",
+    "category": "general",
     "question": "Dallas Mavericks'i 2011'de NBA şampiyonluğuna taşıyan Alman efsane Dirk ___.",
     "answer": "Dirk Nowitzki",
     "alternates": [
@@ -1416,6 +1552,7 @@
     "id": "n6",
     "letter": "N",
     "rule": "starts",
+    "category": "general",
     "question": "Basketbolu 1891'de icat eden Kanadalı beden eğitimi öğretmeni James ___.",
     "answer": "James Naismith",
     "alternates": [
@@ -1426,6 +1563,7 @@
     "id": "n7",
     "letter": "N",
     "rule": "starts",
+    "category": "general",
     "question": "Phoenix Suns formasıyla 2005 ve 2006'da üst üste NBA MVP'si seçilen Kanadalı oyun kurucu Steve ___.",
     "answer": "Steve Nash",
     "alternates": [
@@ -1436,6 +1574,7 @@
     "id": "n8",
     "letter": "N",
     "rule": "starts",
+    "category": "general",
     "question": "Nikola Jokić'in takımı; 2023'te ilk NBA şampiyonluğunu kazanan Denver ___.",
     "answer": "Denver Nuggets",
     "alternates": [
@@ -1447,6 +1586,7 @@
     "id": "o1",
     "letter": "O",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2012 ve 2013'te üst üste EuroLeague şampiyonu olan Pire kulübü.",
     "answer": "Olympiacos",
     "alternates": [
@@ -1458,6 +1598,7 @@
     "id": "o2",
     "letter": "O",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Panathinaikos ve Fenerbahçe ile şampiyonluklar kazanan, 9 EuroLeague kupasıyla rekor sahibi Sırp başantrenör Željko ___.",
     "answer": "Željko Obradović",
     "alternates": [
@@ -1469,6 +1610,7 @@
     "id": "o3",
     "letter": "O",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Armani'nin sahibi olduğu, 2021'de Final Four'a kalan İtalyan kulübü.",
     "answer": "Olimpia Milano",
     "alternates": [
@@ -1481,6 +1623,7 @@
     "id": "o4",
     "letter": "O",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Panathinaikos'un iç saha salonu olan Atina Olimpiyat Salonu'nun kısa adı.",
     "answer": "OAKA",
     "alternates": [
@@ -1491,6 +1634,7 @@
     "id": "o5",
     "letter": "O",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Anadolu Efes'te yetişip NBA'de Cleveland Cavaliers'ta oynayan, Makedonya doğumlu Türk forvet Cedi ___.",
     "answer": "Cedi Osman",
     "alternates": [
@@ -1501,6 +1645,7 @@
     "id": "o6",
     "letter": "O",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos'un Real Madrid'i yendiği 2013 Final Four'unun oynandığı Londra salonu.",
     "answer": "O2 Arena",
     "alternates": [
@@ -1511,6 +1656,7 @@
     "id": "o7",
     "letter": "O",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Monaco'nun 2025 Final Four'unda oynayan Fransız oyun kurucu Elie ___.",
     "answer": "Elie Okobo",
     "alternates": [
@@ -1521,6 +1667,7 @@
     "id": "o8",
     "letter": "O",
     "rule": "starts",
+    "category": "general",
     "question": "Detroit Pistons ile 2004'te NBA şampiyonu olan ilk Türk basketbolcu Mehmet ___.",
     "answer": "Mehmet Okur",
     "alternates": [
@@ -1532,6 +1679,7 @@
     "id": "o9",
     "letter": "O",
     "rule": "starts",
+    "category": "general",
     "question": "Houston Rockets'ı 1994 ve 1995'te şampiyonluğa taşıyan Nijerya doğumlu pivot Hakeem ___.",
     "answer": "Hakeem Olajuwon",
     "alternates": [
@@ -1544,6 +1692,7 @@
     "id": "p1",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2024'te Berlin'de Real Madrid'i yenerek EuroLeague şampiyonu olan Atina kulübü.",
     "answer": "Panathinaikos",
     "alternates": [
@@ -1555,6 +1704,7 @@
     "id": "p2",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2006'da CSKA Moskova ile Final Four MVP'si seçilen Yunan oyun kurucu Theodoros ___.",
     "answer": "Theo Papaloukas",
     "alternates": [
@@ -1565,6 +1715,7 @@
     "id": "p3",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2012 finalinde CSKA'ya karşı son saniye basketiyle Olympiacos'a kupayı getiren Yunan forvet Georgios ___.",
     "answer": "Georgios Printezis",
     "alternates": [
@@ -1575,6 +1726,7 @@
     "id": "p4",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "CSKA Moskova'nın Maccabi'yi yenerek şampiyon olduğu 2006 Final Four'u hangi şehirde oynandı?",
     "answer": "Prag",
     "alternates": [
@@ -1586,6 +1738,7 @@
     "id": "p5",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi Tel Aviv formasıyla 2004 Final Four MVP'si seçilen, NBA'de Toronto'da da oynamış Amerikalı Anthony ___.",
     "answer": "Anthony Parker",
     "alternates": [
@@ -1596,6 +1749,7 @@
     "id": "p6",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Belgrad'ın siyah-beyazlı kulübü; 2010'da Paris'teki Final Four'a kalmıştı.",
     "answer": "Partizan",
     "alternates": [
@@ -1607,6 +1761,7 @@
     "id": "p7",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos ile 2012 ve 2013'te şampiyon olan, sonra Barcelona'ya da giden Yunan forvet Kostas ___.",
     "answer": "Kostas Papanikolaou",
     "alternates": [
@@ -1617,6 +1772,7 @@
     "id": "p8",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Barcelona'yı 2003'te EuroLeague şampiyonu yapan Sırp başantrenör Svetislav ___.",
     "answer": "Svetislav Pešić",
     "alternates": [
@@ -1627,6 +1783,7 @@
     "id": "p9",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Tau Cerámica ve Real Madrid'de oynayan Arjantinli oyun kurucu Pablo ___.",
     "answer": "Pablo Prigioni",
     "alternates": [
@@ -1637,6 +1794,7 @@
     "id": "p10",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2024-25'te EuroLeague'e katılan Fransa başkenti kulübü.",
     "answer": "Paris Basketball",
     "alternates": [
@@ -1647,6 +1805,7 @@
     "id": "p11",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos'un bağlı olduğu, Atina'nın liman kenti.",
     "answer": "Pire",
     "alternates": [
@@ -1658,6 +1817,7 @@
     "id": "p12",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Anadolu Efes ile 2021 ve 2022'de şampiyon olan Alman pivot Tibor ___.",
     "answer": "Tibor Pleiß",
     "alternates": [
@@ -1669,6 +1829,7 @@
     "id": "p13",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2023'ten beri sezonun 7-10. sıradaki takımlarının playoff bileti için oynadığı ön eleme.",
     "answer": "Play-in",
     "alternates": [
@@ -1680,6 +1841,7 @@
     "id": "p14",
     "letter": "P",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2003 ve 2011 Final Four'larının oynandığı Barcelona salonu Palau ___.",
     "answer": "Palau Sant Jordi",
     "alternates": [
@@ -1690,6 +1852,7 @@
     "id": "q1",
     "letter": "Q",
     "rule": "contains",
+    "category": "euroleague",
     "question": "EuroLeague maçları 10'ar dakikalık dört bölümden oluşur. Bu bölümlerin İngilizce adı nedir?",
     "answer": "Quarter",
     "alternates": [
@@ -1700,6 +1863,7 @@
     "id": "q2",
     "letter": "Q",
     "rule": "contains",
+    "category": "euroleague",
     "question": "Baskonia kulübünün adını aldığı İspanya bölgesinin İngilizce adı (Türkçesi Bask).",
     "answer": "Basque",
     "alternates": [
@@ -1710,6 +1874,7 @@
     "id": "q3",
     "letter": "Q",
     "rule": "starts",
+    "category": "general",
     "question": "Utah Jazz ve Atlanta Hawks'ı çalıştıran, kariyerinde CSKA Moskova'da Messina'nın yardımcılığını da yapan Amerikalı koç Quin ___.",
     "answer": "Quin Snyder",
     "alternates": [
@@ -1720,6 +1885,7 @@
     "id": "q4",
     "letter": "Q",
     "rule": "contains",
+    "category": "general",
     "question": "Lakers ile 2000-2002 arasında üst üste üç NBA şampiyonluğu kazanan, 'Diesel' lakaplı dev pivot.",
     "answer": "Shaquille O'Neal",
     "alternates": [
@@ -1733,6 +1899,7 @@
     "id": "q5",
     "letter": "Q",
     "rule": "starts",
+    "category": "general",
     "question": "Bir oyuncunun tek maçta dört ayrı istatistikte çift haneye ulaşmasının adı.",
     "answer": "Quadruple-double",
     "alternates": [
@@ -1743,6 +1910,7 @@
     "id": "q6",
     "letter": "Q",
     "rule": "contains",
+    "category": "general",
     "question": "Dwyane Wade'in NBA'den önce oynadığı Milwaukee'deki üniversite.",
     "answer": "Marquette",
     "alternates": [
@@ -1753,6 +1921,7 @@
     "id": "q7",
     "letter": "Q",
     "rule": "starts",
+    "category": "general",
     "question": "Cleveland Cavaliers'ın salonunun 2005-2019 arasındaki adı: ___ Loans Arena.",
     "answer": "Quicken Loans Arena",
     "alternates": [
@@ -1764,6 +1933,7 @@
     "id": "r1",
     "letter": "R",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2015, 2018 ve 2023'te EuroLeague şampiyonu olan İspanyol kulübü.",
     "answer": "Real Madrid",
     "alternates": [
@@ -1774,6 +1944,7 @@
     "id": "r2",
     "letter": "R",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi Tel Aviv'in 2014 şampiyonluğunda Final Four MVP'si seçilen Amerikalı oyun kurucu Tyrese ___.",
     "answer": "Tyrese Rice",
     "alternates": [
@@ -1784,6 +1955,7 @@
     "id": "r3",
     "letter": "R",
     "rule": "starts",
+    "category": "euroleague",
     "question": "'El Chacho' lakaplı, 2014'te Real Madrid ile EuroLeague sezon MVP'si seçilen Kanaryalı oyun kurucu Sergio ___.",
     "answer": "Sergio Rodríguez",
     "alternates": [
@@ -1796,6 +1968,7 @@
     "id": "r4",
     "letter": "R",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid'de oynayan, Slovenya ile 2017 Avrupa şampiyonu olan Amerikan doğumlu forvet Anthony ___.",
     "answer": "Anthony Randolph",
     "alternates": [
@@ -1806,6 +1979,7 @@
     "id": "r5",
     "letter": "R",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Barcelona ile 2010'da EuroLeague kazanıp NBA'de Minnesota'ya giden İspanyol oyun kurucu Ricky ___.",
     "answer": "Ricky Rubio",
     "alternates": [
@@ -1816,6 +1990,7 @@
     "id": "r6",
     "letter": "R",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid ile 2015 ve 2018'de şampiyon olan uzun yıllık kaptan Felipe ___.",
     "answer": "Felipe Reyes",
     "alternates": [
@@ -1826,6 +2001,7 @@
     "id": "r7",
     "letter": "R",
     "rule": "starts",
+    "category": "euroleague",
     "question": "EuroLeague'de sezonun en iyi genç oyuncusuna verilen ödül.",
     "answer": "Rising Star",
     "alternates": [
@@ -1836,6 +2012,7 @@
     "id": "r8",
     "letter": "R",
     "rule": "starts",
+    "category": "general",
     "question": "Bulls ve Pistons ile şampiyonluklar kazanan, ribaundlarıyla ve renkli saçlarıyla ünlü Dennis ___.",
     "answer": "Dennis Rodman",
     "alternates": [
@@ -1847,6 +2024,7 @@
     "id": "s1",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2009'da Panathinaikos, 2012 ve 2013'te Olympiacos ile Final Four MVP'si seçilen 'Kill Bill' lakaplı Yunan.",
     "answer": "Vassilis Spanoulis",
     "alternates": [
@@ -1858,6 +2036,7 @@
     "id": "s2",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2007'de Panathinaikos, 2008'de CSKA formasıyla üst üste EuroLeague sezon MVP'si seçilen Litvanyalı kanat oyuncusu.",
     "answer": "Ramūnas Šiškauskas",
     "alternates": [
@@ -1868,6 +2047,7 @@
     "id": "s3",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Fenerbahçe ile 2017'de, Panathinaikos ile 2024'te EuroLeague şampiyonu olan Yunan oyun kurucu Kostas ___.",
     "answer": "Kostas Sloukas",
     "alternates": [
@@ -1878,6 +2058,7 @@
     "id": "s4",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "İstanbul'da 2012 ve 2017 Final Four'larına ev sahipliği yapan salon.",
     "answer": "Sinan Erdem",
     "alternates": [
@@ -1888,6 +2069,7 @@
     "id": "s5",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Baskonia, CSKA ve Virtus Bologna'da forma giymiş Gürcü forvet Tornike ___.",
     "answer": "Tornike Shengelia",
     "alternates": [
@@ -1899,6 +2081,7 @@
     "id": "s6",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Oyunculuk kariyerinin ardından başantrenör olarak Monaco'yu 2025 finaline taşıyan Yunan efsane.",
     "answer": "Vassilis Spanoulis",
     "alternates": [
@@ -1909,6 +2092,7 @@
     "id": "s7",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2000-01'de FIBA'nın EuroLeague'e rakip olarak düzenlediği, Maccabi'nin kazandığı turnuva.",
     "answer": "SuproLeague",
     "alternates": [
@@ -1920,6 +2104,7 @@
     "id": "s8",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Tau Cerámica'da forma giyip NBA'de Houston Rockets'a giden Arjantinli uzun Luis ___.",
     "answer": "Luis Scola",
     "alternates": [
@@ -1930,6 +2115,7 @@
     "id": "s9",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Tau Cerámica'dan NBA'de San Antonio Spurs'e giden Brezilyalı pivot Tiago ___.",
     "answer": "Tiago Splitter",
     "alternates": [
@@ -1940,6 +2126,7 @@
     "id": "s10",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Anadolu Efes ile 2021 ve 2022'de şampiyon olan Hırvat forvet Krunoslav ___.",
     "answer": "Krunoslav Simon",
     "alternates": [
@@ -1950,6 +2137,7 @@
     "id": "s11",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "'Big Sofo' lakaplı iri yapılı Yunan pivot Sofoklis ___.",
     "answer": "Sofoklis Schortsanitis",
     "alternates": [
@@ -1961,6 +2149,7 @@
     "id": "s12",
     "letter": "S",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2022 Final Four'unun oynandığı Belgrad salonu.",
     "answer": "Štark Arena",
     "alternates": [
@@ -1972,6 +2161,7 @@
     "id": "t1",
     "letter": "T",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid'in Yeşil Burun Adaları (Cape Verde) doğumlu dev pivotu; 2023 Final Four MVP'si Walter 'Edy' ___.",
     "answer": "Edy Tavares",
     "alternates": [
@@ -1983,6 +2173,7 @@
     "id": "t2",
     "letter": "T",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2010'da Olympiacos formasıyla EuroLeague sezon MVP'si seçilen Sırp oyun kurucu Miloš ___.",
     "answer": "Miloš Teodosić",
     "alternates": [
@@ -1993,6 +2184,7 @@
     "id": "t3",
     "letter": "T",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi'nin kendi seyircisi önünde Skipper Bologna'yı yenerek şampiyon olduğu 2004 Final Four'u hangi şehirde oynandı?",
     "answer": "Tel Aviv",
     "alternates": [
@@ -2003,6 +2195,7 @@
     "id": "t4",
     "letter": "T",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Vitoria kulübünün 2000'lerdeki sponsor adı; 2001 ve 2005'te EuroLeague finali oynadı.",
     "answer": "Tau Cerámica",
     "alternates": [
@@ -2014,6 +2207,7 @@
     "id": "t5",
     "letter": "T",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Barcelona'da uzun yıllar forma giyen Hırvat pivot Ante ___.",
     "answer": "Ante Tomić",
     "alternates": [
@@ -2024,6 +2218,7 @@
     "id": "t6",
     "letter": "T",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid'de 2015-2021 arasında oynayan İsveç milli takımından kanat oyuncusu Jeff ___.",
     "answer": "Jeff Taylor",
     "alternates": [
@@ -2034,6 +2229,7 @@
     "id": "t7",
     "letter": "T",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2000'lerde grup aşamasının ardından oynanan, 16 takımlı ikinci tur.",
     "answer": "Top 16",
     "alternates": [
@@ -2045,6 +2241,7 @@
     "id": "t8",
     "letter": "T",
     "rule": "starts",
+    "category": "general",
     "question": "Bir oyuncunun tek maçta üç ayrı istatistikte çift haneye ulaşmasının adı.",
     "answer": "Triple-double",
     "alternates": [
@@ -2055,6 +2252,7 @@
     "id": "t9",
     "letter": "T",
     "rule": "starts",
+    "category": "general",
     "question": "San Antonio Spurs ile beş NBA şampiyonluğu kazanan 'Big Fundamental' lakaplı efsane uzun.",
     "answer": "Tim Duncan",
     "alternates": [
@@ -2066,6 +2264,7 @@
     "id": "u1",
     "letter": "U",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Fenerbahçe'nin 2017 şampiyonluğunda Final Four MVP'si seçilen Amerikalı pivot Ekpe ___.",
     "answer": "Ekpe Udoh",
     "alternates": [
@@ -2076,6 +2275,7 @@
     "id": "u2",
     "letter": "U",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2007'de Atina'daki Final Four'a kalan Malaga kulübü.",
     "answer": "Unicaja",
     "alternates": [
@@ -2086,6 +2286,7 @@
     "id": "u3",
     "letter": "U",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Kazan kulübü.",
     "answer": "UNICS",
     "alternates": [
@@ -2096,6 +2297,7 @@
     "id": "u4",
     "letter": "U",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Fenerbahçe'nin Ataşehir'deki iç saha salonu.",
     "answer": "Ülker Sports Arena",
     "alternates": [
@@ -2108,6 +2310,7 @@
     "id": "u5",
     "letter": "U",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2000'de EuroLeague'i kuran Avrupa basketbol ligleri birliğinin kısaltması.",
     "answer": "ULEB",
     "alternates": []
@@ -2116,6 +2319,7 @@
     "id": "u6",
     "letter": "U",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2024 Final Four'unun oynandığı Berlin salonunun sponsor adı.",
     "answer": "Uber Arena",
     "alternates": [
@@ -2126,6 +2330,7 @@
     "id": "u7",
     "letter": "U",
     "rule": "starts",
+    "category": "general",
     "question": "John Stockton ve Karl Malone'un efsaneleştiği Salt Lake City takımı.",
     "answer": "Utah Jazz",
     "alternates": [
@@ -2137,6 +2342,7 @@
     "id": "u8",
     "letter": "U",
     "rule": "starts",
+    "category": "general",
     "question": "John Wooden'ın 10 NCAA şampiyonluğu kazandığı Los Angeles üniversitesi.",
     "answer": "UCLA",
     "alternates": []
@@ -2145,6 +2351,7 @@
     "id": "v1",
     "letter": "V",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2023'te Olympiacos formasıyla EuroLeague sezon MVP'si seçilen Bulgar forvet Sasha ___.",
     "answer": "Sasha Vezenkov",
     "alternates": [
@@ -2155,6 +2362,7 @@
     "id": "v2",
     "letter": "V",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2019'da Fenerbahçe formasıyla EuroLeague sezon MVP'si seçilen Çek pivot Jan ___.",
     "answer": "Jan Veselý",
     "alternates": [
@@ -2165,6 +2373,7 @@
     "id": "v3",
     "letter": "V",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2001'de 'Kinder' sponsorluğuyla EuroLeague'i kazanan İtalyan kulübü.",
     "answer": "Virtus Bologna",
     "alternates": [
@@ -2176,6 +2385,7 @@
     "id": "v4",
     "letter": "V",
     "rule": "starts",
+    "category": "euroleague",
     "question": "CSKA'nın Anadolu Efes'i yenerek şampiyon olduğu 2019 Final Four'u hangi Bask şehrinde oynandı?",
     "answer": "Vitoria",
     "alternates": [
@@ -2187,6 +2397,7 @@
     "id": "v5",
     "letter": "V",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2017'de İspanya Ligi'ni (ACB) kazanan turuncu formalı İspanyol kulübü.",
     "answer": "Valencia",
     "alternates": [
@@ -2197,6 +2408,7 @@
     "id": "v6",
     "letter": "V",
     "rule": "starts",
+    "category": "general",
     "question": "Orlando ve Chicago'da forma giyen Karadağlı pivot Nikola ___.",
     "answer": "Nikola Vučević",
     "alternates": [
@@ -2207,6 +2419,7 @@
     "id": "v7",
     "letter": "V",
     "rule": "starts",
+    "category": "general",
     "question": "2000 NBA smaç yarışmasını kazanan, 'Vinsanity' lakaplı Toronto Raptors yıldızı.",
     "answer": "Vince Carter",
     "alternates": [
@@ -2218,6 +2431,7 @@
     "id": "v8",
     "letter": "V",
     "rule": "starts",
+    "category": "general",
     "question": "Lakers ve Sacramento Kings'te oynayan, NBA'de oynayan ilk Avrupalı yıldızlardan Sırp pivot Vlade ___.",
     "answer": "Vlade Divac",
     "alternates": [
@@ -2229,6 +2443,7 @@
     "id": "w1",
     "letter": "W",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos'un savunmasıyla tanınan Amerikalı guardı Thomas ___.",
     "answer": "Thomas Walkup",
     "alternates": [
@@ -2239,6 +2454,7 @@
     "id": "w2",
     "letter": "W",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Türkiye milli takımında da forma giyen, uzun yıllar Maccabi Tel Aviv'de oynayan Amerikalı guard Scottie ___.",
     "answer": "Scottie Wilbekin",
     "alternates": [
@@ -2249,6 +2465,7 @@
     "id": "w3",
     "letter": "W",
     "rule": "starts",
+    "category": "euroleague",
     "question": "NBA'de Charlotte Hornets ile yıldızlaşıp kariyerinin sonunda Monaco'da oynayan Amerikalı guard Kemba ___.",
     "answer": "Kemba Walker",
     "alternates": [
@@ -2259,6 +2476,7 @@
     "id": "w4",
     "letter": "W",
     "rule": "starts",
+    "category": "general",
     "question": "San Antonio Spurs'ün 2023 draftında 1 numaradan seçtiği 2,20'lik Fransız yıldız Victor ___.",
     "answer": "Victor Wembanyama",
     "alternates": [
@@ -2270,6 +2488,7 @@
     "id": "w5",
     "letter": "W",
     "rule": "starts",
+    "category": "general",
     "question": "2017'de NBA MVP'si seçilen, triple-double rekorlarıyla bilinen oyun kurucu Russell ___.",
     "answer": "Russell Westbrook",
     "alternates": [
@@ -2280,6 +2499,7 @@
     "id": "w6",
     "letter": "W",
     "rule": "starts",
+    "category": "general",
     "question": "Miami Heat ile 2006 NBA Finalleri'nin MVP'si seçilen guard Dwyane ___.",
     "answer": "Dwyane Wade",
     "alternates": [
@@ -2291,6 +2511,7 @@
     "id": "w7",
     "letter": "W",
     "rule": "starts",
+    "category": "general",
     "question": "Stephen Curry'nin takımı; 2015, 2017, 2018 ve 2022'de NBA şampiyonu olan Golden State ___.",
     "answer": "Golden State Warriors",
     "alternates": [
@@ -2302,6 +2523,7 @@
     "id": "w8",
     "letter": "W",
     "rule": "starts",
+    "category": "general",
     "question": "1962'de tek maçta 100 sayı atarak NBA rekorunu kıran pivot Wilt ___.",
     "answer": "Wilt Chamberlain",
     "alternates": [
@@ -2313,6 +2535,7 @@
     "id": "w9",
     "letter": "W",
     "rule": "starts",
+    "category": "general",
     "question": "UCLA'yı 10 NCAA şampiyonluğuna taşıyan efsane koç John ___.",
     "answer": "John Wooden",
     "alternates": [
@@ -2323,6 +2546,7 @@
     "id": "x1",
     "letter": "X",
     "rule": "contains",
+    "category": "euroleague",
     "question": "FC Barcelona'yı 2010'da Paris'te EuroLeague şampiyonluğuna taşıyan İspanyol başantrenör.",
     "answer": "Xavi Pascual",
     "alternates": [
@@ -2334,6 +2558,7 @@
     "id": "x2",
     "letter": "X",
     "rule": "contains",
+    "category": "euroleague",
     "question": "Barcelona'da forma giydikten sonra NBA'de Oklahoma City'de oynayan Mallorcalı şutör.",
     "answer": "Álex Abrines",
     "alternates": [
@@ -2345,6 +2570,7 @@
     "id": "x3",
     "letter": "X",
     "rule": "contains",
+    "category": "euroleague",
     "question": "Khimki'nin yıldızı, NBA'de Minnesota'da da oynamış Rus guard.",
     "answer": "Alexey Shved",
     "alternates": [
@@ -2356,6 +2582,7 @@
     "id": "x4",
     "letter": "X",
     "rule": "contains",
+    "category": "euroleague",
     "question": "Maccabi Tel Aviv ile 2014'te şampiyon olan Amerikan-İsrailli uzun.",
     "answer": "Alex Tyus",
     "alternates": [
@@ -2366,6 +2593,7 @@
     "id": "x5",
     "letter": "X",
     "rule": "contains",
+    "category": "general",
     "question": "San Antonio Spurs, Houston Rockets ve Dallas Mavericks'in bulunduğu ABD eyaleti.",
     "answer": "Texas",
     "alternates": [
@@ -2376,6 +2604,7 @@
     "id": "x6",
     "letter": "X",
     "rule": "contains",
+    "category": "general",
     "question": "Steve Nash'in iki kez MVP seçildiği Arizona takımı.",
     "answer": "Phoenix Suns",
     "alternates": [
@@ -2387,6 +2616,7 @@
     "id": "x7",
     "letter": "X",
     "rule": "contains",
+    "category": "general",
     "question": "NBA'de maaş sınırını aşan takımların ödediği ceza vergisinin İngilizce adı.",
     "answer": "Luxury tax",
     "alternates": [
@@ -2398,6 +2628,7 @@
     "id": "y1",
     "letter": "Y",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Maccabi Tel Aviv'in efsanevi iç saha salonunun tarihi adı.",
     "answer": "Yad Eliyahu",
     "alternates": [
@@ -2408,6 +2639,7 @@
     "id": "y2",
     "letter": "Y",
     "rule": "contains",
+    "category": "euroleague",
     "question": "Real Madrid'in 2023'te Kaunas'ta yendiği ve Llull'un son saniye basketiyle kupayı kaçıran rakip.",
     "answer": "Olympiacos",
     "alternates": [
@@ -2419,6 +2651,7 @@
     "id": "y3",
     "letter": "Y",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Real Madrid'de oynadıktan sonra NBA'de Philadelphia 76ers'a giden Fransız forvet Guerschon ___.",
     "answer": "Guerschon Yabusele",
     "alternates": [
@@ -2429,6 +2662,7 @@
     "id": "y4",
     "letter": "Y",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Olympiacos ve Panathinaikos'un ülkesi.",
     "answer": "Yunanistan",
     "alternates": [
@@ -2439,6 +2673,7 @@
     "id": "y5",
     "letter": "Y",
     "rule": "contains",
+    "category": "euroleague",
     "question": "Almanya'nın futbolla da ünlü, EuroLeague'de mücadele eden Münih kulübü.",
     "answer": "Bayern Münih",
     "alternates": [
@@ -2451,6 +2686,7 @@
     "id": "y6",
     "letter": "Y",
     "rule": "starts",
+    "category": "general",
     "question": "2002 NBA draftında 1 numaradan Houston Rockets'a seçilen Çinli dev pivot.",
     "answer": "Yao Ming",
     "alternates": [
@@ -2462,6 +2698,7 @@
     "id": "y7",
     "letter": "Y",
     "rule": "starts",
+    "category": "general",
     "question": "Atlanta Hawks'ın uzaktan şutlarıyla bilinen yıldız oyun kurucusu Trae ___.",
     "answer": "Trae Young",
     "alternates": [
@@ -2472,6 +2709,7 @@
     "id": "y8",
     "letter": "Y",
     "rule": "starts",
+    "category": "general",
     "question": "1998 ve 2002 FIBA Dünya Şampiyonası'nı kazanan, Sırbistan-Karadağ'ın o dönemki devlet adı.",
     "answer": "Yugoslavya",
     "alternates": [
@@ -2483,6 +2721,7 @@
     "id": "z1",
     "letter": "Z",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Jasikevičius yönetiminde 2018 Final Four'unda üçüncü olan Kaunas kulübü.",
     "answer": "Žalgiris",
     "alternates": [
@@ -2494,6 +2733,7 @@
     "id": "z2",
     "letter": "Z",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2020-2022 arasında EuroLeague'de mücadele eden St. Petersburg kulübü.",
     "answer": "Zenit",
     "alternates": [
@@ -2504,6 +2744,7 @@
     "id": "z3",
     "letter": "Z",
     "rule": "contains",
+    "category": "euroleague",
     "question": "Belgrad'ın 'Kızıl Yıldız' anlamına gelen kulübü.",
     "answer": "Crvena Zvezda",
     "alternates": [
@@ -2516,6 +2757,7 @@
     "id": "z4",
     "letter": "Z",
     "rule": "starts",
+    "category": "euroleague",
     "question": "CSKA Moskova ve Brose Bamberg'de oynamış Yunan oyun kurucu Nikos ___.",
     "answer": "Nikos Zisis",
     "alternates": [
@@ -2526,6 +2768,7 @@
     "id": "z5",
     "letter": "Z",
     "rule": "starts",
+    "category": "euroleague",
     "question": "Cibona'nın şehri, Hırvatistan'ın başkenti.",
     "answer": "Zagreb",
     "alternates": []
@@ -2534,6 +2777,7 @@
     "id": "z6",
     "letter": "Z",
     "rule": "starts",
+    "category": "euroleague",
     "question": "2023 Final Four'unun oynandığı Kaunas salonu.",
     "answer": "Žalgirio Arena",
     "alternates": [
@@ -2545,6 +2789,7 @@
     "id": "z7",
     "letter": "Z",
     "rule": "starts",
+    "category": "general",
     "question": "2019 NBA draftında 1 numaradan New Orleans Pelicans'a seçilen güçlü forvet Zion ___.",
     "answer": "Zion Williamson",
     "alternates": [
@@ -2556,6 +2801,7 @@
     "id": "z8",
     "letter": "Z",
     "rule": "starts",
+    "category": "general",
     "question": "2015 ve 2016 NBA smaç yarışmalarını üst üste kazanan guard Zach ___.",
     "answer": "Zach LaVine",
     "alternates": [

@@ -3,7 +3,11 @@
 Modern EuroLeague (2000 sonrası) temalı passaparola oyunu. A–Z, 4 dakika, mobil ve masaüstü uyumlu.
 
 - **Oyun:** `/`
-- **Admin paneli:** `/admin` (soruları görüntüle, ekle, düzenle, sil, JSON içe/dışa aktar)
+  - **Günlük** (varsayılan): herkese her gün aynı 26 soru, tek hak, 4 dakika. Gece yarısı (TSİ) yenilenir; seçilen set Redis'te saklanır ve sorular harf harf sırayla döner.
+  - **Serbest:** rastgele sorularla sınırsız oyun; ayarlardan süre ve "sadece EuroLeague" seçilebilir.
+- **Admin paneli:** `/admin`
+  - Sorular: görüntüle, ekle, düzenle, sil, kategori (EuroLeague / Genel basketbol), JSON içe/dışa aktar
+  - İstatistikler: en zor sorular, en çok boş bırakılanlar, doğruya yakın yanlış cevaplar (tek tıkla alternatif cevap olarak eklenir)
 
 ## Branch akışı
 
@@ -21,6 +25,15 @@ Modern EuroLeague (2000 sonrası) temalı passaparola oyunu. A–Z, 4 dakika, mo
    bundan sonra kaynak Redis'tir, admin panelindeki değişiklikler anında canlıya yansır.
 
 Redis bağlı değilse uygulama yine çalışır ama sorular bellekte tutulur (değişiklikler kalıcı olmaz, admin panelinde uyarı çıkar).
+
+## Redis anahtarları
+
+| Anahtar | İçerik |
+|---|---|
+| `pp:questions` | Sorular (hash, id → soru) |
+| `pp:seedVersion`, `pp:deleted` | Varsayılan soruların birleştirilmesi / silinenlerin takibi |
+| `pp:daily:<tarih>`, `pp:dailyLast` | Günün soru seti ve soruların son kullanıldığı gün |
+| `pp:qstats`, `pp:wrong` | Soru bazında doğru/yanlış/boş sayıları ve yanlış cevaplar |
 
 ## Cevap eşleştirme
 

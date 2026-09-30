@@ -644,3 +644,52 @@ button.iconBtn:hover {
     font-size: 20px;
   }
 }
+
+/* mode tabs */
+.modeTabs {
+  flex: none;
+  display: flex;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 999px;
+  background: var(--tile);
+  border: 1px solid var(--tile-line);
+}
+.modeTabs button {
+  height: 32px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: var(--muted);
+}
+.modeTabs button small {
+  font-weight: 700;
+  opacity: 0.75;
+}
+.modeTabs .tabOn {
+  background: var(--bg);
+  color: var(--fg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.countdown span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.countdown strong {
+  font-size: 26px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}

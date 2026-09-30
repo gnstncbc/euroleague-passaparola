@@ -1,10 +1,12 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { fitsLetter, isCorrect, normalize } from "@/lib/match";
-import { LETTERS, ruleLabel, type Question, type Rule } from "@/lib/types";
+import { CATEGORY_LABEL, LETTERS, ruleLabel, type Category, type Question, type Rule } from "@/lib/types";
 import type { StoreKind } from "@/lib/store";
+import type { StatsReport } from "@/lib/results";
+import AdminStats, { statsLine } from "./AdminStats";
 import s from "./Admin.module.css";
 
 type Draft = Omit<Question, "id" | "alternates"> & { id?: string; alternatesText: string };
@@ -12,6 +14,7 @@ type Draft = Omit<Question, "id" | "alternates"> & { id?: string; alternatesText
 const emptyDraft = (letter = "A"): Draft => ({
   letter,
   rule: "starts",
+  category: "euroleague",
   question: "",
   answer: "",
   alternatesText: "",
@@ -38,12 +41,25 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
   const [list, setList] = useState(initial);
   const [letter, setLetter] = useState<string | null>(null);
   const [search, setSearch] = useState("");
+  const [category, setCategory] = useState<Category | null>(null);
   const [draft, setDraft] = useState<Draft | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [testGuess, setTestGuess] = useState("");
   const fileRef = useRef<HTMLInputElement>(null);
+  const [view, setView] = useState<"questions" | "stats">("questions");
+  const [report, setReport] = useState<StatsReport | null>(null);
+
+  const loadReport = useCallback(async () => {
+    try {
+      setReport(await api<StatsReport>("/api/admin/stats", "GET"));
+    } catch {}
+  }, []);
+
+  useEffect(() => {
+    loadReport();
+  }, [loadReport]);
 
   const counts = useMemo(() => {
     const c: Record<string, number> = {};
@@ -56,9 +72,10 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
     return list.filter(
       (q) =>
         (!letter || q.letter === letter) &&
+        (!category || q.category === category) &&
         (!term || normalize(`${q.question} ${q.answer} ${q.alternates.join(" ")}`).includes(term)),
     );
-  }, [list, letter, search]);
+  }, [list, letter, search, category]);
 
   const flash = (msg: string) => {
     setNotice(msg);
@@ -96,7 +113,42 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
       });
       setDraft(null);
       flash(draft.id ? "Soru güncellendi" : "Soru eklendi");
+      // Wrong guesses that the edited answer now accepts no longer need review.
+      const accepted = (report?.wrong[saved.id] ?? []).filter((w) =>
+        isCorrect(w.guess, saved.answer, saved.alternates),
+      );
+      if (accepted.length) {
+        await Promise.all(
+          accepted.map((w) => api("/api/admin/stats", "POST", { id: saved.id, guess: w.guess })),
+        );
+        await loadReport();
+      }
     });
+
+  const acceptGuess = (q: Question, guess: string) =>
+    run(async () => {
+      const body = { ...q, alternates: [...q.alternates, guess] };
+      const saved = await api<Question>(`/api/admin/questions/${encodeURIComponent(q.id)}`, "PUT", body);
+      await api("/api/admin/stats", "POST", { id: q.id, guess });
+      setList((l) => l.map((x) => (x.id === saved.id ? saved : x)));
+      await loadReport();
+      flash(`“${guess}” kabul edilen cevaplara eklendi`);
+    });
+
+  const dismissGuess = (q: Question, guess: string) =>
+    run(async () => {
+      await api("/api/admin/stats", "POST", { id: q.id, guess });
+      await loadReport();
+    });
+
+  const resetReport = () => {
+    if (!confirm("Tüm soru istatistikleri ve kaydedilen yanlış cevaplar silinsin mi?")) return;
+    run(async () => {
+      await api("/api/admin/stats", "DELETE");
+      await loadReport();
+      flash("İstatistikler sıfırlandı");
+    });
+  };
 
   const remove = (q: Question) => {
     if (!confirm(`"${q.answer}" cevaplı soru silinsin mi?`)) return;
@@ -169,6 +221,36 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
         </p>
       )}
 
+      <div className={s.viewTabs} role="tablist">
+        <button role="tab" aria-selected={view === "questions"} className={view === "questions" ? s.segOn : ""} onClick={() => setView("questions")}>
+          Sorular
+        </button>
+        <button
+          role="tab"
+          aria-selected={view === "stats"}
+          className={view === "stats" ? s.segOn : ""}
+          onClick={() => {
+            setView("stats");
+            loadReport();
+          }}
+        >
+          İstatistikler
+        </button>
+      </div>
+
+      {view === "stats" ? (
+        <AdminStats
+          report={report}
+          questions={list}
+          busy={busy}
+          onEdit={(q) => open(toDraft(q))}
+          onAccept={acceptGuess}
+          onDismiss={dismissGuess}
+          onRefresh={loadReport}
+          onReset={resetReport}
+        />
+      ) : (
+      <>
       <div className={s.toolbar}>
         <input
           className={s.input}
@@ -177,6 +259,21 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
           onChange={(e) => setSearch(e.target.value)}
         />
         <button className={s.primary} onClick={() => open(emptyDraft(letter ?? "A"))}>+ Yeni soru</button>
+      </div>
+
+      <div className={s.catFilter} role="radiogroup" aria-label="Kategori">
+        {([null, "euroleague", "general"] as (Category | null)[]).map((c) => (
+          <button
+            key={c ?? "all"}
+            role="radio"
+            aria-checked={category === c}
+            className={category === c ? s.segOn : ""}
+            onClick={() => setCategory(c)}
+          >
+            {c ? CATEGORY_LABEL[c] : "Tüm kategoriler"}{" "}
+            <small>{c ? list.filter((q) => q.category === c).length : list.length}</small>
+          </button>
+        ))}
       </div>
 
       <div className={s.letters}>
@@ -208,7 +305,10 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
                   {q.answer}
                   {q.alternates.length > 0 && <em> · {q.alternates.join(", ")}</em>}
                 </span>
-                <span className={s.itemRule}>{ruleLabel(q.letter, q.rule)}</span>
+                <span className={s.itemRule}>
+                  {ruleLabel(q.letter, q.rule)}
+                  {q.category === "general" && <span className={s.catTag}>Genel</span>}
+                </span>
               </span>
             </button>
             <button className={s.del} onClick={() => remove(q)} aria-label="Sil" disabled={busy}>
@@ -237,6 +337,8 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
           }}
         />
       </footer>
+      </>
+      )}
 
       {notice && <div className={s.toast}>{notice}</div>}
 
@@ -283,6 +385,22 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
               </div>
             </div>
 
+            <div className={s.field}>
+              <span>Kategori</span>
+              <div className={s.segment}>
+                {(["euroleague", "general"] as Category[]).map((c) => (
+                  <button
+                    key={c}
+                    type="button"
+                    className={draft.category === c ? s.segOn : ""}
+                    onClick={() => setDraft({ ...draft, category: c })}
+                  >
+                    {CATEGORY_LABEL[c]}
+                  </button>
+                ))}
+              </div>
+            </div>
+
             <label className={s.field}>
               <span>Soru</span>
               <textarea
@@ -322,6 +440,37 @@ export default function AdminPanel({ initial, storeKind }: { initial: Question[]
                 Soyad, küçük yazım hataları, aksanlar ve eksik yazımlar zaten otomatik kabul edilir.
               </small>
             </label>
+
+            {draft.id && (
+              <div className={s.qStats}>
+                <strong>{statsLine(report?.stats[draft.id])}</strong>
+                {!!report?.wrong[draft.id]?.length && (
+                  <>
+                    <span className={s.hint}>Oyuncuların yanlış cevapları (dokununca alternatiflere eklenir):</span>
+                    <ul>
+                      {report.wrong[draft.id]
+                        .filter((w) => !isCorrect(w.guess, draft.answer, alternates))
+                        .slice(0, 12)
+                        .map((w) => (
+                          <li key={w.guess}>
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setDraft({
+                                  ...draft,
+                                  alternatesText: [...alternates, w.guess].join("\n"),
+                                })
+                              }
+                            >
+                              + {w.guess} <em>×{w.count}</em>
+                            </button>
+                          </li>
+                        ))}
+                    </ul>
+                  </>
+                )}
+              </div>
+            )}
 
             <label className={`${s.field} ${s.tester}`}>
               <span>Cevabı dene</span>

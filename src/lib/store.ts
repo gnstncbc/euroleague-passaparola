@@ -11,7 +11,14 @@ const DELETED = "pp:deleted";
 const seedList = seed as Question[];
 // Changes whenever questions are added to the seed file, so new defaults get
 // merged into an existing database without touching edited or deleted ones.
-const seedVersion = `v1-${createHash("sha1").update(seedList.map((q) => q.id).join(",")).digest("hex")}`;
+const seedVersion = `v2-${createHash("sha1")
+  .update(seedList.map((q) => `${q.id}:${q.category}`).join(","))
+  .digest("hex")}`;
+
+// Entries saved before categories existed count as EuroLeague questions.
+function normalizeQuestion(q: Question): Question {
+  return { ...q, category: q.category === "general" ? "general" : "euroleague" };
+}
 
 export type StoreKind = "redis" | "memory";
 
@@ -33,9 +40,12 @@ function envPair(): { url: string; token: string } | null {
   return null;
 }
 
-function redisClient(): Redis | null {
+let client: Redis | null | undefined;
+export function redisClient(): Redis | null {
+  if (client !== undefined) return client;
   const pair = envPair();
-  return pair ? new Redis(pair) : null;
+  client = pair ? new Redis(pair) : null;
+  return client;
 }
 
 const redis = redisClient();
@@ -56,6 +66,17 @@ async function ensureSeeded(r: Redis) {
   const skip = new Set([...ids, ...deleted]);
   const missing = seedList.filter((q) => !skip.has(q.id));
   if (missing.length) await r.hset(HASH, Object.fromEntries(missing.map((q) => [q.id, q])));
+  // Tag default questions stored before categories were introduced.
+  const untagged = seedList.filter((q) => q.category === "general" && ids.includes(q.id));
+  if (untagged.length) {
+    const current = await r.hmget<Record<string, Question | null>>(HASH, ...untagged.map((q) => q.id));
+    const patch = Object.fromEntries(
+      Object.entries(current ?? {})
+        .filter(([, q]) => q && !q.category)
+        .map(([id, q]) => [id, { ...q!, category: "general" as const }]),
+    );
+    if (Object.keys(patch).length) await r.hset(HASH, patch);
+  }
   await r.set(SEED_VERSION, seedVersion);
 }
 
@@ -64,10 +85,10 @@ function sortQuestions(list: Question[]) {
 }
 
 export async function listQuestions(): Promise<Question[]> {
-  if (!redis) return sortQuestions([...memory().values()]);
+  if (!redis) return sortQuestions([...memory().values()].map(normalizeQuestion));
   await ensureSeeded(redis);
   const all = await redis.hgetall<Record<string, Question>>(HASH);
-  return sortQuestions(Object.values(all ?? {}));
+  return sortQuestions(Object.values(all ?? {}).map(normalizeQuestion));
 }
 
 export async function saveQuestion(q: Question): Promise<void> {

@@ -130,3 +130,20 @@ export function fitsLetter(answer: string, letter: string, rule: "starts" | "con
   if (!n || !l) return false;
   return rule === "starts" ? n.split(" ").some((w) => w.startsWith(l)) : n.includes(l);
 }
+
+/** 0–1 similarity of a rejected guess to the closest accepted form (for admin review). */
+export function closeness(guess: string, answer: string, alternates: string[] = []): number {
+  const inputs = inputForms(guess);
+  let best = 0;
+  for (const option of [answer, ...alternates]) {
+    // Also compare with single words, so "Adanolu" counts as close to "Anadolu Efes".
+    const words = normalize(option).split(" ").filter((w) => w.length >= 3 && !STOPWORDS.has(w));
+    for (const target of new Set([...candidateForms(option), ...words])) {
+      for (const input of inputs) {
+        const len = Math.max(input.length, target.length);
+        best = Math.max(best, 1 - levenshtein(phonetic(input), phonetic(target)) / len);
+      }
+    }
+  }
+  return best;
+}

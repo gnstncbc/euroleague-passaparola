@@ -5,6 +5,8 @@ export interface Settings {
   minutes: 3 | 4 | 5;
   revealAnswer: boolean;
   colorBlind: boolean;
+  /** Question pool for free mode (the daily puzzle always uses every category). */
+  scope: "all" | "euroleague";
 }
 
 export const SETTINGS_KEY = "pp:settings";
@@ -14,6 +16,7 @@ export const defaultSettings: Settings = {
   minutes: 4,
   revealAnswer: true,
   colorBlind: false,
+  scope: "all",
 };
 
 export function readSettings(): Settings {
@@ -25,6 +28,7 @@ export function readSettings(): Settings {
         minutes: [3, 4, 5].includes(s.minutes) ? s.minutes : 4,
         revealAnswer: s.revealAnswer !== false,
         colorBlind: s.colorBlind === true,
+        scope: s.scope === "euroleague" ? "euroleague" : "all",
       };
     }
   } catch {}

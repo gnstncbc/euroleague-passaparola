@@ -9,6 +9,7 @@ class FakeRedis {
   async hkeys() { return [...db.hash.keys()]; }
   async hgetall() { return db.hash.size ? Object.fromEntries(db.hash) : null; }
   async hset(_k: string, obj: Record<string, unknown>) { for (const [f, v] of Object.entries(obj)) db.hash.set(f, v); return 1; }
+  async hmget(_k: string, ...f: string[]) { return Object.fromEntries(f.map((x) => [x, db.hash.get(x) ?? null])); }
   async hdel(_k: string, f: string) { db.hash.delete(f); return 1; }
   async smembers() { return [...db.set]; }
   async sadd(_k: string, ...m: string[]) { m.forEach((x) => db.set.add(x)); return m.length; }
@@ -51,6 +52,18 @@ describe("redis store seeding", () => {
     expect(list.find((q) => q.id === "a1")?.question).toBe("EDITED");
     expect(ids.has("custom")).toBe(true);
     for (const q of seed.slice(81)) expect(ids.has(q.id)).toBe(true);
+  });
+
+  it("tags stored general questions that predate categories", async () => {
+    const general = seed.find((q) => q.category === "general")!;
+    seed.forEach((q) => {
+      const { category, ...rest } = q;
+      db.hash.set(q.id, q.id === general.id ? { ...rest, question: "EDITED" } : q);
+    });
+    db.kv.set("pp:seedVersion", "v1-old");
+    const found = (await store.listQuestions()).find((q) => q.id === general.id)!;
+    expect(found.category).toBe("general");
+    expect(found.question).toBe("EDITED");
   });
 
   it("does not restore deleted questions on the next seed update", async () => {

@@ -77,7 +77,7 @@ export default function SettingsPanel({
       <div className={s.row}>
         <div className={s.text}>
           <strong>Oyun süresi</strong>
-          <span>Bir sonraki oyundan itibaren geçerli</span>
+          <span>Serbest mod için. Günlük bulmaca herkes için 4 dakika.</span>
         </div>
         <Segment<3 | 4 | 5>
           label="Oyun süresi"
@@ -87,6 +87,22 @@ export default function SettingsPanel({
             { value: 3, label: "3 dk" },
             { value: 4, label: "4 dk" },
             { value: 5, label: "5 dk" },
+          ]}
+        />
+      </div>
+
+      <div className={s.row}>
+        <div className={s.text}>
+          <strong>Serbest mod soruları</strong>
+          <span>Günlük bulmacada tüm kategoriler karışık gelir.</span>
+        </div>
+        <Segment<"all" | "euroleague">
+          label="Serbest mod soruları"
+          value={settings.scope}
+          onChange={(v) => set("scope", v)}
+          options={[
+            { value: "all", label: "Tümü" },
+            { value: "euroleague", label: "EuroLeague" },
           ]}
         />
       </div>

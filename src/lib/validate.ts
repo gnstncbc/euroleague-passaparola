@@ -5,6 +5,7 @@ export function parseQuestion(input: unknown, id?: string): Question | string {
   const o = input as Record<string, unknown>;
   const letter = String(o.letter ?? "").toUpperCase().trim();
   const rule = o.rule === "contains" ? "contains" : "starts";
+  const category = o.category === "general" ? "general" : "euroleague";
   const question = String(o.question ?? "").trim();
   const answer = String(o.answer ?? "").trim();
   const alternates = Array.isArray(o.alternates)
@@ -15,5 +16,5 @@ export function parseQuestion(input: unknown, id?: string): Question | string {
   if (!answer) return "Cevap boş olamaz";
   if (question.length > 500 || answer.length > 100) return "Metin çok uzun";
   const finalId = id ?? (typeof o.id === "string" && o.id.trim() ? o.id.trim() : crypto.randomUUID());
-  return { id: finalId, letter, rule, question, answer, alternates };
+  return { id: finalId, letter, rule, category, question, answer, alternates };
 }

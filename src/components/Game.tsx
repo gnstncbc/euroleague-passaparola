@@ -4,9 +4,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { isCorrect } from "@/lib/match";
 import type { Question } from "@/lib/types";
 import {
-  buildRound, formatTime, GAME_MS, nextOpen, readStats, recordGame, resetStats,
-  type Slot, type Stats,
+  buildRound, formatTime, GAME_MS, nextOpen, readDailyProgress, readStats, recordGame, resetStats,
+  restoreSlots, saveDailyProgress, type Mode, type Slot, type Stats,
 } from "@/lib/game";
+import { istanbulDate, msUntilNextDay } from "@/lib/day";
 import Ring from "./Ring";
 import StatsPanel from "./StatsPanel";
 import SettingsPanel from "./SettingsPanel";
@@ -14,6 +15,55 @@ import { defaultSettings, readSettings, saveSettings, type Settings } from "@/li
 import s from "./Game.module.css";
 
 type Phase = "idle" | "playing" | "paused" | "done";
+
+export interface DailyPuzzle {
+  date: string;
+  number: number;
+  questions: Question[];
+}
+
+/** Every daily player gets the same clock. */
+const DAILY_MS = GAME_MS;
+
+function sendResults(slots: Slot[], mode: Mode) {
+  try {
+    const body = JSON.stringify({
+      mode,
+      results: slots.map((x) => ({ id: x.q.id, status: x.status, guess: x.status === "wrong" ? x.guess : undefined })),
+    });
+    fetch("/api/results", { method: "POST", headers: { "Content-Type": "application/json" }, body, keepalive: true }).catch(
+      () => {},
+    );
+  } catch {}
+}
+
+function Countdown() {
+  const [left, setLeft] = useState<number | null>(null);
+  useEffect(() => {
+    const tick = () => setLeft(msUntilNextDay());
+    tick();
+    const id = window.setInterval(tick, 1000);
+    return () => window.clearInterval(id);
+  }, []);
+  if (left === null) return null;
+  const done = left < 1500;
+  const sec = Math.floor(left / 1000);
+  const hms = [Math.floor(sec / 3600), Math.floor((sec % 3600) / 60), sec % 60]
+    .map((n) => String(n).padStart(2, "0"))
+    .join(":");
+  return (
+    <div className={s.countdown}>
+      {done ? (
+        <button className={s.ghost} onClick={() => window.location.reload()}>Yeni bulmaca hazır →</button>
+      ) : (
+        <>
+          <span>Sonraki bulmaca</span>
+          <strong>{hms}</strong>
+        </>
+      )}
+    </div>
+  );
+}
 type Feedback = { kind: "correct" | "wrong" | "passed"; text: string; key: number } | null;
 
 // Keeps --vvh / --vvt in sync with the visual viewport so the layout
@@ -42,8 +92,9 @@ function useVisualViewport() {
   return height;
 }
 
-export default function Game({ questions }: { questions: Question[] }) {
+export default function Game({ questions, daily }: { questions: Question[]; daily: DailyPuzzle }) {
   const viewportHeight = useVisualViewport();
+  const [mode, setMode] = useState<Mode>("daily");
   const [phase, setPhase] = useState<Phase>("idle");
   const [slots, setSlots] = useState<Slot[]>([]);
   const [current, setCurrent] = useState(0);
@@ -63,29 +114,94 @@ export default function Game({ questions }: { questions: Question[] }) {
   remainingRef.current = remaining;
   const roundMsRef = useRef(roundMs);
   roundMsRef.current = roundMs;
+  const modeRef = useRef(mode);
+  modeRef.current = mode;
+
+  // Bring back today's daily puzzle: finished result, or a paused game in progress.
+  const loadDaily = useCallback(() => {
+    const progress = readDailyProgress(daily.date);
+    setRoundMs(DAILY_MS);
+    setFeedback(null);
+    setGuess("");
+    if (!progress) {
+      setSlots([]);
+      setRemaining(DAILY_MS);
+      setPhase("idle");
+      return;
+    }
+    const restored = restoreSlots(daily.questions, progress);
+    setSlots(restored);
+    setRemaining(progress.remaining);
+    if (progress.finished) {
+      setPhase("done");
+    } else {
+      const open = restored[progress.current];
+      const cur = open && (open.status === "pending" || open.status === "passed") ? progress.current : nextOpen(restored, -1);
+      if (cur === -1) {
+        setPhase("done");
+      } else {
+        setCurrent(cur);
+        setPhase("paused");
+      }
+    }
+  }, [daily]);
 
   useEffect(() => {
     setStats(readStats());
     setSettings(readSettings());
-  }, []);
+    loadDaily();
+  }, [loadDaily]);
+
+  const switchMode = (m: Mode) => {
+    if (m === mode) return;
+    setMode(m);
+    setCopied(false);
+    if (m === "daily") {
+      loadDaily();
+    } else {
+      setSlots([]);
+      setFeedback(null);
+      setPhase("idle");
+    }
+  };
+
+  // Persist daily progress (rounded to the second) so a reload cannot reset the clock.
+  const remainingSec = Math.ceil(remaining / 1000);
+  useEffect(() => {
+    if (mode !== "daily" || !slots.length || phase === "idle") return;
+    saveDailyProgress({
+      date: daily.date,
+      slots: slots.map((x) => ({ id: x.q.id, status: x.status, guess: x.guess })),
+      current,
+      remaining: remainingSec * 1000,
+      finished: phase === "done",
+    });
+  }, [mode, slots, current, phase, remainingSec, daily.date]);
 
   const updateSettings = (next: Settings) => {
     setSettings(next);
     saveSettings(next);
   };
 
-  const finish = useCallback((final: Slot[]) => {
-    setPhase("done");
-    setStats(
-      recordGame({
-        correct: final.filter((x) => x.status === "correct").length,
-        wrong: final.filter((x) => x.status === "wrong").length,
-        total: final.length,
-        ms: roundMsRef.current - Math.max(0, remainingRef.current),
-      }),
-    );
-    inputRef.current?.blur();
-  }, []);
+  const finish = useCallback(
+    (final: Slot[]) => {
+      const m = modeRef.current;
+      setPhase("done");
+      setStats(
+        recordGame({
+          correct: final.filter((x) => x.status === "correct").length,
+          wrong: final.filter((x) => x.status === "wrong").length,
+          total: final.length,
+          ms: roundMsRef.current - Math.max(0, remainingRef.current),
+          mode: m,
+          ...(m === "daily" ? { date: daily.date, number: daily.number } : {}),
+        }),
+      );
+      sendResults(final, m);
+      inputRef.current?.blur();
+    },
+    [daily],
+  );
 
   // Countdown
   useEffect(() => {
@@ -122,11 +238,14 @@ export default function Game({ questions }: { questions: Question[] }) {
   const focusInput = () => requestAnimationFrame(() => inputRef.current?.focus());
 
   const start = () => {
-    const round = buildRound(questions);
+    const round =
+      mode === "daily"
+        ? daily.questions.map((q) => ({ q, status: "pending" as const }))
+        : buildRound(settings.scope === "euroleague" ? questions.filter((q) => q.category === "euroleague") : questions);
     if (!round.length) return;
     setSlots(round);
     setCurrent(0);
-    const ms = settings.minutes * 60_000;
+    const ms = mode === "daily" ? DAILY_MS : settings.minutes * 60_000;
     setRoundMs(ms);
     setRemaining(ms);
     setGuess("");
@@ -193,9 +312,10 @@ export default function Game({ questions }: { questions: Question[] }) {
       .map((x) => (x.status === "correct" ? "🟩" : x.status === "wrong" ? "🟥" : "⬜"))
       .join("");
     const rows = squares.match(/(?:🟩|🟥|⬜){1,13}/gu)?.join("\n") ?? squares;
-    return `Passaparola · EuroLeague 🏀\n${counts.correct}/${slots.length} doğru · ${formatTime(
-      roundMs - remaining,
-    )}\n${rows}\n${window.location.origin}`;
+    const title = mode === "daily" ? `Passaparola #${daily.number} 🏀` : "Passaparola · Serbest mod 🏀";
+    return `${title}\n${counts.correct}/${slots.length} doğru · ${formatTime(roundMs - remaining)}\n${rows}\n${
+      window.location.origin
+    }`;
   };
 
   const share = async () => {
@@ -273,6 +393,16 @@ export default function Game({ questions }: { questions: Question[] }) {
       </header>
 
       <main className={`${s.main} ${phase === "done" ? s.mainScroll : ""}`}>
+        {(phase === "idle" || phase === "done") && (
+          <div className={s.modeTabs} role="tablist" aria-label="Oyun modu">
+            <button role="tab" aria-selected={mode === "daily"} className={mode === "daily" ? s.tabOn : ""} onClick={() => switchMode("daily")}>
+              Günlük <small>#{daily.number}</small>
+            </button>
+            <button role="tab" aria-selected={mode === "free"} className={mode === "free" ? s.tabOn : ""} onClick={() => switchMode("free")}>
+              Serbest
+            </button>
+          </div>
+        )}
         {compact && (
           <div className={s.compactBar}>
             <div className={s.compactTop}>
@@ -296,7 +426,7 @@ export default function Game({ questions }: { questions: Question[] }) {
             statuses={ringStatuses}
           >
             {phase === "idle" && (
-              <button className={s.startBtn} onClick={start} disabled={!questions.length}>
+              <button className={s.startBtn} onClick={start} disabled={!(mode === "daily" ? daily.questions : questions).length}>
                 Başla
               </button>
             )}
@@ -323,18 +453,25 @@ export default function Game({ questions }: { questions: Question[] }) {
 
         {phase === "idle" && (
           <section className={s.intro}>
-            <p className={s.lead}>
-              A&apos;dan Z&apos;ye her harf için bir <strong>modern EuroLeague</strong> sorusu. Süren{" "}
-              <strong>{settings.minutes} dakika</strong>.
-            </p>
+            {mode === "daily" ? (
+              <p className={s.lead}>
+                <strong>Günün bulmacası #{daily.number}.</strong> Herkese aynı {daily.questions.length} soru, tek hak,{" "}
+                <strong>{DAILY_MS / 60_000} dakika</strong>.
+              </p>
+            ) : (
+              <p className={s.lead}>
+                <strong>Serbest mod:</strong> her oyunda rastgele sorular, istediğin kadar oyna. Süren{" "}
+                <strong>{settings.minutes} dakika</strong>.
+              </p>
+            )}
             <ul className={s.rules}>
               <li>Bilmiyorsan <strong>Pas</strong> geç; tur bitince o harfe geri dönersin.</li>
               <li>Küçük yazım hataları ve eksik yazılan isimler kabul edilir.</li>
               <li>Kişi isimlerinde harf genelde soyadına aittir.</li>
             </ul>
-            {stats && stats.played > 0 && (
+            {stats && stats.history.length + stats.played > 0 && (
               <button className={s.statsLink} onClick={() => setStatsOpen(true)}>
-                {stats.played} oyun · en iyi {stats.best} · istatistikler →
+                İstatistikler →
               </button>
             )}
             {!questions.length && <p className={s.statsLine}>Henüz soru eklenmemiş.</p>}
@@ -346,7 +483,7 @@ export default function Game({ questions }: { questions: Question[] }) {
             <div className={s.questionWrap}>
               {phase === "paused" ? (
                 <div className={s.pausedBox}>
-                  <p>Duraklatıldı</p>
+                  <p>{mode === "daily" && remaining < roundMs ? "Kaldığın yerden devam et" : "Duraklatıldı"}</p>
                   <div className={s.row}>
                     <button className={s.primary} onClick={resume}>Devam et</button>
                     <button className={s.ghost} onClick={() => finish(slots)}>Bitir</button>
@@ -424,14 +561,16 @@ export default function Game({ questions }: { questions: Question[] }) {
             </div>
             <div className={s.row}>
               <button className={s.primary} onClick={share}>{copied ? "Kopyalandı ✓" : "Paylaş"}</button>
-              <button className={s.ghost} onClick={start}>Tekrar oyna</button>
+              {mode === "daily" ? (
+                <button className={s.ghost} onClick={() => switchMode("free")}>Serbest oyna</button>
+              ) : (
+                <button className={s.ghost} onClick={start}>Tekrar oyna</button>
+              )}
             </div>
-            {stats && (
-              <button className={s.statsLink} onClick={() => setStatsOpen(true)}>
-                {stats.played} oyun · en iyi {stats.best} · ortalama{" "}
-                {(stats.played ? stats.totalCorrect / stats.played : 0).toLocaleString("tr-TR", { maximumFractionDigits: 1 })} · istatistikler →
-              </button>
-            )}
+            {mode === "daily" && <Countdown />}
+            <button className={s.statsLink} onClick={() => setStatsOpen(true)}>
+              İstatistikler →
+            </button>
             <ol className={s.review}>
               {slots.map((x) => (
                 <li key={x.q.id} className={s.reviewItem}>
@@ -465,6 +604,8 @@ export default function Game({ questions }: { questions: Question[] }) {
             <button className={s.modalClose} onClick={() => setStatsOpen(false)} aria-label="Kapat">×</button>
             <StatsPanel
               stats={stats}
+              initialMode={mode}
+              today={istanbulDate()}
               onReset={() => {
                 if (confirm("Tüm istatistiklerin silinsin mi?")) setStats(resetStats());
               }}
@@ -478,12 +619,16 @@ export default function Game({ questions }: { questions: Question[] }) {
           <div className={s.modal} role="dialog" aria-modal="true" onClick={(e) => e.stopPropagation()}>
             <button className={s.modalClose} onClick={() => setHelpOpen(false)} aria-label="Kapat">×</button>
             <h2>Nasıl oynanır</h2>
-            <p>Her harf için 2000 sonrası EuroLeague hakkında bir soru gelir. Cevap o harfle başlar ya da içinde o harf geçer.</p>
+            <p>Her harf için modern EuroLeague (ve biraz genel basketbol) hakkında bir soru gelir. Cevap o harfle başlar ya da içinde o harf geçer.</p>
+            <p>
+              <strong>Günlük:</strong> herkese her gün aynı sorular, günde bir hak; gece yarısı (TSİ) yenilenir.{" "}
+              <strong>Serbest:</strong> rastgele sorularla istediğin kadar oyna.
+            </p>
             <ul>
               <li><strong>Enter</strong> ya da ok tuşu: cevapla</li>
               <li><strong>Pas</strong> (ya da boşken Enter): sonraki harfe geç, tur sonunda geri gel</li>
               <li>Yanlış cevap o harfi kapatır.</li>
-              <li>{settings.minutes} dakika bittiğinde ya da tüm harfler kapandığında oyun biter.</li>
+              <li>Süre bittiğinde ya da tüm harfler kapandığında oyun biter.</li>
             </ul>
             <div className={s.legend}>
               <span><i className={s.st_correct} /> doğru</span>
