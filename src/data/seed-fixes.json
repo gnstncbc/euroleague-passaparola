@@ -4,5 +4,29 @@
     "field": "question",
     "from": "CSKA'nın 2008'de, Real Madrid'in 2015'te şampiyon olduğu Final Four'lara ev sahipliği yapan başkent.",
     "to": "CSKA'nın 2008'de şampiyon olduğu ve Real'in 2015'te kendi evinde kupayı kaldırdığı Final Four'ların başkenti."
+  },
+  {
+    "id": "n3",
+    "field": "question",
+    "from": "Panathinaikos'u 2024'te şampiyonluğa taşıyıp Final Four MVP'si seçilen Amerikalı guard Kendrick ___.",
+    "to": "2023'te Panathinaikos'a gelip ilk sezonunda EuroLeague şampiyonu olan, NBA'de Miami Heat'te de oynamış Amerikalı guard Kendrick ___."
+  },
+  {
+    "id": "p19",
+    "field": "question",
+    "from": "2006'da CSKA ile hem sezonun hem Final Four'un MVP'si seçilen Yunan oyun kurucu.",
+    "to": "2006'da Final Four MVP'si, 2007'de yedek kulübesinden gelen ilk oyuncu olarak sezon MVP'si seçilen CSKA'nın Yunan oyun kurucusu."
+  },
+  {
+    "id": "s2",
+    "field": "question",
+    "from": "2007'de Panathinaikos, 2008'de CSKA formasıyla üst üste EuroLeague sezon MVP'si seçilen Litvanyalı kanat oyuncusu.",
+    "to": "2008'de CSKA Moskova ile hem EuroLeague'i kazanan hem de sezon MVP'si seçilen Litvanyalı kanat oyuncusu."
+  },
+  {
+    "id": "p20",
+    "field": "question",
+    "from": "2004 ve 2005'te üst üste EuroLeague sezon MVP'si seçilen Maccabi yıldızı Anthony ___.",
+    "to": "Ödülün verildiği ilk iki sezonda, 2005 ve 2006'da üst üste EuroLeague MVP'si seçilen Maccabi yıldızı Anthony ___."
   }
 ]
