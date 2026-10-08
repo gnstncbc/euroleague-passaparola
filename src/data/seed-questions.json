@@ -240,6 +240,28 @@
     ]
   },
   {
+    "id": "a26",
+    "letter": "A",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Anadolu Efes ile 2021 ve 2022'de üst üste EuroLeague şampiyonu olan Fransız uzun.",
+    "answer": "Adrien Moerman",
+    "alternates": [
+      "Moerman"
+    ]
+  },
+  {
+    "id": "a27",
+    "letter": "A",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Baskonia, Fenerbahçe, Anadolu Efes, Žalgiris ve Virtus Bologna'da oynayan, lösemiyle mücadelesinin ardından basketbolu bırakan İtalyan forvet.",
+    "answer": "Achille Polonara",
+    "alternates": [
+      "Polonara"
+    ]
+  },
+  {
     "id": "b1",
     "letter": "B",
     "rule": "starts",
@@ -550,6 +572,29 @@
     "answer": "Bobby Brown",
     "alternates": [
       "Brown"
+    ]
+  },
+  {
+    "id": "b32",
+    "letter": "B",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Žalgiris (2017-19), Barcelona (2019-22) ve Olimpia Milano'da forma giyen, iki kez All-EuroLeague takımına seçilen Amerikalı uzun.",
+    "answer": "Brandon Davies",
+    "alternates": [
+      "Davies"
+    ]
+  },
+  {
+    "id": "b33",
+    "letter": "B",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Ocak 2026'da Paulius Motiejūnas'ın yerine Euroleague Basketball'un CEO'su seçilen, NBA'in Avrupa operasyonlarında 12 yıl çalışmış İspanyol yönetici.",
+    "answer": "Chus Bueno",
+    "alternates": [
+      "Bueno",
+      "Jesús Bueno"
     ]
   },
   {
@@ -1160,6 +1205,29 @@
     ]
   },
   {
+    "id": "e19",
+    "letter": "E",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2021'de Milwaukee Bucks ile NBA şampiyonu olup ertesi yıl Anadolu Efes ile EuroLeague'i kazanan Amerikalı guard.",
+    "answer": "Elijah Bryant",
+    "alternates": [
+      "Bryant"
+    ]
+  },
+  {
+    "id": "e20",
+    "letter": "E",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2007-2015 arasında Fenerbahçe'de oynayan, Slovenya'dan sonra Türkiye milli takımını seçen Bosna doğumlu forvet.",
+    "answer": "Emir Preldžić",
+    "alternates": [
+      "Preldzic",
+      "Preldžić"
+    ]
+  },
+  {
     "id": "f1",
     "letter": "F",
     "rule": "starts",
@@ -1325,6 +1393,17 @@
     "answer": "Alessandro Frosini",
     "alternates": [
       "Frosini"
+    ]
+  },
+  {
+    "id": "f17",
+    "letter": "F",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2011'de Caja Laboral formasıyla ACB MVP'si seçilen, 2015-2021 arasında Valencia'da oynayan İspanyol kanat oyuncusu.",
+    "answer": "Fernando San Emeterio",
+    "alternates": [
+      "San Emeterio"
     ]
   },
   {
@@ -1531,6 +1610,17 @@
     "alternates": []
   },
   {
+    "id": "g19",
+    "letter": "G",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2016 NBA draftında 13. sıradan seçilen; Panathinaikos, Fenerbahçe, Monaco ve Anadolu Efes'te forma giyen Yunan pivot.",
+    "answer": "Georgios Papagiannis",
+    "alternates": [
+      "Papagiannis"
+    ]
+  },
+  {
     "id": "h1",
     "letter": "H",
     "rule": "starts",
@@ -1687,6 +1777,18 @@
     "answer": "Ricky Hickman",
     "alternates": [
       "Hickman"
+    ]
+  },
+  {
+    "id": "h15",
+    "letter": "H",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Ocak 2020'de CSKA Moskova'ya katılıp ertesi sezon Panathinaikos'a geçen Kübalı forvet.",
+    "answer": "Howard Sant-Roos",
+    "alternates": [
+      "Sant-Roos",
+      "Sant Roos"
     ]
   },
   {
@@ -1859,6 +1961,29 @@
     "answer": "Dimitris Itoudis",
     "alternates": [
       "Itoudis"
+    ]
+  },
+  {
+    "id": "i16",
+    "letter": "I",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Olympiacos'un Real Madrid'e 79-78 kaybettiği 2023 finalinde 21 sayı atan Amerikalı guard.",
+    "answer": "Isaiah Canaan",
+    "alternates": [
+      "Canaan"
+    ]
+  },
+  {
+    "id": "i17",
+    "letter": "I",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Olympiacos'u 2017'de İstanbul'daki Final Four'da finale taşıyan Yunan başantrenör.",
+    "answer": "Ioannis Sfairopoulos",
+    "alternates": [
+      "Sfairopoulos",
+      "Giannis Sfairopoulos"
     ]
   },
   {
@@ -2062,6 +2187,28 @@
     ]
   },
   {
+    "id": "j18",
+    "letter": "J",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2019'da Toronto Raptors ile NBA şampiyonu olup EuroLeague'de Valencia, Zenit, Monaco ve Anadolu Efes'te oynayan Amerikalı guard.",
+    "answer": "Jordan Loyd",
+    "alternates": [
+      "Loyd"
+    ]
+  },
+  {
+    "id": "j19",
+    "letter": "J",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Maccabi Tel Aviv'i 2011 finaline taşıyıp All-EuroLeague ikinci takımına seçilen Amerikalı oyun kurucu.",
+    "answer": "Jeremy Pargo",
+    "alternates": [
+      "Pargo"
+    ]
+  },
+  {
     "id": "k1",
     "letter": "K",
     "rule": "starts",
@@ -2227,6 +2374,32 @@
     "answer": "Keith Langford",
     "alternates": [
       "Langford"
+    ]
+  },
+  {
+    "id": "k16",
+    "letter": "K",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Anadolu Efes'in lider olduğu 2019-20 EuroLeague sezonunun Mayıs 2020'de şampiyon ilan edilmeden iptal edilmesine yol açan salgın.",
+    "answer": "Koronavirüs",
+    "alternates": [
+      "Koronavirus",
+      "Korona",
+      "Covid",
+      "Covid-19",
+      "Kovid"
+    ]
+  },
+  {
+    "id": "k17",
+    "letter": "K",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Olimpia Milano ve Partizan'dan sonra 2024'te Barcelona'ya imza atan Amerikalı şutör.",
+    "answer": "Kevin Punter",
+    "alternates": [
+      "Punter"
     ]
   },
   {
@@ -2428,6 +2601,17 @@
     "answer": "Mathias Lessort",
     "alternates": [
       "Lessort"
+    ]
+  },
+  {
+    "id": "l20",
+    "letter": "L",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "ABD doğumlu olup İspanya ile 2022 EuroBasket'i kazanan ve turnuvanın en iyi beşine seçilen, aynı yaz Maccabi Tel Aviv'e katılan oyun kurucu.",
+    "answer": "Lorenzo Brown",
+    "alternates": [
+      "Brown"
     ]
   },
   {
@@ -2719,6 +2903,17 @@
     "alternates": [
       "Mitoglou",
       "Konstantinos Mitoglou"
+    ]
+  },
+  {
+    "id": "m31",
+    "letter": "M",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Lokomotiv Kuban'ı 2016 Final Four'una taşıyıp yarı finalde CSKA'ya 26 sayı atan Amerikalı oyun kurucu.",
+    "answer": "Malcolm Delaney",
+    "alternates": [
+      "Delaney"
     ]
   },
   {
@@ -3108,6 +3303,17 @@
     ]
   },
   {
+    "id": "o19",
+    "letter": "O",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2015'te Golden State Warriors ile NBA, 2018'de Real Madrid ile EuroLeague şampiyonluğu yaşayan uzun.",
+    "answer": "Ognjen Kuzmić",
+    "alternates": [
+      "Kuzmic"
+    ]
+  },
+  {
     "id": "p1",
     "letter": "P",
     "rule": "starts",
@@ -3389,6 +3595,17 @@
     ]
   },
   {
+    "id": "p27",
+    "letter": "P",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2020 ve 2021'de Baskonia formasıyla EuroLeague'in top çalma lideri olan, 2021-22'de Fenerbahçe'de oynayan Amerikalı oyun kurucu.",
+    "answer": "Pierria Henry",
+    "alternates": [
+      "Henry"
+    ]
+  },
+  {
     "id": "q1",
     "letter": "Q",
     "rule": "contains",
@@ -3503,6 +3720,28 @@
     "answer": "Martinique",
     "alternates": [
       "Martinik"
+    ]
+  },
+  {
+    "id": "q12",
+    "letter": "Q",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2015-2018 arasında UNICS Kazan'da, ardından Valencia ve Crvena Zvezda'da EuroLeague'de oynayan oyun kurucu.",
+    "answer": "Quino Colom",
+    "alternates": [
+      "Colom"
+    ]
+  },
+  {
+    "id": "q13",
+    "letter": "Q",
+    "rule": "contains",
+    "category": "euroleague",
+    "question": "Şubat 2020'de Olympiacos'a katılıp kulüpte yaklaşık yedi yıl geçiren, 2026'da Türk Telekom'a imza atan Amerikalı kanat oyuncusu.",
+    "answer": "Shaquielle McKissic",
+    "alternates": [
+      "McKissic"
     ]
   },
   {
@@ -4226,6 +4465,18 @@
     ]
   },
   {
+    "id": "u14",
+    "letter": "U",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2001-02 sezonunda EuroLeague'de mücadele eden, iflas ederek kapanan Perm kulübü.",
+    "answer": "Ural Great",
+    "alternates": [
+      "Ural",
+      "Ural Great Perm"
+    ]
+  },
+  {
     "id": "v1",
     "letter": "V",
     "rule": "starts",
@@ -4450,6 +4701,28 @@
     ]
   },
   {
+    "id": "v21",
+    "letter": "V",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "2022-23'ten beri Bayern Münih'in kaptanlığını yapan, daha önce Valencia'da oynamış Sırp forvet.",
+    "answer": "Vladimir Lučić",
+    "alternates": [
+      "Lucic"
+    ]
+  },
+  {
+    "id": "v22",
+    "letter": "V",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Real Madrid'in 2023 şampiyonluğunda kadroda olup sakatlık nedeniyle Final Four'u kaçıran, sonra Anadolu Efes'e geçen Fransız pivot.",
+    "answer": "Vincent Poirier",
+    "alternates": [
+      "Poirier"
+    ]
+  },
+  {
     "id": "w1",
     "letter": "W",
     "rule": "starts",
@@ -4647,6 +4920,18 @@
     ]
   },
   {
+    "id": "w19",
+    "letter": "W",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Partizan, Žalgiris, CSKA, Fenerbahçe, Barcelona ve Monaco'da oynayan Fransız oyun kurucu Léo ___.",
+    "answer": "Léo Westermann",
+    "alternates": [
+      "Westermann",
+      "Leo Westermann"
+    ]
+  },
+  {
     "id": "x1",
     "letter": "X",
     "rule": "contains",
@@ -4773,6 +5058,19 @@
     "alternates": [
       "Shved",
       "Aleksey Shved"
+    ]
+  },
+  {
+    "id": "x13",
+    "letter": "X",
+    "rule": "contains",
+    "category": "euroleague",
+    "question": "Real Madrid ve Bilbao'da oynadıktan sonra teknik direktör olarak Almanya'yı 2025 EuroBasket finalinde Türkiye'yi yenerek şampiyon yapan İspanyol.",
+    "answer": "Alex Mumbrú",
+    "alternates": [
+      "Mumbru",
+      "Álex Mumbrú",
+      "Alex Mumbru"
     ]
   },
   {
@@ -4951,6 +5249,17 @@
     ]
   },
   {
+    "id": "y17",
+    "letter": "Y",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Maccabi Tel Aviv altyapısından yetişip 2004 ve 2005'te EuroLeague kazanan, 2008'de Olympiacos'a geçen İsrailli guard.",
+    "answer": "Yotam Halperin",
+    "alternates": [
+      "Halperin"
+    ]
+  },
+  {
     "id": "z1",
     "letter": "Z",
     "rule": "starts",
@@ -5087,6 +5396,17 @@
     "answer": "Zoran Planinić",
     "alternates": [
       "Planinic"
+    ]
+  },
+  {
+    "id": "z14",
+    "letter": "Z",
+    "rule": "starts",
+    "category": "euroleague",
+    "question": "Olympiacos, Žalgiris, Olimpia Milano ve Partizan'da oynadıktan sonra Hapoel Tel Aviv'e katılan Amerikalı uzun.",
+    "answer": "Zach LeDay",
+    "alternates": [
+      "LeDay"
     ]
   }
 ]
